@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/What-Really-Happened/">
+  <title>Contact - What Really Happened</title>
+  <meta name="description" content="Get in touch. Pilot program information.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav>
+    <div class="nav-logo">WHAT REALLY HAPPENED</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
+      <li><a href="case-study.html">Case Study</a></li>
+      <li><a href="for.html">Who It's For</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section style="padding: 120px 40px 80px; max-width: 1400px; margin: 0 auto;">
+      <div class="section-label">CONTACT & PILOT</div>
+      <h1 style="font-size: 56px; margin-bottom: 24px;">Get In Touch</h1>
+      <p style="max-width: 700px; font-size: 18px;">Questions about the curriculum, facilitator training, or deployment? We're here to help.</p>
+    </section>
+
+    <!-- Pilot Program -->
+    <section class="fade-in">
+      <h2>The Pilot Program</h2>
+      <p>The Johnson County pilot proposal represents the first implementation site for the curriculum. A pilot program runs for 16 weeks with 90-minute weekly sessions, full documentation, and case study output.</p>
+      <p>The pilot is designed to:</p>
+      <ul style="margin-left: 20px; margin-top: 16px; margin-bottom: 16px;">
+        <li style="margin-bottom: 8px;">Establish the curriculum as deployable and clinically effective</li>
+        <li style="margin-bottom: 8px;">Generate outcome data and participant feedback</li>
+        <li style="margin-bottom: 8px;">Provide facilitator training and certification</li>
+        <li style="margin-bottom: 8px;">Build a replicable model for other institutions</li>
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="fade-in">
+      <h2>Contact Form</h2>
+      <div class="business-block" style="max-width: 640px;">
+        <form id="contact-form">
+          <div>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="organization">Organization *</label>
+            <input type="text" id="organization" name="organization" required>
+          </div>
+          <div>
+            <label for="role">Role *</label>
+            <input type="text" id="role" name="role" required>
+          </div>
+          <div>
+            <label for="context">Deployment Context *</label>
+            <select id="context" name="context" required>
+              <option value="">Select a context</option>
+              <option value="Recovery & Residential Treatment">Recovery & Residential Treatment</option>
+              <option value="Corrections & Reentry">Corrections & Reentry</option>
+              <option value="Community Mental Health">Community Mental Health</option>
+              <option value="Clinician & Professional Training">Clinician & Professional Training</option>
+              <option value="Workforce & Peer Support">Workforce & Peer Support</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your organization and what you're looking for..."></textarea>
+          </div>
+          <div>
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn-cta-primary" style="width: 100%; margin-top: 20px;">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Direct Contact -->
+    <section class="fade-in">
+      <h2>Direct Contact</h2>
+      <div class="business-block">
+        <h3>Address</h3>
+        <p>Capitol Contracts LLC<br>Clarksville, Arkansas<br>United States</p>
+        
+        <h3 style="margin-top: 32px;">Email</h3>
+        <p><a href="mailto:info@capitolcontracts.com">info@capitolcontracts.com</a></p>
+        
+        <h3 style="margin-top: 32px;">Organization Status</h3>
+        <p>Service-Disabled Veteran-Owned Small Business (SDVOSB)<br>Pursuing SDVOSB and HUBZone certification</p>
+      </div>
+    </section>
+
+    <!-- Primary Deployment Targets -->
+    <section class="fade-in">
+      <h2>Primary Deployment Targets</h2>
+      <p>We are actively pursuing partnerships and contracts with:</p>
+      <div style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div class="business-block">
+          <h3>Arkansas Department of Corrections</h3>
+          <p>Reentry and rehabilitation programming</p>
+        </div>
+        <div class="business-block">
+          <h3>Arkansas Department of Human Services</h3>
+          <p>Community mental health and social services</p>
+        </div>
+        <div class="business-block">
+          <h3>Arkansas Division of Workforce Services</h3>
+          <p>Workforce development and training</p>
+        </div>
+        <div class="business-block">
+          <h3>Local Recovery & Reentry Organizations</h3>
+          <p>Arkansas River Valley region</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Happens Next -->
+    <section class="fade-in">
+      <h2>What Happens Next</h2>
+      <p>Submit the form above or email us directly. We'll connect you with the appropriate team member to discuss your specific needs and explore how the curriculum can serve your organization.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section fade-in">
+      <h2>Ready to start a conversation?</h2>
+      <p>Let's discuss how What Really Happened can serve your institution.</p>
+      <div class="cta-buttons">
+        <button class="btn-cta-secondary" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">BACK TO FORM</button>
+        <button class="btn-cta-primary" onclick="window.location.href='mailto:info@capitolcontracts.com'">EMAIL DIRECTLY</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>What Really Happened</h4>
+        <p style="font-size: 14px; color: var(--text-secondary);">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="case-study.html">Case Study</a></li>
+          <li><a href="for.html">Who It's For</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Organization</h4>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); line-height: 1.8;">
+          <div><strong>Capitol Contracts LLC</strong></div>
+          <div>Clarksville, Arkansas</div>
+          <div style="margin-top: 12px;">Service-Disabled Veteran-Owned Small Business</div>
+          <div style="font-size: 11px; margin-top: 8px;">NAICS: 611710, 611699, 513130</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
