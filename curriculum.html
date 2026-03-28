@@ -1,339 +1,735 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/What-Really-Happened/">
-  <title>Curriculum - What Really Happened</title>
-  <meta name="description" content="The complete 18-session curriculum with word-for-word facilitator scripts.">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Complete Curriculum — What Really Happened</title>
+  <meta name="description" content="18 sessions. Word-for-word facilitator scripts. Deployable from day one." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0a0908;
+      --dark:     #111110;
+      --mid:      #1c1b19;
+      --border:   #2a2927;
+      --muted:    #6b6860;
+      --body:     #c8c4bc;
+      --light:    #e8e4dc;
+      --white:    #f5f2ec;
+      --ember:    #c4621a;
+      --ember-lt: #d97a38;
+      --ember-dk: #8f3e08;
+      --serif:    'Playfair Display', Georgia, serif;
+      --prose:    'Crimson Pro', Georgia, serif;
+      --mono:     'Space Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--body);
+      font-family: var(--prose);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .skip-link {
+      position: absolute; top: -999px; left: 1rem;
+      background: var(--ember); color: var(--white);
+      padding: .5rem 1rem; font-family: var(--mono); font-size: .75rem; z-index: 9999;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,9,8,.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .site-name {
+      font-family: var(--mono); font-size: .72rem;
+      letter-spacing: .18em; color: var(--ember); text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 2rem; }
+
+    nav a {
+      font-family: var(--mono); font-size: .68rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); transition: color .2s;
+    }
+    nav a:hover, nav a.active { color: var(--white); }
+
+    #main { padding-top: 56px; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 5rem 6rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--mid) 0%, var(--black) 100%);
+    }
+
+    .eyebrow {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--ember); margin-bottom: 1rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 600; color: var(--white); margin-bottom: 1rem; line-height: 1.15;
+    }
+
+    .page-hero .sub {
+      font-size: 1.1rem; color: var(--muted); max-width: 55ch;
+    }
+
+    .hero-quote {
+      margin-top: 2.5rem;
+      border-left: 2px solid var(--ember-dk);
+      padding-left: 1.5rem;
+      font-family: var(--serif); font-style: italic;
+      font-size: 1.15rem; color: var(--light); max-width: 55ch;
+    }
+
+    .hero-quote cite {
+      display: block; margin-top: .5rem;
+      font-family: var(--mono); font-size: .6rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); font-style: normal;
+    }
+
+    /* CONTENT */
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+
+    .content h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: 1.25rem; line-height: 1.2;
+    }
+
+    .content p { color: var(--body); margin-bottom: 1rem; }
+
+    /* ARCHITECTURE */
+    .architecture {
+      background: var(--mid);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 5rem 6rem;
+    }
+
+    .arch-inner { max-width: 900px; margin: 0 auto; }
+
+    .arch-inner h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: .75rem;
+    }
+
+    .arch-sub {
+      color: var(--muted); margin-bottom: 2.5rem; font-size: 1rem;
+    }
+
+    .timing-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0;
+    }
+
+    .timing-row {
+      display: contents;
+    }
+
+    .timing-row .time {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .08em; color: var(--ember);
+      padding: .85rem 1.5rem .85rem 0;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+
+    .timing-row .desc {
+      padding: .85rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timing-row .desc strong {
+      display: block; color: var(--light);
+      font-family: var(--serif); font-weight: 600;
+      font-size: 1rem; margin-bottom: .15rem;
+    }
+
+    .timing-row .desc span {
+      font-size: .9rem; color: var(--muted);
+    }
+
+    /* FIVE PARTS */
+    .five-parts {
+      max-width: 900px; margin: 0 auto; padding: 5rem 2rem;
+    }
+
+    .five-parts h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white); margin-bottom: 2rem;
+    }
+
+    details {
+      border-bottom: 1px solid var(--border);
+    }
+
+    details:first-of-type { border-top: 1px solid var(--border); }
+
+    summary {
+      list-style: none;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 0;
+      cursor: pointer;
+      font-family: var(--serif); font-size: 1.05rem;
+      color: var(--light);
+      transition: color .2s;
+    }
+
+    summary:hover { color: var(--white); }
+    summary::after { content: '+'; font-family: var(--mono); color: var(--ember); }
+    details[open] summary::after { content: '−'; }
+
+    details p {
+      color: var(--body); padding: 0 0 1.25rem;
+      font-size: 1rem; max-width: 70ch;
+    }
+
+    /* ALL 18 SESSIONS */
+    .all-sessions { padding: 5rem 6rem; background: var(--mid); }
+    .all-sessions-inner { max-width: 1100px; margin: 0 auto; }
+
+    .all-sessions h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white); margin-bottom: 2rem;
+    }
+
+    .session-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .sl-card {
+      background: var(--dark);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      transition: background .2s;
+    }
+
+    .sl-card:hover { background: var(--black); }
+
+    .sl-num {
+      font-family: var(--mono); font-size: .65rem;
+      color: var(--ember); letter-spacing: .1em;
+    }
+
+    .sl-part {
+      font-family: var(--mono); font-size: .58rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .sl-title {
+      font-family: var(--serif); font-size: 1rem;
+      color: var(--light); line-height: 1.3;
+    }
+
+    .sl-meta {
+      display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .25rem;
+    }
+
+    .sl-badge {
+      font-family: var(--mono); font-size: .55rem;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--ember); border: 1px solid var(--ember-dk);
+      padding: .15rem .45rem;
+    }
+
+    .sl-time {
+      font-family: var(--mono); font-size: .55rem;
+      letter-spacing: .08em; color: var(--muted);
+      border: 1px solid var(--border);
+      padding: .15rem .45rem;
+    }
+
+    /* WHAT'S IN EACH SCRIPT */
+    .script-contents {
+      max-width: 900px; margin: 0 auto; padding: 5rem 2rem;
+    }
+
+    .script-contents h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white); margin-bottom: 2rem;
+    }
+
+    .components-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .component-item {
+      border: 1px solid var(--border);
+      padding: 1.25rem;
+      background: var(--dark);
+    }
+
+    .comp-icon { font-size: 1.25rem; margin-bottom: .5rem; }
+
+    .comp-label {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .08em; color: var(--light);
+      text-transform: uppercase;
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 6rem; text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section h2 {
+      font-family: var(--serif); font-size: 2rem;
+      color: var(--white); margin-bottom: .75rem;
+    }
+
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; font-size: 1rem; }
+
+    .btn-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block; background: var(--ember); color: var(--white);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--ember-lt); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block; border: 1px solid var(--border); color: var(--body);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-secondary:hover { border-color: var(--ember-dk); color: var(--white); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 3rem 6rem;
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;
+    }
+
+    .footer-brand p {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .08em; color: var(--ember);
+      text-transform: uppercase; margin-bottom: .5rem;
+    }
+
+    .footer-brand .tagline {
+      font-family: var(--prose); font-size: .95rem; color: var(--muted);
+      letter-spacing: 0; text-transform: none; font-weight: 300; margin-bottom: 1rem;
+    }
+
+    .footer-meta {
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .06em; line-height: 1.8;
+    }
+
+    .footer-col h4 {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 1rem;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .5rem; }
+    .footer-col ul li a {
+      font-family: var(--prose); font-size: .95rem;
+      color: var(--muted); transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+
+    .footer-bottom {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 1.25rem 6rem;
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .08em;
+    }
+
+    @media (max-width: 900px) {
+      .page-hero, .architecture, .all-sessions, .cta-section { padding: 3rem 2rem; }
+      footer { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 2rem; }
+      .footer-bottom { padding: 1.25rem 2rem; }
+      nav { display: none; }
+    }
+  </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <nav>
-    <div class="nav-logo">WHAT REALLY HAPPENED</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="curriculum.html" class="active">Curriculum</a></li>
-      <li><a href="case-study.html">Case Study</a></li>
-      <li><a href="for.html">Who It's For</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+  <header>
+    <span class="site-name">What Really Happened</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="curriculum.html" class="active">Curriculum</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="for.html">Who It's For</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section style="padding: 120px 40px 80px; max-width: 1400px; margin: 0 auto;">
-      <div class="section-label">COMPLETE CURRICULUM</div>
-      <h1 style="font-size: 56px; margin-bottom: 24px;">The Complete Curriculum</h1>
-      <p style="max-width: 700px; font-size: 18px;">18 sessions. Word-for-word facilitator scripts. Deployable from day one.</p>
-    </section>
 
-    <!-- Methodology -->
-    <section class="fade-in">
-      <div class="pull-quote">
-        <p>"A concept you can only hold in your head is a concept you cannot use in your body."</p>
-        <div class="pull-quote-attribution">Session 02</div>
+    <div class="page-hero">
+      <p class="eyebrow">Complete Curriculum</p>
+      <h1>The Complete Curriculum</h1>
+      <p class="sub">18 sessions. Word-for-word facilitator scripts. Deployable from day one.</p>
+      <div class="hero-quote">
+        "A concept you can only hold in your head is a concept you cannot use in your body."
+        <cite>Session 02</cite>
       </div>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <div class="content">
       <h2>Methodology: Why a Case Study</h2>
       <p>The curriculum is built around a single documented life — a published memoir that traces one nervous system from premature birth through chronic complex trauma, addiction, relationship destruction, system collapse, and the specific, non-linear process of rebuilding.</p>
       <p>Every clinical concept is grounded in a specific event, relationship, or moment from the source material. The methodology is not abstraction. Abstraction fails where specificity succeeds. A person can memorize the definition of hypervigilance and miss it in a room, but cannot encounter a body that circled an entire building to avoid the front entrance without understanding something about what a nervous system does when proximity has been encoded as threat since before language.</p>
-    </section>
+    </div>
 
-    <!-- Session Architecture -->
-    <section class="fade-in">
-      <h2>Session Architecture</h2>
-      <p>Each session follows this consistent clinical architecture. The facilitation is load-bearing. The room is where the co-regulation happens.</p>
-      <div class="architecture-boxes">
-        <div class="arch-box">
-          <div class="arch-time">5 min</div>
-          <div class="arch-name">Opening Grounding</div>
-          <div class="arch-desc">Nervous system regulation</div>
-        </div>
-        <div class="arch-box">
-          <div class="arch-time">25 min</div>
-          <div class="arch-name">Lecture</div>
-          <div class="arch-desc">Clinical content with timing</div>
-        </div>
-        <div class="arch-box">
-          <div class="arch-time">20 min</div>
-          <div class="arch-name">Group Discussion</div>
-          <div class="arch-desc">Facilitated exploration</div>
-        </div>
-        <div class="arch-box">
-          <div class="arch-time">10 min</div>
-          <div class="arch-name">Individual Reflection</div>
-          <div class="arch-desc">Journal or worksheet</div>
-        </div>
-        <div class="arch-box">
-          <div class="arch-time">10 min</div>
-          <div class="arch-name">Closing Grounding</div>
-          <div class="arch-desc">Return to baseline</div>
+    <!-- SESSION ARCHITECTURE -->
+    <div class="architecture">
+      <div class="arch-inner">
+        <h2>Session Architecture</h2>
+        <p class="arch-sub">Each session follows this consistent clinical architecture. The facilitation is load-bearing. The room is where the co-regulation happens.</p>
+        <div class="timing-grid">
+          <div class="timing-row">
+            <div class="time">5 min</div>
+            <div class="desc">
+              <strong>Opening Grounding</strong>
+              <span>Nervous system regulation</span>
+            </div>
+          </div>
+          <div class="timing-row">
+            <div class="time">25 min</div>
+            <div class="desc">
+              <strong>Lecture</strong>
+              <span>Clinical content with timing</span>
+            </div>
+          </div>
+          <div class="timing-row">
+            <div class="time">20 min</div>
+            <div class="desc">
+              <strong>Group Discussion</strong>
+              <span>Facilitated exploration</span>
+            </div>
+          </div>
+          <div class="timing-row">
+            <div class="time">10 min</div>
+            <div class="desc">
+              <strong>Individual Reflection</strong>
+              <span>Journal or worksheet</span>
+            </div>
+          </div>
+          <div class="timing-row">
+            <div class="time">10 min</div>
+            <div class="desc">
+              <strong>Closing Grounding</strong>
+              <span>Return to baseline</span>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Five Parts Accordion -->
-    <section class="fade-in">
+    <!-- FIVE PARTS -->
+    <div class="five-parts">
       <h2>The Five Parts</h2>
-      <div style="margin-top: 40px;">
-        <button class="accordion-header">
-          <span>Sessions 00 — Introduction</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Building safety and establishing the clinical frame. Welcome, Safety, and Why This Course Exists.</p>
-        </div>
 
-        <button class="accordion-header">
-          <span>Sessions 01–02 — Part I: How It Gets Built Into You</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Early development and trauma formation. The Blueprint of Survival. The Masks We Wear.</p>
-        </div>
+      <details>
+        <summary>Session 00 — Introduction</summary>
+        <p>Building safety and establishing the clinical frame. Welcome, Safety, and Why This Course Exists.</p>
+      </details>
 
-        <button class="accordion-header">
-          <span>Sessions 03–04 — Part II: How It Destroys Your Relationships</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Adult relationships and relational consequences. When Love Hurts. The War on Reality.</p>
-        </div>
+      <details>
+        <summary>Sessions 01–02 — Part I: How It Gets Built Into You</summary>
+        <p>Early development and trauma formation. The Blueprint of Survival. The Masks We Wear.</p>
+      </details>
 
-        <button class="accordion-header">
-          <span>Sessions 05–07.5 — Part III: How You Tried to Cope</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Coping strategies and regulation mechanisms. Relapse Isn't a Betrayal. What Healing Actually Looks Like. The Breaking Point. Shut Up, I Have Work Tomorrow (DEEP DIVE).</p>
-        </div>
+      <details>
+        <summary>Sessions 03–04 — Part II: How It Destroys Your Relationships</summary>
+        <p>Adult relationships and relational consequences. When Love Hurts. The War on Reality.</p>
+      </details>
 
-        <button class="accordion-header">
-          <span>Sessions 08–12 — Part IV: The Internal Battlefield</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Crisis architecture and neuroscience. Rewriting the Legacy. Shame vs. Responsibility. Your Brain on Trauma. The Anatomy of a Spiral. Crisis, Suicide Risk, and Staying Alive (SAFETY PROTOCOL).</p>
-        </div>
+      <details>
+        <summary>Sessions 05–07.5 — Part III: How You Tried to Cope</summary>
+        <p>Coping strategies and regulation mechanisms. Relapse Isn't a Betrayal. What Healing Actually Looks Like. The Breaking Point. Shut Up, I Have Work Tomorrow (Deep Dive).</p>
+      </details>
 
-        <button class="accordion-header">
-          <span>Sessions 13–16 — Part V: Changing the World Around You</span>
-          <span class="accordion-toggle">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Integration and systemic change. The Lessons Nobody Taught Us. Speaking Truth to Power. The Crucial Question. The Revolution Must Be Trauma-Informed.</p>
+      <details>
+        <summary>Sessions 08–12 — Part IV: The Internal Battlefield</summary>
+        <p>Crisis architecture and neuroscience. Rewriting the Legacy. Shame vs. Responsibility. Your Brain on Trauma. The Anatomy of a Spiral. Crisis, Suicide Risk, and Staying Alive (Safety Protocol).</p>
+      </details>
+
+      <details>
+        <summary>Sessions 13–16 — Part V: Changing the World Around You</summary>
+        <p>Integration and systemic change. The Lessons Nobody Taught Us. Speaking Truth to Power. The Crucial Question. The Revolution Must Be Trauma-Informed.</p>
+      </details>
+    </div>
+
+    <!-- ALL 18 SESSIONS -->
+    <section class="all-sessions">
+      <div class="all-sessions-inner">
+        <h2>All 18 Sessions</h2>
+        <div class="session-list">
+
+          <a href="session-00.html" class="sl-card">
+            <p class="sl-num">00</p>
+            <p class="sl-part">Intro</p>
+            <p class="sl-title">Welcome, Safety, and Why This Course Exists</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-01.html" class="sl-card">
+            <p class="sl-num">01</p>
+            <p class="sl-part">Part I</p>
+            <p class="sl-title">The Blueprint of Survival</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-02.html" class="sl-card">
+            <p class="sl-num">02</p>
+            <p class="sl-part">Part I</p>
+            <p class="sl-title">The Masks We Wear</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-03.html" class="sl-card">
+            <p class="sl-num">03</p>
+            <p class="sl-part">Part II</p>
+            <p class="sl-title">When Love Hurts</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-04.html" class="sl-card">
+            <p class="sl-num">04</p>
+            <p class="sl-part">Part II</p>
+            <p class="sl-title">The War on Reality</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-05.html" class="sl-card">
+            <p class="sl-num">05</p>
+            <p class="sl-part">Part III</p>
+            <p class="sl-title">Relapse Isn't a Betrayal</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-06.html" class="sl-card">
+            <p class="sl-num">06</p>
+            <p class="sl-part">Part III</p>
+            <p class="sl-title">What Healing Actually Looks Like</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <!-- FIX: was labeled PART IV — correct label is PART III -->
+          <a href="session-07.html" class="sl-card">
+            <p class="sl-num">07</p>
+            <p class="sl-part">Part III</p>
+            <p class="sl-title">The Breaking Point</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-07-5.html" class="sl-card">
+            <p class="sl-num">07.5</p>
+            <p class="sl-part">Part III</p>
+            <p class="sl-title">Shut Up, I Have Work Tomorrow</p>
+            <div class="sl-meta">
+              <span class="sl-badge">Deep Dive</span>
+              <span class="sl-time">90 min</span>
+            </div>
+          </a>
+
+          <a href="session-08.html" class="sl-card">
+            <p class="sl-num">08</p>
+            <p class="sl-part">Part IV</p>
+            <p class="sl-title">Rewriting the Legacy</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-09.html" class="sl-card">
+            <p class="sl-num">09</p>
+            <p class="sl-part">Part IV</p>
+            <p class="sl-title">Shame vs. Responsibility</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-10.html" class="sl-card">
+            <p class="sl-num">10</p>
+            <p class="sl-part">Part IV</p>
+            <p class="sl-title">Your Brain on Trauma</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-11.html" class="sl-card">
+            <p class="sl-num">11</p>
+            <p class="sl-part">Part IV</p>
+            <p class="sl-title">The Anatomy of a Spiral</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-12.html" class="sl-card">
+            <p class="sl-num">12</p>
+            <p class="sl-part">Part IV</p>
+            <p class="sl-title">Crisis, Suicide Risk, and Staying Alive</p>
+            <div class="sl-meta">
+              <span class="sl-badge">Safety Protocol</span>
+              <span class="sl-time">70 min</span>
+            </div>
+          </a>
+
+          <a href="session-13.html" class="sl-card">
+            <p class="sl-num">13</p>
+            <p class="sl-part">Part V</p>
+            <p class="sl-title">The Lessons Nobody Taught Us</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-14.html" class="sl-card">
+            <p class="sl-num">14</p>
+            <p class="sl-part">Part V</p>
+            <p class="sl-title">Speaking Truth to Power</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-15.html" class="sl-card">
+            <p class="sl-num">15</p>
+            <p class="sl-part">Part V</p>
+            <p class="sl-title">The Crucial Question</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
+          <a href="session-16.html" class="sl-card">
+            <p class="sl-num">16</p>
+            <p class="sl-part">Part V</p>
+            <p class="sl-title">The Revolution Must Be Trauma-Informed</p>
+            <div class="sl-meta"><span class="sl-time">70 min</span></div>
+          </a>
+
         </div>
       </div>
     </section>
 
-    <!-- Full Session List -->
-    <section class="fade-in">
-      <h2>All 18 Sessions</h2>
-      <div class="session-list">
-        <a href="session-00.html" class="session-row fade-in">
-          <div class="session-row-number">00</div>
-          <div class="session-row-part">INTRO</div>
-          <div class="session-row-title">Welcome, Safety, and Why This Course Exists</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-01.html" class="session-row fade-in">
-          <div class="session-row-number">01</div>
-          <div class="session-row-part">PART I</div>
-          <div class="session-row-title">The Blueprint of Survival</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-02.html" class="session-row fade-in">
-          <div class="session-row-number">02</div>
-          <div class="session-row-part">PART I</div>
-          <div class="session-row-title">The Masks We Wear</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-03.html" class="session-row fade-in">
-          <div class="session-row-number">03</div>
-          <div class="session-row-part">PART II</div>
-          <div class="session-row-title">When Love Hurts</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-04.html" class="session-row fade-in">
-          <div class="session-row-number">04</div>
-          <div class="session-row-part">PART II</div>
-          <div class="session-row-title">The War on Reality</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-05.html" class="session-row fade-in">
-          <div class="session-row-number">05</div>
-          <div class="session-row-part">PART III</div>
-          <div class="session-row-title">Relapse Isn't a Betrayal</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-06.html" class="session-row fade-in">
-          <div class="session-row-number">06</div>
-          <div class="session-row-part">PART III</div>
-          <div class="session-row-title">What Healing Actually Looks Like</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-07.html" class="session-row fade-in">
-          <div class="session-row-number">07</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">The Breaking Point</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-07-5.html" class="session-row fade-in">
-          <div class="session-row-number">07.5</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">Shut Up, I Have Work Tomorrow <span class="badge">DEEP DIVE</span></div>
-          <div class="session-row-duration">90 min</div>
-        </a>
-        <a href="session-08.html" class="session-row fade-in">
-          <div class="session-row-number">08</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">Rewriting the Legacy</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-09.html" class="session-row fade-in">
-          <div class="session-row-number">09</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">Shame vs. Responsibility</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-10.html" class="session-row fade-in">
-          <div class="session-row-number">10</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">Your Brain on Trauma</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-11.html" class="session-row fade-in">
-          <div class="session-row-number">11</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">The Anatomy of a Spiral</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-12.html" class="session-row fade-in">
-          <div class="session-row-number">12</div>
-          <div class="session-row-part">PART IV</div>
-          <div class="session-row-title">Crisis, Suicide Risk, and Staying Alive <span class="badge" style="border-color: var(--success); color: var(--success);">SAFETY PROTOCOL</span></div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-13.html" class="session-row fade-in">
-          <div class="session-row-number">13</div>
-          <div class="session-row-part">PART V</div>
-          <div class="session-row-title">The Lessons Nobody Taught Us</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-14.html" class="session-row fade-in">
-          <div class="session-row-number">14</div>
-          <div class="session-row-part">PART V</div>
-          <div class="session-row-title">Speaking Truth to Power</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-15.html" class="session-row fade-in">
-          <div class="session-row-number">15</div>
-          <div class="session-row-part">PART V</div>
-          <div class="session-row-title">The Crucial Question</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-        <a href="session-16.html" class="session-row fade-in">
-          <div class="session-row-number">16</div>
-          <div class="session-row-part">PART V</div>
-          <div class="session-row-title">The Revolution Must Be Trauma-Informed</div>
-          <div class="session-row-duration">70 min</div>
-        </a>
-    </section>
-
-    <!-- What's In Each Script -->
-    <section class="fade-in">
+    <!-- WHAT'S IN EACH SCRIPT -->
+    <div class="script-contents">
       <h2>What's In Each Script</h2>
-      <div class="icon-grid">
-        <div class="icon-card">
-          <div class="icon">📄</div>
-          <div class="icon-label">Word-for-word script</div>
+      <div class="components-grid">
+        <div class="component-item">
+          <div class="comp-icon">📄</div>
+          <div class="comp-label">Word-for-word script</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">🎬</div>
-          <div class="icon-label">Stage directions</div>
+        <div class="component-item">
+          <div class="comp-icon">🎬</div>
+          <div class="comp-label">Stage directions</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">📋</div>
-          <div class="icon-label">Pre-session notes</div>
+        <div class="component-item">
+          <div class="comp-icon">📋</div>
+          <div class="comp-label">Pre-session notes</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">⚠️</div>
-          <div class="icon-label">WATCH FOR alerts</div>
+        <div class="component-item">
+          <div class="comp-icon">⚠️</div>
+          <div class="comp-label">Watch for alerts</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">🔍</div>
-          <div class="icon-label">DEEP DIVE expansions</div>
+        <div class="component-item">
+          <div class="comp-icon">🔍</div>
+          <div class="comp-label">Deep Dive expansions</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">💬</div>
-          <div class="icon-label">Discussion prompts</div>
+        <div class="component-item">
+          <div class="comp-icon">💬</div>
+          <div class="comp-label">Discussion prompts</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">✍️</div>
-          <div class="icon-label">Journal prompts</div>
+        <div class="component-item">
+          <div class="comp-icon">✍️</div>
+          <div class="comp-label">Journal prompts</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">🔬</div>
-          <div class="icon-label">Clinical appendix</div>
+        <div class="component-item">
+          <div class="comp-icon">🔬</div>
+          <div class="comp-label">Clinical appendix</div>
         </div>
-        <div class="icon-card">
-          <div class="icon">📚</div>
-          <div class="icon-label">Key terms table</div>
+        <div class="component-item">
+          <div class="comp-icon">📚</div>
+          <div class="comp-label">Key terms table</div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- CTA -->
-    <section class="cta-section fade-in">
+    <section class="cta-section">
       <h2>Ready to deploy this curriculum?</h2>
       <p>Request the full curriculum overview and we'll connect you with implementation details.</p>
-      <div class="cta-buttons">
-        <button class="btn-cta-secondary" onclick="window.location.href='contact.html'">REQUEST OVERVIEW</button>
-        <button class="btn-cta-primary" onclick="window.location.href='contact.html'">CONTACT US</button>
+      <div class="btn-row">
+        <a href="contact.html" class="btn-primary">Request Overview</a>
+        <a href="contact.html" class="btn-secondary">Contact Us</a>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-column">
-        <h4>What Really Happened</h4>
-        <p style="font-size: 14px; color: var(--text-secondary);">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
-      </div>
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="case-study.html">Case Study</a></li>
-          <li><a href="for.html">Who It's For</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Organization</h4>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); line-height: 1.8;">
-          <div><strong>Capitol Contracts LLC</strong></div>
-          <div>Clarksville, Arkansas</div>
-          <div style="margin-top: 12px;">Service-Disabled Veteran-Owned Small Business</div>
-          <div style="font-size: 11px; margin-top: 8px;">NAICS: 611710, 611699, 513130</div>
-        </div>
+    <div class="footer-brand">
+      <p>What Really Happened</p>
+      <p class="tagline">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
+      <div class="footer-meta">
+        <div>Capitol Contracts LLC · Clarksville, Arkansas</div>
+        <div>Service-Disabled Veteran-Owned Small Business</div>
+        <div>UEI: HH77KN5AV5X7 · CAGE: 9ZFJ6</div>
+        <div>NAICS: 611710 · 611430 · 624190</div>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+        <li><a href="for.html">Who It's For</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <ul>
+        <li><a href="about.html">Capitol Contracts LLC</a></li>
+        <li><a href="contact.html">Request a Proposal</a></li>
+      </ul>
     </div>
   </footer>
+  <div class="footer-bottom">© 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.</div>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

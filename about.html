@@ -1,131 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/What-Really-Happened/">
-  <title>About - What Really Happened</title>
-  <meta name="description" content="About the curriculum, the organization, and Daniel Lingar.">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About This Work — What Really Happened</title>
+  <meta name="description" content="The organization. The curriculum. The person behind it." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0a0908;
+      --dark:     #111110;
+      --mid:      #1c1b19;
+      --border:   #2a2927;
+      --muted:    #6b6860;
+      --body:     #c8c4bc;
+      --light:    #e8e4dc;
+      --white:    #f5f2ec;
+      --ember:    #c4621a;
+      --ember-lt: #d97a38;
+      --ember-dk: #8f3e08;
+      --serif:    'Playfair Display', Georgia, serif;
+      --prose:    'Crimson Pro', Georgia, serif;
+      --mono:     'Space Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--body);
+      font-family: var(--prose);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .skip-link {
+      position: absolute; top: -999px; left: 1rem;
+      background: var(--ember); color: var(--white);
+      padding: .5rem 1rem; font-family: var(--mono); font-size: .75rem; z-index: 9999;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,9,8,.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .site-name {
+      font-family: var(--mono); font-size: .72rem;
+      letter-spacing: .18em; color: var(--ember); text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 2rem; }
+
+    nav a {
+      font-family: var(--mono); font-size: .68rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); transition: color .2s;
+    }
+    nav a:hover, nav a.active { color: var(--white); }
+
+    #main { padding-top: 56px; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 5rem 6rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--mid) 0%, var(--black) 100%);
+    }
+
+    .eyebrow {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--ember); margin-bottom: 1rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 600; color: var(--white); margin-bottom: .75rem; line-height: 1.15;
+    }
+
+    .page-hero .sub {
+      font-size: 1.1rem; color: var(--muted); max-width: 55ch;
+    }
+
+    /* CONTENT SECTIONS */
+    .about-section {
+      max-width: 860px; margin: 0 auto;
+      padding: 5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-section:last-of-type { border-bottom: none; }
+
+    .section-label {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--ember); margin-bottom: 1rem;
+    }
+
+    .about-section h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: 1.25rem; line-height: 1.2;
+    }
+
+    .about-section p {
+      color: var(--body); margin-bottom: 1rem; font-size: 1.05rem;
+    }
+
+    /* ORG CARD */
+    .org-card {
+      background: var(--mid);
+      border: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .org-block h3 {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: .75rem;
+    }
+
+    .org-block p, .org-block div {
+      font-family: var(--mono); font-size: .75rem;
+      letter-spacing: .04em; color: var(--body);
+      line-height: 1.9;
+    }
+
+    .org-block strong { color: var(--light); }
+
+    .naics-list {
+      display: flex; flex-direction: column; gap: .25rem; margin-top: .25rem;
+    }
+
+    .naics-item {
+      font-family: var(--mono); font-size: .7rem;
+      color: var(--body);
+    }
+
+    .naics-item .code { color: var(--ember); }
+
+    /* PULLQUOTE */
+    .pullquote {
+      margin: 2.5rem 0;
+      border-left: 2px solid var(--ember-dk);
+      padding-left: 1.5rem;
+    }
+
+    .pullquote blockquote {
+      font-family: var(--serif); font-style: italic;
+      font-size: 1.2rem; color: var(--light); line-height: 1.5;
+    }
+
+    /* STATUS PANEL */
+    .status-panel {
+      background: var(--mid);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 5rem 6rem;
+    }
+
+    .status-inner { max-width: 860px; margin: 0 auto; }
+
+    .status-inner h2 {
+      font-family: var(--serif); font-size: 1.6rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .status-inner p { color: var(--body); margin-bottom: 1rem; font-size: 1.05rem; }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .status-item {
+      border: 1px solid var(--border);
+      padding: 1.25rem 1.5rem;
+      background: var(--dark);
+    }
+
+    .status-marker {
+      font-family: var(--mono); font-size: .58rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      margin-bottom: .35rem;
+    }
+
+    .status-marker.complete { color: var(--ember); }
+    .status-marker.next { color: var(--muted); }
+
+    .status-item p {
+      font-size: .95rem; color: var(--body); margin: 0;
+    }
+
+    /* CTA */
+    .cta-section {
+      padding: 6rem; text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section h2 {
+      font-family: var(--serif); font-size: 2rem;
+      color: var(--white); margin-bottom: .75rem;
+    }
+
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; font-size: 1rem; }
+
+    .btn-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block; background: var(--ember); color: var(--white);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--ember-lt); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block; border: 1px solid var(--border); color: var(--body);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-secondary:hover { border-color: var(--ember-dk); color: var(--white); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 3rem 6rem;
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;
+    }
+
+    .footer-brand p {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .08em; color: var(--ember);
+      text-transform: uppercase; margin-bottom: .5rem;
+    }
+
+    .footer-brand .tagline {
+      font-family: var(--prose); font-size: .95rem; color: var(--muted);
+      letter-spacing: 0; text-transform: none; font-weight: 300; margin-bottom: 1rem;
+    }
+
+    .footer-meta {
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .06em; line-height: 1.8;
+    }
+
+    .footer-col h4 {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 1rem;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .5rem; }
+    .footer-col ul li a {
+      font-family: var(--prose); font-size: .95rem;
+      color: var(--muted); transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+
+    .footer-bottom {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 1.25rem 6rem;
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .08em;
+    }
+
+    @media (max-width: 900px) {
+      .page-hero { padding: 3rem 2rem; }
+      .about-section { padding: 3rem 2rem; }
+      .org-card { grid-template-columns: 1fr; }
+      .status-panel { padding: 3rem 2rem; }
+      .status-grid { grid-template-columns: 1fr; }
+      .cta-section { padding: 3rem 2rem; }
+      footer { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 2rem; }
+      .footer-bottom { padding: 1.25rem 2rem; }
+      nav { display: none; }
+    }
+  </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <nav>
-    <div class="nav-logo">WHAT REALLY HAPPENED</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="curriculum.html">Curriculum</a></li>
-      <li><a href="case-study.html">Case Study</a></li>
-      <li><a href="for.html">Who It's For</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+  <header>
+    <span class="site-name">What Really Happened</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="for.html">Who It's For</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section style="padding: 120px 40px 80px; max-width: 1400px; margin: 0 auto;">
-      <div class="section-label">ABOUT</div>
-      <h1 style="font-size: 56px; margin-bottom: 24px;">About This Work</h1>
-      <p style="max-width: 700px; font-size: 18px;">The organization. The curriculum. The person behind it.</p>
-    </section>
 
-    <!-- About the Curriculum -->
-    <section class="fade-in">
+    <div class="page-hero">
+      <p class="eyebrow">About</p>
+      <h1>About This Work</h1>
+      <p class="sub">The organization. The curriculum. The person behind it.</p>
+    </div>
+
+    <!-- ABOUT THE CURRICULUM -->
+    <div class="about-section">
+      <p class="section-label">The Curriculum</p>
       <h2>About the Curriculum</h2>
       <p><em>What Really Happened: A Trauma Education Series</em> was built from one life. Built for the people who circled the building to find the back entrance. Built because silence stopped working.</p>
       <p>The curriculum is not a wellness brand. It is not a therapy program. It is a serious, clinical, human document about what Complex PTSD actually looks like from inside the nervous system that lives it — and a curriculum built to teach that to anyone who needs to understand it.</p>
       <p>The design matches the material: direct, unsparing, specific, and alive. Every clinical concept is grounded in a specific event, relationship, or moment from a documented life. Every session is built to be facilitated — the room is where the co-regulation happens. The facilitation is load-bearing.</p>
-    </section>
+    </div>
 
-    <!-- Capitol Contracts LLC -->
-    <section class="fade-in">
+    <!-- ABOUT THE ORG -->
+    <div class="about-section">
+      <p class="section-label">The Organization</p>
       <h2>Capitol Contracts LLC</h2>
-      <div class="business-block">
-        <p><strong>Capitol Contracts LLC</strong> is a service-disabled veteran-owned small business (SDVOSB) registered in Clarksville, Arkansas. The company is pursuing SDVOSB and HUBZone certification and is registered under the following NAICS codes:</p>
-        <div class="business-info" style="margin-top: 20px;">
-          <div class="info-item"><span class="info-label">611710</span> Educational support services</div>
-          <div class="info-item"><span class="info-label">611699</span> All other miscellaneous schools and instruction</div>
-          <div class="info-item"><span class="info-label">513130</span> Book publishing</div>
-          <div class="info-item"><span class="info-label">UEI</span> [UEI]</div>
-          <div class="info-item"><span class="info-label">CAGE Code</span> [CAGE]</div>
-        </div>
-        <p style="margin-top: 20px;">The company is pursuing state and federal procurement contracts with Arkansas Department of Corrections, Arkansas Department of Human Services, Arkansas Division of Workforce Services, and local recovery and reentry organizations in the Arkansas River Valley region.</p>
-      </div>
-    </section>
+      <p>Capitol Contracts LLC is a service-disabled veteran-owned small business (SDVOSB) registered in Clarksville, Arkansas. The company is pursuing SDVOSB and HUBZone certification and is registered under the following NAICS codes:</p>
 
-    <!-- About Daniel Lingar -->
-    <section class="fade-in">
+      <div class="org-card">
+        <div class="org-block">
+          <h3>Registration</h3>
+          <div>
+            <div><strong>UEI</strong> HH77KN5AV5X7</div>
+            <div><strong>CAGE</strong> 9ZFJ6</div>
+            <div style="margin-top:.5rem;"><strong>Clarksville, Arkansas</strong></div>
+            <div>Service-Disabled Veteran-Owned Small Business</div>
+          </div>
+        </div>
+        <div class="org-block">
+          <h3>NAICS Codes</h3>
+          <div class="naics-list">
+            <div class="naics-item"><span class="code">611710</span> — Educational Support Services</div>
+            <div class="naics-item"><span class="code">611430</span> — Professional &amp; Management Development Training</div>
+            <div class="naics-item"><span class="code">624190</span> — Other Individual &amp; Family Services</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem;">The company is pursuing state and federal procurement contracts with the Arkansas Department of Corrections, Arkansas Department of Human Services, Arkansas Division of Workforce Services, and local recovery and reentry organizations in the Arkansas River Valley region.</p>
+    </div>
+
+    <!-- ABOUT DANIEL -->
+    <div class="about-section">
+      <p class="section-label">The Person</p>
       <h2>About Daniel Lingar</h2>
       <p>Daniel Lingar is the author of <em>From the Storm to the Fire</em>, the memoir that serves as the primary source material for the curriculum. He is the founder of Capitol Contracts LLC and the curriculum developer for <em>What Really Happened: A Trauma Education Series</em>.</p>
       <p>The case study that forms the foundation of the curriculum is his own life. The credential is not a degree. The credential is the work and the survival. The curriculum was built from the specific, documented moment-to-moment choice to stay alive when staying alive made no logical sense — and from the understanding that this choice, multiplied across a nervous system shaped by trauma, is the mechanism by which healing becomes possible.</p>
       <p>Daniel is available for facilitator training, institutional consultation, and professional speaking engagements. He brings to this work both the lived experience of Complex PTSD and the clinical understanding of how that experience becomes teachable.</p>
-    </section>
-
-    <!-- Pull Quote -->
-    <section class="fade-in">
-      <div class="pull-quote">
-        <p>"The people who survived the systems that failed them are not obstacles to institutional improvement. They are the experts the institution needs."</p>
+      <div class="pullquote">
+        <blockquote>"The people who survived the systems that failed them are not obstacles to institutional improvement. They are the experts the institution needs."</blockquote>
       </div>
-    </section>
+    </div>
 
-    <!-- Development Status -->
-    <section class="fade-in">
-      <h2>Development Status</h2>
-      <p>The curriculum is currently in final development. All 18 sessions exist as complete, deployable facilitator scripts with clinical appendices, discussion prompts, and grounding exercises.</p>
-      <p>The next development phase covers facilitator training curriculum, the leave-behind curriculum overview packet, and the pilot program proposal targeting a local recovery center as the first documented implementation site.</p>
-      <p>The case study is drawn from <em>From the Storm to the Fire</em>, which is listed in the curriculum's recommended reading and which provides the primary source material for every session. The curriculum was built specifically to make that source material clinically usable — to give it the facilitation architecture, the safety scaffolding, and the clinical language that transform a memoir into a deployable group intervention.</p>
+    <!-- DEVELOPMENT STATUS -->
+    <section class="status-panel">
+      <div class="status-inner">
+        <h2>Development Status</h2>
+        <p>All 18 sessions exist as complete, deployable facilitator scripts with clinical appendices, discussion prompts, and grounding exercises. The curriculum is ready for pilot deployment.</p>
+        <p>The case study is drawn from <em>From the Storm to the Fire</em>, which is listed in the curriculum's recommended reading and which provides the primary source material for every session. The curriculum was built specifically to make that source material clinically usable — to give it the facilitation architecture, the safety scaffolding, and the clinical language that transform a memoir into a deployable group intervention.</p>
+
+        <div class="status-grid">
+          <div class="status-item">
+            <p class="status-marker complete">✓ Complete</p>
+            <p>All 18 facilitator scripts with clinical appendices, discussion prompts, and grounding exercises</p>
+          </div>
+          <div class="status-item">
+            <p class="status-marker complete">✓ Complete</p>
+            <p>Session architecture, timing guides, WATCH FOR alerts, and Deep Dive expansions</p>
+          </div>
+          <div class="status-item">
+            <p class="status-marker next">In Progress</p>
+            <p>Facilitator training curriculum and certification pathway</p>
+          </div>
+          <div class="status-item">
+            <p class="status-marker next">In Progress</p>
+            <p>Leave-behind curriculum overview packet and pilot program proposal for first documented implementation site</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta-section fade-in">
+    <section class="cta-section">
       <h2>Ready to bring this to your program?</h2>
       <p>Contact us to discuss implementation, facilitator training, or partnership opportunities.</p>
-      <div class="cta-buttons">
-        <button class="btn-cta-secondary" onclick="window.location.href='contact.html'">START A CONVERSATION</button>
-        <button class="btn-cta-primary" onclick="window.location.href='contact.html'">GET IN TOUCH</button>
+      <div class="btn-row">
+        <a href="contact.html" class="btn-primary">Start a Conversation</a>
+        <a href="contact.html" class="btn-secondary">Get in Touch</a>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-column">
-        <h4>What Really Happened</h4>
-        <p style="font-size: 14px; color: var(--text-secondary);">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
-      </div>
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="case-study.html">Case Study</a></li>
-          <li><a href="for.html">Who It's For</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Organization</h4>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); line-height: 1.8;">
-          <div><strong>Capitol Contracts LLC</strong></div>
-          <div>Clarksville, Arkansas</div>
-          <div style="margin-top: 12px;">Service-Disabled Veteran-Owned Small Business</div>
-          <div style="font-size: 11px; margin-top: 8px;">NAICS: 611710, 611699, 513130</div>
-        </div>
+    <div class="footer-brand">
+      <p>What Really Happened</p>
+      <p class="tagline">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
+      <div class="footer-meta">
+        <div>Capitol Contracts LLC · Clarksville, Arkansas</div>
+        <div>Service-Disabled Veteran-Owned Small Business</div>
+        <div>UEI: HH77KN5AV5X7 · CAGE: 9ZFJ6</div>
+        <div>NAICS: 611710 · 611430 · 624190</div>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+        <li><a href="for.html">Who It's For</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <ul>
+        <li><a href="about.html">Capitol Contracts LLC</a></li>
+        <li><a href="contact.html">Request a Proposal</a></li>
+      </ul>
     </div>
   </footer>
+  <div class="footer-bottom">© 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.</div>
 
-  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,235 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/What-Really-Happened/">
-  <title>Who It's For - What Really Happened</title>
-  <meta name="description" content="Five deployment contexts. One curriculum.">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Who This Curriculum Is For — What Really Happened</title>
+  <meta name="description" content="Five deployment contexts. One curriculum. Designed for institutions that need trauma literacy now." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0a0908;
+      --dark:     #111110;
+      --mid:      #1c1b19;
+      --border:   #2a2927;
+      --muted:    #6b6860;
+      --body:     #c8c4bc;
+      --light:    #e8e4dc;
+      --white:    #f5f2ec;
+      --ember:    #c4621a;
+      --ember-lt: #d97a38;
+      --ember-dk: #8f3e08;
+      --serif:    'Playfair Display', Georgia, serif;
+      --prose:    'Crimson Pro', Georgia, serif;
+      --mono:     'Space Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--body);
+      font-family: var(--prose);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .skip-link {
+      position: absolute; top: -999px; left: 1rem;
+      background: var(--ember); color: var(--white);
+      padding: .5rem 1rem; font-family: var(--mono); font-size: .75rem; z-index: 9999;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,9,8,.92); backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+
+    .site-name {
+      font-family: var(--mono); font-size: .72rem;
+      letter-spacing: .18em; color: var(--ember); text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 2rem; }
+
+    nav a {
+      font-family: var(--mono); font-size: .68rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); transition: color .2s;
+    }
+    nav a:hover, nav a.active { color: var(--white); }
+
+    #main { padding-top: 56px; }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 5rem 6rem 4rem;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--mid) 0%, var(--black) 100%);
+    }
+
+    .eyebrow {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--ember); margin-bottom: 1rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 600; color: var(--white); margin-bottom: .75rem; line-height: 1.15;
+    }
+
+    .page-hero .sub {
+      font-size: 1.1rem; color: var(--muted); max-width: 60ch;
+    }
+
+    /* AUDIENCE SECTION */
+    .audience-section {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .audience-section:last-of-type { border-bottom: none; }
+
+    .audience-inner {
+      max-width: 1100px; margin: 0 auto;
+      padding: 5rem 6rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .audience-section:nth-child(even) { background: var(--mid); }
+
+    .audience-sidebar {}
+
+    .audience-num {
+      font-family: var(--mono); font-size: 3rem;
+      color: var(--border); line-height: 1;
+      margin-bottom: .75rem;
+    }
+
+    .audience-label {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--ember); margin-bottom: .5rem;
+    }
+
+    .naics-codes {
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .06em;
+      line-height: 1.8; margin-top: 1rem;
+    }
+
+    .audience-body h2 {
+      font-family: var(--serif); font-size: 1.7rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: 1.25rem; line-height: 1.2;
+    }
+
+    .audience-body p {
+      color: var(--body); margin-bottom: 1rem; font-size: 1.05rem;
+    }
+
+    .audience-quote {
+      border-left: 2px solid var(--ember-dk);
+      padding-left: 1.25rem;
+      margin-top: 1.75rem;
+    }
+
+    .audience-quote blockquote {
+      font-family: var(--serif); font-style: italic;
+      font-size: 1.05rem; color: var(--light); line-height: 1.5;
+      margin-bottom: .5rem;
+    }
+
+    .audience-quote cite {
+      font-family: var(--mono); font-size: .58rem;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); font-style: normal;
+    }
+
+    /* COMPARISON TABLE */
+    .table-section {
+      padding: 5rem 6rem;
+      background: var(--mid);
+      border-top: 1px solid var(--border);
+    }
+
+    .table-section h2 {
+      font-family: var(--serif); font-size: 1.8rem;
+      font-weight: 600; color: var(--white);
+      margin-bottom: 2rem; max-width: 1100px; margin-left: auto; margin-right: auto;
+    }
+
+    .table-wrap {
+      max-width: 1100px; margin: 0 auto;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%; border-collapse: collapse;
+      font-size: .95rem;
+    }
+
+    thead tr {
+      border-bottom: 1px solid var(--ember-dk);
+    }
+
+    th {
+      font-family: var(--mono); font-size: .6rem;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--ember); text-align: left;
+      padding: .75rem 1rem;
+    }
+
+    th:first-child { color: var(--muted); }
+
+    td {
+      padding: .75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--body);
+      vertical-align: middle;
+    }
+
+    td:first-child {
+      font-family: var(--prose); font-size: .95rem;
+      color: var(--light);
+    }
+
+    td:not(:first-child) {
+      font-family: var(--mono); font-size: .75rem;
+      color: var(--ember); text-align: center;
+    }
+
+    tbody tr:hover { background: rgba(255,255,255,.02); }
+
+    /* CTA */
+    .cta-section {
+      padding: 6rem; text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section h2 {
+      font-family: var(--serif); font-size: 2rem;
+      color: var(--white); margin-bottom: .75rem;
+    }
+
+    .cta-section p { color: var(--muted); margin-bottom: 2rem; font-size: 1rem; }
+
+    .btn-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-block; background: var(--ember); color: var(--white);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--ember-lt); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-block; border: 1px solid var(--border); color: var(--body);
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; padding: .9rem 2rem;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-secondary:hover { border-color: var(--ember-dk); color: var(--white); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 3rem 6rem;
+      display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;
+    }
+
+    .footer-brand p {
+      font-family: var(--mono); font-size: .65rem;
+      letter-spacing: .08em; color: var(--ember);
+      text-transform: uppercase; margin-bottom: .5rem;
+    }
+
+    .footer-brand .tagline {
+      font-family: var(--prose); font-size: .95rem; color: var(--muted);
+      letter-spacing: 0; text-transform: none; font-weight: 300; margin-bottom: 1rem;
+    }
+
+    .footer-meta {
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .06em; line-height: 1.8;
+    }
+
+    .footer-col h4 {
+      font-family: var(--mono); font-size: .62rem;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 1rem;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .5rem; }
+    .footer-col ul li a {
+      font-family: var(--prose); font-size: .95rem;
+      color: var(--muted); transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--white); }
+
+    .footer-bottom {
+      background: var(--dark); border-top: 1px solid var(--border);
+      padding: 1.25rem 6rem;
+      font-family: var(--mono); font-size: .6rem;
+      color: var(--muted); letter-spacing: .08em;
+    }
+
+    @media (max-width: 900px) {
+      .page-hero { padding: 3rem 2rem; }
+      .audience-inner { grid-template-columns: 1fr; gap: 1.5rem; padding: 3rem 2rem; }
+      .audience-num { display: none; }
+      .table-section { padding: 3rem 2rem; }
+      .cta-section { padding: 3rem 2rem; }
+      footer { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 2rem; }
+      .footer-bottom { padding: 1.25rem 2rem; }
+      nav { display: none; }
+    }
+  </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <nav>
-    <div class="nav-logo">WHAT REALLY HAPPENED</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="curriculum.html">Curriculum</a></li>
-      <li><a href="case-study.html">Case Study</a></li>
-      <li><a href="for.html" class="active">Who It's For</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
+  <header>
+    <span class="site-name">What Really Happened</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="curriculum.html">Curriculum</a>
+      <a href="case-study.html">Case Study</a>
+      <a href="for.html" class="active">Who It's For</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <main id="main">
-    <!-- Hero -->
-    <section style="padding: 120px 40px 80px; max-width: 1400px; margin: 0 auto;">
-      <div class="section-label">WHO IT'S FOR</div>
-      <h1 style="font-size: 56px; margin-bottom: 24px;">Who This Curriculum Is For</h1>
-      <p style="max-width: 700px; font-size: 18px;">Five deployment contexts. One curriculum. Designed for institutions that need trauma literacy now.</p>
-    </section>
 
-    <!-- Recovery & Residential Treatment -->
-    <section class="fade-in" style="border-left: 3px solid var(--accent-fire); padding-left: 40px;">
-      <h2>Recovery & Residential Treatment Programs</h2>
-      <p>The curriculum is designed to run as a standalone psychoeducational group series within existing treatment infrastructure. It does not require clinical staff to facilitate — it requires trained facilitators who can follow the script, hold the container, and connect participants to clinical support when the material surfaces acute need.</p>
-      <p>The curriculum addresses addiction as a regulatory strategy rather than a moral failure. It names the shame spiral as the mechanism most likely to produce relapse. It provides a framework for understanding what sobriety without regulation actually costs.</p>
-      <div class="pull-quote">
-        <p>"Relapse isn't a betrayal. It's the nervous system saying: I don't have another way to regulate yet."</p>
-        <div class="pull-quote-attribution">Session 05</div>
+    <div class="page-hero">
+      <p class="eyebrow">Who It's For</p>
+      <h1>Who This Curriculum Is For</h1>
+      <p class="sub">Five deployment contexts. One curriculum. Designed for institutions that need trauma literacy now.</p>
+    </div>
+
+    <!-- 1: RECOVERY -->
+    <section class="audience-section">
+      <div class="audience-inner">
+        <div class="audience-sidebar">
+          <p class="audience-num">01</p>
+          <p class="audience-label">Recovery &amp; Residential Treatment</p>
+          <div class="naics-codes">
+            <div>NAICS 621410</div>
+            <div>NAICS 621498</div>
+          </div>
+        </div>
+        <div class="audience-body">
+          <h2>Recovery &amp; Residential Treatment Programs</h2>
+          <p>The curriculum is designed to run as a standalone psychoeducational group series within existing treatment infrastructure. It does not require clinical staff to facilitate — it requires trained facilitators who can follow the script, hold the container, and connect participants to clinical support when the material surfaces acute need.</p>
+          <p>The curriculum addresses addiction as a regulatory strategy rather than a moral failure. It names the shame spiral as the mechanism most likely to produce relapse. It provides a framework for understanding what sobriety without regulation actually costs.</p>
+          <div class="audience-quote">
+            <blockquote>"Relapse isn't a betrayal. It's the nervous system saying: I don't have another way to regulate yet."</blockquote>
+            <cite>Session 05</cite>
+          </div>
+        </div>
       </div>
-      <div class="badge">NAICS: 621410, 621498</div>
     </section>
 
-    <div style="width: 100%; height: 200px; overflow: hidden; margin: 60px 0;"><img src="https://source.unsplash.com/1400x200/?concrete,wall,architecture" alt="Concrete wall" style="width: 100%; height: 100%; object-fit: cover;"><div style="position: absolute; width: 100%; height: 200px; background: rgba(14, 13, 11, 0.75); margin-top: -200px;"></div></div>
-
-    <!-- Correctional & Reentry -->
-    <section class="fade-in" style="border-left: 3px solid var(--accent-fire); padding-left: 40px;">
-      <h2>Correctional & Reentry Settings</h2>
-      <p>The legal echo chamber analysis in Session 16 — the documented feedback loop between trauma symptoms, institutional misreading, and compounding legal consequence — is built from direct experience of the warrant system.</p>
-      <p>The curriculum is designed to be comprehensible to people who have moved through courts and corrections as the person whose freeze response produced the failure to appear, not as the observer of that process. It teaches the neuroscience of why the brain underwater cannot execute the compliance the court is requiring.</p>
-      <div class="pull-quote">
-        <p>"The brain underwater cannot execute the compliance the court is requiring."</p>
-        <div class="pull-quote-attribution">Session 16</div>
+    <!-- 2: CORRECTIONS -->
+    <section class="audience-section">
+      <div class="audience-inner">
+        <div class="audience-sidebar">
+          <p class="audience-num">02</p>
+          <p class="audience-label">Correctional &amp; Reentry Settings</p>
+          <div class="naics-codes">
+            <div>NAICS 922140</div>
+            <div>NAICS 922150</div>
+          </div>
+        </div>
+        <div class="audience-body">
+          <h2>Correctional &amp; Reentry Settings</h2>
+          <p>The legal echo chamber analysis in Session 16 — the documented feedback loop between trauma symptoms, institutional misreading, and compounding legal consequence — is built from direct experience of the warrant system.</p>
+          <p>The curriculum is designed to be comprehensible to people who have moved through courts and corrections as the person whose freeze response produced the failure to appear, not as the observer of that process. It teaches the neuroscience of why the brain underwater cannot execute the compliance the court is requiring.</p>
+          <div class="audience-quote">
+            <blockquote>"The brain underwater cannot execute the compliance the court is requiring."</blockquote>
+            <cite>Session 16</cite>
+          </div>
+        </div>
       </div>
-      <div class="badge">NAICS: 922140, 922150</div>
     </section>
 
-    <div style="width: 100%; height: 200px; overflow: hidden; margin: 60px 0;"><img src="https://source.unsplash.com/1400x200/?community,hands,people" alt="Community" style="width: 100%; height: 100%; object-fit: cover;"><div style="position: absolute; width: 100%; height: 200px; background: rgba(14, 13, 11, 0.75); margin-top: -200px;"></div></div>
-
-    <!-- Community Mental Health -->
-    <section class="fade-in" style="border-left: 3px solid var(--accent-fire); padding-left: 40px;">
-      <h2>Community Mental Health & Social Services</h2>
-      <p>The curriculum is appropriate for clients in case management, peer support, or outpatient contexts who are not in active crisis but who have never had the mechanisms of their own nervous system named in plain language.</p>
-      <p>The Plain Version methodology — no clinical jargon required, all terms defined at first use, no diagnostic gatekeeping — is designed for general audiences. The DEEP DIVE expansions are designed for clinician-level groups. The same script serves both.</p>
-      <div class="pull-quote">
-        <p>"Naming the regulation tax accurately is not self-pity. It is the prerequisite for addressing it."</p>
-        <div class="pull-quote-attribution">Session 05</div>
+    <!-- 3: COMMUNITY MH -->
+    <section class="audience-section">
+      <div class="audience-inner">
+        <div class="audience-sidebar">
+          <p class="audience-num">03</p>
+          <p class="audience-label">Community Mental Health &amp; Social Services</p>
+          <div class="naics-codes">
+            <div>NAICS 621330</div>
+            <div>NAICS 621399</div>
+          </div>
+        </div>
+        <div class="audience-body">
+          <h2>Community Mental Health &amp; Social Services</h2>
+          <p>The curriculum is appropriate for clients in case management, peer support, or outpatient contexts who are not in active crisis but who have never had the mechanisms of their own nervous system named in plain language.</p>
+          <p>The Plain Version methodology — no clinical jargon required, all terms defined at first use, no diagnostic gatekeeping — is designed for general audiences. The Deep Dive expansions are designed for clinician-level groups. The same script serves both.</p>
+          <div class="audience-quote">
+            <blockquote>"Naming the regulation tax accurately is not self-pity. It is the prerequisite for addressing it."</blockquote>
+            <cite>Session 05</cite>
+          </div>
+        </div>
       </div>
-      <div class="badge">NAICS: 621330, 621399</div>
     </section>
 
-    <div style="width: 100%; height: 200px; overflow: hidden; margin: 60px 0;"><img src="https://source.unsplash.com/1400x200/?desk,paper,document" alt="Desk with documents" style="width: 100%; height: 100%; object-fit: cover;"><div style="position: absolute; width: 100%; height: 200px; background: rgba(14, 13, 11, 0.75); margin-top: -200px;"></div></div>
-
-    <!-- Clinician & Professional Training -->
-    <section class="fade-in" style="border-left: 3px solid var(--accent-fire); padding-left: 40px;">
-      <h2>Clinician & Professional Training</h2>
-      <p>Trauma literacy — understanding what a fawn response is, why the amygdala hijack happens before the thinking brain catches up, what the regulation tax costs before a shift begins — belongs in any setting where people are expected to function.</p>
-      <p>A clinician who has moved through all 18 sessions understands why shame-based intervention fails, why the brain underwater cannot execute the compliance the court is requiring, why "peace boring, sign healing — not wrong" is a clinical observation rather than an inspirational statement.</p>
-      <div class="pull-quote">
-        <p>"A concept you can only hold in your head is a concept you cannot use in your body."</p>
-        <div class="pull-quote-attribution">Session 02</div>
+    <!-- 4: CLINICIAN TRAINING -->
+    <section class="audience-section">
+      <div class="audience-inner">
+        <div class="audience-sidebar">
+          <p class="audience-num">04</p>
+          <p class="audience-label">Clinician &amp; Professional Training</p>
+          <div class="naics-codes">
+            <div>NAICS 611710</div>
+            <div>NAICS 611430</div>
+          </div>
+        </div>
+        <div class="audience-body">
+          <h2>Clinician &amp; Professional Training</h2>
+          <p>Trauma literacy — understanding what a fawn response is, why the amygdala hijack happens before the thinking brain catches up, what the regulation tax costs before a shift begins — belongs in any setting where people are expected to function at sustained professional capacity.</p>
+          <p>A clinician who has moved through all 18 sessions understands why shame-based intervention fails, why the brain underwater cannot execute the compliance the court is requiring, and why a nervous system that finally begins to quiet will often read that quiet as danger rather than safety — and why that paradox is clinical, not moral.</p>
+          <div class="audience-quote">
+            <blockquote>"A concept you can only hold in your head is a concept you cannot use in your body."</blockquote>
+            <cite>Session 02</cite>
+          </div>
+        </div>
       </div>
-      <div class="badge">NAICS: 611710, 611699</div>
     </section>
 
-    <div style="width: 100%; height: 200px; overflow: hidden; margin: 60px 0;"><img src="https://source.unsplash.com/1400x200/?morning,window,light" alt="Morning light" style="width: 100%; height: 100%; object-fit: cover;"><div style="position: absolute; width: 100%; height: 200px; background: rgba(14, 13, 11, 0.75); margin-top: -200px;"></div></div>
-
-    <!-- Workforce & Peer Support -->
-    <section class="fade-in" style="border-left: 3px solid var(--accent-fire); padding-left: 40px;">
-      <h2>Workforce & Peer Support Programs</h2>
-      <p>Trauma literacy belongs in employer-sponsored wellness contexts, peer support specialist training, and community education settings.</p>
-      <p>The curriculum is deployable in any setting where people are expected to function under conditions that were shaped by lives the conditions didn't account for. It teaches the neuroscience of why the regulation tax is real and why naming it accurately is not weakness.</p>
-      <div class="pull-quote">
-        <p>"The war in the chest before every shift is real. Naming it accurately is not self-pity."</p>
-        <div class="pull-quote-attribution">Session 05</div>
+    <!-- 5: WORKFORCE -->
+    <section class="audience-section">
+      <div class="audience-inner">
+        <div class="audience-sidebar">
+          <p class="audience-num">05</p>
+          <p class="audience-label">Workforce &amp; Peer Support Programs</p>
+          <div class="naics-codes">
+            <div>NAICS 611430</div>
+            <div>NAICS 541612</div>
+          </div>
+        </div>
+        <div class="audience-body">
+          <h2>Workforce &amp; Peer Support Programs</h2>
+          <p>Trauma literacy belongs in employer-sponsored wellness contexts, peer support specialist training, and community education settings.</p>
+          <p>The curriculum is deployable in any setting where people are expected to function under conditions that were shaped by lives the conditions didn't account for. It teaches the neuroscience of why the regulation tax is real and why naming it accurately is not weakness.</p>
+          <div class="audience-quote">
+            <blockquote>"The war in the chest before every shift is real. Naming it accurately is not self-pity."</blockquote>
+            <cite>Session 05</cite>
+          </div>
+        </div>
       </div>
-      <div class="badge">NAICS: 611699, 541612</div>
     </section>
 
-    <!-- Feature Comparison Table -->
-    <section class="fade-in">
+    <!-- TABLE -->
+    <section class="table-section">
       <h2>Curriculum Features by Audience</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Recovery</th>
-            <th>Corrections</th>
-            <th>Community MH</th>
-            <th>Training</th>
-            <th>Workforce</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>18 complete sessions</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Word-for-word scripts</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Stage directions & timing</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>DEEP DIVE expansions</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Clinical appendix</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Discussion prompts</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Safety protocol (Session 12)</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-          <tr>
-            <td>Facilitator training available</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Recovery</th>
+              <th>Corrections</th>
+              <th>Community MH</th>
+              <th>Training</th>
+              <th>Workforce</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>18 complete sessions</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Word-for-word scripts</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Stage directions &amp; timing</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Deep Dive expansions</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Clinical appendix</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Discussion prompts</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Safety protocol (Session 12)</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr>
+              <td>Facilitator training available</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta-section fade-in">
+    <section class="cta-section">
       <h2>Which audience does your organization represent?</h2>
       <p>Contact us to discuss how the curriculum fits your specific deployment context.</p>
-      <div class="cta-buttons">
-        <button class="btn-cta-secondary" onclick="window.location.href='contact.html'">START A CONVERSATION</button>
-        <button class="btn-cta-primary" onclick="window.location.href='contact.html'">CONTACT US</button>
+      <div class="btn-row">
+        <a href="contact.html" class="btn-primary">Start a Conversation</a>
+        <a href="curriculum.html" class="btn-secondary">View the Curriculum</a>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-column">
-        <h4>What Really Happened</h4>
-        <p style="font-size: 14px; color: var(--text-secondary);">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
-      </div>
-      <div class="footer-column">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="case-study.html">Case Study</a></li>
-          <li><a href="for.html">Who It's For</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Organization</h4>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); line-height: 1.8;">
-          <div><strong>Capitol Contracts LLC</strong></div>
-          <div>Clarksville, Arkansas</div>
-          <div style="margin-top: 12px;">Service-Disabled Veteran-Owned Small Business</div>
-          <div style="font-size: 11px; margin-top: 8px;">NAICS: 611710, 611699, 513130</div>
-        </div>
+    <div class="footer-brand">
+      <p>What Really Happened</p>
+      <p class="tagline">A trauma education series built from one documented life. 18 sessions. Complete facilitator scripts. Deployable from day one.</p>
+      <div class="footer-meta">
+        <div>Capitol Contracts LLC · Clarksville, Arkansas</div>
+        <div>Service-Disabled Veteran-Owned Small Business</div>
+        <div>UEI: HH77KN5AV5X7 · CAGE: 9ZFJ6</div>
+        <div>NAICS: 611710 · 611430 · 624190</div>
       </div>
     </div>
-    <div class="footer-bottom">
-      © 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+        <li><a href="for.html">Who It's For</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Organization</h4>
+      <ul>
+        <li><a href="about.html">Capitol Contracts LLC</a></li>
+        <li><a href="contact.html">Request a Proposal</a></li>
+      </ul>
     </div>
   </footer>
+  <div class="footer-bottom">© 2026 Capitol Contracts LLC. All rights reserved. Built for institutions that need trauma literacy now.</div>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
