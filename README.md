@@ -25,6 +25,20 @@ The curriculum is not a wellness brand. It is not a therapy program. It is a ser
 4. **Part IV: The Internal Battlefield** — Crisis architecture and neuroscience
 5. **Part V: Changing the World Around You** — Integration and systemic change
 
+---
+
+## 🛠 Facilitator Toolkit (Consolidated)
+This repository now includes the full **Facilitator Toolkit** (formerly `blueprint-of-survival`). 
+
+You can find the raw curriculum documents, facilitator scripts, and clinical peer review materials in the [`/facilitator-toolkit`](./facilitator-toolkit) directory. 
+
+### Included Facilitator Assets:
+- **17 Session Scripts** (.docx format)
+- **Master Course Document**
+- **Clinical Peer Review Letter**
+
+---
+
 ## Deployment Contexts
 
 The curriculum is designed for five primary deployment contexts:

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Really Happened — Understanding CPTSD</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: #faf9f6; color: #1a1a1a; line-height: 1.75; }
+
+  /* COVER */
+  .cover {
+    background: #1a1a2e;
+    color: #f5f0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 40px;
+  }
+  .cover .institution { font-family: Arial, sans-serif; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #a89f8c; margin-bottom: 40px; }
+  .cover h1 { font-size: 42px; font-weight: normal; line-height: 1.2; max-width: 720px; margin-bottom: 20px; }
+  .cover .subtitle { font-size: 18px; color: #c8bfa8; font-style: italic; margin-bottom: 50px; }
+  .cover .divider { width: 60px; height: 2px; background: #c8a96e; margin: 0 auto 40px; }
+  .cover .meta { font-family: Arial, sans-serif; font-size: 14px; color: #a89f8c; line-height: 2; }
+  .cover .meta strong { color: #f5f0e8; }
+
+  /* LAYOUT */
+  .container { max-width: 860px; margin: 0 auto; padding: 60px 40px; }
+
+  /* SECTION HEADERS */
+  .section-header {
+    border-left: 4px solid #c8a96e;
+    padding-left: 20px;
+    margin: 60px 0 30px;
+  }
+  .section-header .label { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-bottom: 8px; }
+  .section-header h2 { font-size: 28px; font-weight: normal; color: #1a1a2e; }
+
+  /* INTRO TEXT */
+  .intro { font-size: 17px; color: #333; margin-bottom: 30px; }
+
+  /* SYLLABUS TABLE */
+  .syllabus-table { width: 100%; border-collapse: collapse; margin: 30px 0; font-family: Arial, sans-serif; font-size: 14px; }
+  .syllabus-table th { background: #1a1a2e; color: #f5f0e8; padding: 12px 16px; text-align: left; font-weight: 500; }
+  .syllabus-table td { padding: 12px 16px; border-bottom: 1px solid #e5e0d8; vertical-align: top; }
+  .syllabus-table tr:nth-child(even) td { background: #f5f2ed; }
+  .syllabus-table .part-row td { background: #2d2d4e; color: #c8bfa8; font-weight: 600; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; padding: 8px 16px; }
+  .syllabus-table .num { color: #888; font-weight: 600; width: 40px; }
+  .syllabus-table .title-cell { font-weight: 600; color: #1a1a2e; }
+  .syllabus-table .theme-cell { color: #555; font-style: italic; }
+
+  /* LECTURE CARDS */
+  .lecture-card {
+    background: white;
+    border: 1px solid #e5e0d8;
+    border-radius: 4px;
+    margin: 40px 0;
+    overflow: hidden;
+  }
+  .lecture-header {
+    background: #1a1a2e;
+    color: #f5f0e8;
+    padding: 20px 28px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .lecture-num { font-family: Arial, sans-serif; font-size: 12px; color: #c8a96e; letter-spacing: 2px; text-transform: uppercase; white-space: nowrap; }
+  .lecture-title { font-size: 20px; font-weight: normal; }
+  .lecture-body { padding: 28px; }
+  .lecture-tag { display: inline-block; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #888; background: #f5f2ed; padding: 3px 10px; border-radius: 2px; margin-bottom: 20px; }
+
+  .lecture-section { margin: 20px 0; }
+  .lecture-section h4 { font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #c8a96e; margin-bottom: 10px; }
+  .lecture-section p { font-size: 15px; color: #333; margin-bottom: 10px; }
+  .lecture-section ul { padding-left: 20px; }
+  .lecture-section li { font-size: 15px; color: #333; margin-bottom: 6px; }
+
+  .key-terms { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+  .term-pill { background: #f5f2ed; border-left: 3px solid #c8a96e; padding: 8px 12px; font-family: Arial, sans-serif; font-size: 13px; }
+  .term-pill strong { color: #1a1a2e; display: block; font-size: 12px; }
+  .term-pill span { color: #555; font-size: 12px; }
+
+  .discussion-box { background: #f5f2ed; border-left: 4px solid #1a1a2e; padding: 16px 20px; margin: 10px 0; }
+  .discussion-box p { font-size: 14px; color: #333; font-style: italic; margin-bottom: 6px; }
+  .discussion-box p:last-child { margin-bottom: 0; }
+
+  .grounding-box { background: #1a1a2e; color: #f5f0e8; padding: 16px 20px; margin: 10px 0; border-radius: 2px; }
+  .grounding-box p { font-size: 14px; color: #c8bfa8; }
+
+  .lecture-divider { border: none; border-top: 1px solid #e5e0d8; margin: 20px 0; }
+
+  /* GLOSSARY */
+  .glossary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+  .glossary-item { background: white; border: 1px solid #e5e0d8; padding: 16px; }
+  .glossary-item dt { font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+  .glossary-item dd { font-size: 14px; color: #555; line-height: 1.6; }
+
+  /* RULES BOX */
+  .rules-box { background: white; border: 1px solid #e5e0d8; padding: 28px; margin: 20px 0; }
+  .rules-box h3 { font-family: Arial, sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #1a1a2e; margin-bottom: 16px; }
+  .rules-box li { font-size: 15px; color: #333; margin-bottom: 8px; padding-left: 8px; }
+
+  /* CALLOUT */
+  .callout { background: #2d2d4e; color: #f5f0e8; padding: 24px 28px; margin: 30px 0; border-radius: 2px; }
+  .callout p { font-size: 16px; line-height: 1.8; color: #d8d0c0; }
+  .callout p strong { color: #f5f0e8; }
+
+  /* FOOTER */
+  .footer { background: #1a1a2e; color: #a89f8c; text-align: center; padding: 40px; font-family: Arial, sans-serif; font-size: 13px; margin-top: 80px; }
+  .footer p { margin-bottom: 8px; }
+
+  @media print {
+    .cover { page-break-after: always; min-height: auto; padding: 100px 60px; }
+    .lecture-card { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="institution">A Trauma Education Series</div>
+  <h1>What Really Happened</h1>
+  <div class="subtitle">Understanding Complex PTSD — From Science to Survival to Healing</div>
+  <div class="divider"></div>
+  <div class="meta">
+    <p><strong>Instructor:</strong> Daniel Bret Lingar</p>
+    <p><strong>Format:</strong> 16-Session Course · Harvard Seminar Style</p>
+    <p><strong>Case Study:</strong> From the Storm to the Fire (memoir)</p>
+    <p><strong>Audience:</strong> Survivors, Clinicians, Educators, Families, Anyone Who Wants to Understand</p>
+    <p><strong>Language:</strong> Plain English — No Jargon Required</p>
+  </div>
+</div>
+
+<!-- ABOUT THE COURSE -->
+<div class="container">
+
+  <div class="section-header">
+    <div class="label">About This Course</div>
+    <h2>Why This Exists</h2>
+  </div>
+
+  <p class="intro">Most courses on trauma talk about trauma like it happened to someone else. This one doesn't. This course uses one real life — Daniel Lingar's — as the case study. Every concept we cover, you'll see it in actual events, actual relationships, actual moments that happened to an actual person. That's the difference between knowing something academically and understanding it in your bones.</p>
+
+  <p class="intro">This isn't a course about being broken. It's a course about understanding why people do what they do when they've been through what they've been through. It's about replacing "what's wrong with you?" with "what happened to you?"</p>
+
+  <div class="callout">
+    <p><strong>The core idea of this entire course:</strong> When a person's early environment is dangerous, neglectful, or unpredictable — especially when there's no way out — the brain rewires itself to survive. Those survival adaptations don't disappear when the danger does. They keep running. Understanding that is the beginning of everything.</p>
+  </div>
+
+  <!-- GROUND RULES -->
+  <div class="section-header">
+    <div class="label">Before We Begin</div>
+    <h2>Trauma-Safe Ground Rules</h2>
+  </div>
+
+  <div class="rules-box">
+    <h3>This course deals with heavy material. Here's how we handle that:</h3>
+    <ul>
+      <li><strong>Choice:</strong> You can step back from any discussion or exercise at any point. No explanation required.</li>
+      <li><strong>Confidentiality:</strong> What's shared in a group setting stays there.</li>
+      <li><strong>No forced disclosure:</strong> You never have to share personal details to participate.</li>
+      <li><strong>Grounding first:</strong> Every session opens and closes with a brief grounding exercise. Use it.</li>
+      <li><strong>Pace yourself:</strong> This material can activate your own nervous system. That's normal. Go slow.</li>
+      <li><strong>You are not your diagnosis:</strong> We talk about symptoms and patterns here — not identity and worth.</li>
+    </ul>
+  </div>
+
+  <!-- SYLLABUS -->
+  <div class="section-header">
+    <div class="label">Course Map</div>
+    <h2>All 16 Sessions at a Glance</h2>
+  </div>
+
+  <table class="syllabus-table">
+    <thead>
+      <tr><th>#</th><th>Session Title</th><th>What It's About</th></tr>
+    </thead>
+    <tbody>
+      <tr class="part-row"><td colspan="3">Part I — How It Gets Built Into You</td></tr>
+      <tr><td class="num">0</td><td class="title-cell">Welcome, Safety, and Why This Course Matters</td><td class="theme-cell">What CPTSD actually is and why it matters</td></tr>
+      <tr><td class="num">1</td><td class="title-cell">The Blueprint of Survival</td><td class="theme-cell">Early trauma, the NICU, domestic violence, and how the foundation gets laid</td></tr>
+      <tr><td class="num">2</td><td class="title-cell">The Masks We Wear</td><td class="theme-cell">Fawning, people-pleasing, perfectionism, and the cost of performing</td></tr>
+      <tr class="part-row"><td colspan="3">Part II — How It Destroys Your Relationships</td></tr>
+      <tr><td class="num">3</td><td class="title-cell">When Love Hurts</td><td class="theme-cell">Trauma bonds, love bombing, and why you keep repeating the same pain</td></tr>
+      <tr><td class="num">4</td><td class="title-cell">The War on Reality</td><td class="theme-cell">Gaslighting, blame shifting, DARVO, and how to trust yourself again</td></tr>
+      <tr class="part-row"><td colspan="3">Part III — How You Tried to Cope</td></tr>
+      <tr><td class="num">5</td><td class="title-cell">Relapse Isn't a Betrayal</td><td class="theme-cell">Addiction as pain management, not moral failure</td></tr>
+      <tr><td class="num">6</td><td class="title-cell">What Healing Actually Looks Like</td><td class="theme-cell">Self-attunement, regulation, and the reality of recovery</td></tr>
+      <tr><td class="num">7</td><td class="title-cell">The Breaking Point</td><td class="theme-cell">Grief, guilt, and the weight of profound loss</td></tr>
+      <tr class="part-row"><td colspan="3">Part IV — The Internal Battlefield</td></tr>
+      <tr><td class="num">8</td><td class="title-cell">Rewriting the Legacy</td><td class="theme-cell">Fatherhood, disappearance, and the fight to be seen</td></tr>
+      <tr><td class="num">9</td><td class="title-cell">Shame vs. Responsibility</td><td class="theme-cell">The difference between accountability and self-destruction</td></tr>
+      <tr><td class="num">10</td><td class="title-cell">Your Brain on Trauma</td><td class="theme-cell">The neuroscience of CPTSD — explained in plain English</td></tr>
+      <tr><td class="num">11</td><td class="title-cell">Rewiring the Clock</td><td class="theme-cell">Why CPTSD makes you chronically late — and what actually helps</td></tr>
+      <tr><td class="num">12</td><td class="title-cell">From Reactive to Responsive</td><td class="theme-cell">Building a nervous system that works for you, not against you</td></tr>
+      <tr class="part-row"><td colspan="3">Part V — Changing the World Around You</td></tr>
+      <tr><td class="num">13</td><td class="title-cell">The Lessons Nobody Taught Us</td><td class="theme-cell">Why trauma literacy should be as basic as first aid</td></tr>
+      <tr><td class="num">14</td><td class="title-cell">Speaking Truth to Power</td><td class="theme-cell">Rage, systemic betrayal, and the right to be angry</td></tr>
+      <tr><td class="num">15</td><td class="title-cell">The Crucial Question</td><td class="theme-cell">"What's wrong with you?" vs. "What happened to you?"</td></tr>
+      <tr><td class="num">16</td><td class="title-cell">The Revolution Must Be Trauma-Informed</td><td class="theme-cell">Building the world survivors deserved all along</td></tr>
+    </tbody>
+  </table>
+
+  <!-- SESSION FORMAT -->
+  <div class="rules-box" style="margin-top:30px;">
+    <h3>Each Session Runs Like This</h3>
+    <ul>
+      <li><strong>5 min</strong> — Grounding exercise to settle your nervous system before we dig in</li>
+      <li><strong>25 min</strong> — The lecture (reading, listening, or watching)</li>
+      <li><strong>20 min</strong> — Group discussion or personal reflection</li>
+      <li><strong>10 min</strong> — Journal prompt or worksheet</li>
+      <li><strong>10 min</strong> — Close with grounding and integration</li>
+    </ul>
+  </div>
+
+  <!-- ===== LECTURES ===== -->
+  <div class="section-header">
+    <div class="label">The Sessions</div>
+    <h2>Session by Session</h2>
+  </div>
+
+  <!-- SESSION 0 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 0</div>
+      <div class="lecture-title">Welcome, Safety, and Why This Course Matters</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Foundation</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>CPTSD isn't a single bad thing that happened. It's what happens when bad things kept happening, for a long time, when you were trapped and couldn't escape — especially in childhood. The World Health Organization recognizes it as its own separate diagnosis for a reason: it rewires more than your fear response. It rewires your identity, your relationships, and how you see yourself.</p>
+        <p>This course uses one person's life — Daniel Lingar's — as a live, documented case study. Not to sensationalize. To humanize. To show that the clinical terminology isn't just text in a textbook. It's someone's Wednesday morning.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>CPTSD</strong><span>Complex PTSD — trauma from prolonged, repeated experiences you couldn't escape, especially in childhood</span></div>
+          <div class="term-pill"><strong>"What happened to you?"</strong><span>The foundational reframe — replaces judgment with curiosity</span></div>
+          <div class="term-pill"><strong>Affect dysregulation</strong><span>Emotions that swing wildly and feel impossible to manage</span></div>
+          <div class="term-pill"><strong>Negative self-concept</strong><span>A deep, stable belief that you are fundamentally broken or worthless</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>Think of a time when someone misread your behavior because they didn't know your history. How would their response have changed if they'd asked "what happened to you?" first?</p>
+          <p>Have you ever been diagnosed with something (depression, anxiety, BPD) that never quite fit? What piece of the picture might have been missing?</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Opening Grounding Exercise</h4>
+        <div class="grounding-box"><p>Name 3 things you can see. Name 3 things you can hear. Name 3 things you can physically feel against your skin right now. Take one slow breath. You're here. That's enough for today.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 1 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 1</div>
+      <div class="lecture-title">The Blueprint of Survival</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part I — How It Gets Built Into You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Daniel was born three pounds, four ounces. He spent thirty days in an incubator in 1982 — no skin-to-skin contact, no mother's heartbeat, just machines and alarms. His brain was forming during those thirty days. What it learned before he had words for anything was: proximity is dangerous, distance is safer, the world is loud and you are alone in it.</p>
+        <p>By five years old, he was hiding under blankets listening to violence he couldn't stop. By six, he was covered in bruises and telling CPS it was his fault. His brain made the only move a child's brain can make to survive: it decided the chaos was his fault. Because if it's your fault, at least the parent is still safe to love.</p>
+        <p>That logic — I am the problem — became his operating system. It didn't uninstall when he grew up. It kept running quietly underneath everything.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Attachment trauma</strong><span>When the bond that's supposed to be your safest thing becomes a source of fear or pain</span></div>
+          <div class="term-pill"><strong>Early relational trauma</strong><span>Wounds from the first relationships — before you had language to understand what was happening</span></div>
+          <div class="term-pill"><strong>Hypervigilance</strong><span>Your nervous system locked permanently in "scan for danger" mode</span></div>
+          <div class="term-pill"><strong>Disorganized attachment</strong><span>The caregiver is both the source of comfort AND the source of fear — your brain doesn't know what to do with that</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What did "normal" look like in your childhood home? How might someone else have described the same environment?</p>
+          <p>When did you first start believing that the problems around you were somehow your fault?</p>
+          <p>Where in your body do you feel the remnants of hypervigilance right now?</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Grounding Exercise</h4>
+        <div class="grounding-box"><p>Four-count box breathing: breathe in for 4, hold for 4, breathe out for 4, hold for 4. Repeat three times. This tells your nervous system it's safe enough to slow down.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 2 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 2</div>
+      <div class="lecture-title">The Masks We Wear</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part I — How It Gets Built Into You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>When you grow up learning that your authentic self isn't safe — that having needs causes conflict, that expressing pain gets punished — you learn to wear a mask. You become whoever keeps the peace. You become indispensable so nobody leaves. You perform competence and hold it together and make everyone laugh while quietly imploding.</p>
+        <p>Daniel worked with migraines. Covered other people's shifts. Did five people's work on two hours of sleep. Not because he loved hard labor. Because stopping felt dangerous. Because saying no felt like abandonment. His body was running on fumes while his face said "I'm fine."</p>
+        <p>That's not work ethic. That's a trauma response wearing a work ethic costume.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Fawn response</strong><span>The fourth survival response: instead of fighting, fleeing, or freezing — you appease. You people-please. You make yourself useful and small.</span></div>
+          <div class="term-pill"><strong>Competence trap</strong><span>When your overperformance becomes your prison — the more you do, the more is expected</span></div>
+          <div class="term-pill"><strong>Emotional labor</strong><span>The invisible work of managing everyone else's feelings while suppressing your own</span></div>
+          <div class="term-pill"><strong>Burnout</strong><span>What happens when the performance finally becomes unsustainable</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What does your "I'm fine" mask look like? When do you put it on most automatically?</p>
+          <p>When was the last time you said yes to something when every part of you wanted to say no? What were you afraid would happen if you said no?</p>
+          <p>Has anyone ever praised you as "strong" or "reliable" in a moment when you were actually drowning?</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Journal Prompt</h4>
+        <div class="grounding-box"><p>Write about one role you play that exhausts you. What does it protect? What does it cost? What would happen if you put it down for a day?</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 3 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 3</div>
+      <div class="lecture-title">When Love Hurts</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part II — How It Destroys Your Relationships</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>When your earliest lesson about love was that it comes with pain, unpredictability, and the constant threat of abandonment — your brain learns what love is supposed to feel like. And what it learns is wrong. So when you meet someone who creates that exact same chaos in your chest — the anxiety, the walking on eggshells, the desperate need to make them stay — something in you says: yes. This is it. This is real.</p>
+        <p>That's not love. That's your nervous system recognizing a familiar neighborhood.</p>
+        <p>Daniel went from Trinity to Tina to Kristina. Each one hit a different specific wound. Tina hit the abandonment terror. Kristina hit the hunger to finally be seen. None of them were safe. All of them felt undeniably familiar.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Trauma bond</strong><span>An attachment formed through cycles of harm and relief — love and pain so tangled they feel inseparable</span></div>
+          <div class="term-pill"><strong>Love bombing</strong><span>Overwhelming someone with attention and praise early on to hook them emotionally before the control begins</span></div>
+          <div class="term-pill"><strong>Repetition compulsion</strong><span>The unconscious drive to recreate your earliest wounds — hoping this time it'll end differently</span></div>
+          <div class="term-pill"><strong>Self-attunement</strong><span>The practice of turning inward first — noticing what you actually feel and need before reaching for someone else</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>Have you ever mistaken intensity for intimacy? What did that feel like physically?</p>
+          <p>Can you trace a pattern across your significant relationships — the same wound, different people?</p>
+          <p>What does "safe" feel like in a relationship? Does it feel boring? Why might that be?</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Grounding Exercise</h4>
+        <div class="grounding-box"><p>Place one hand on your chest. Feel your heart beating. Ask it: "What do I actually feel right now — not what I think I should feel, not what's convenient — what's actually here?" You don't have to answer out loud. Just sit with the question.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 4 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 4</div>
+      <div class="lecture-title">The War on Reality</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part II — How It Destroys Your Relationships</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Gaslighting doesn't break you by screaming. It breaks you by whispering. "That never happened." "You're too sensitive." "You're imagining things." Over months and years, you stop trusting your own memory. You stop trusting your own perception. You start checking every thought against the other person's version of events before you'll believe it.</p>
+        <p>Daniel journaled — not for healing at first, but just to prove to himself that the things he remembered actually happened. That's what extended gaslighting does: it makes evidence of your own life feel necessary.</p>
+        <p>DARVO is the abuse playbook: Deny what happened. Attack the person who brought it up. Reverse who's the victim and who's the abuser. Most people have experienced this and didn't have a name for it.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Gaslighting</strong><span>Making someone question their own reality, memory, and sanity through consistent denial and manipulation</span></div>
+          <div class="term-pill"><strong>Blame shifting</strong><span>Deflecting accountability by making everything your fault instead of theirs</span></div>
+          <div class="term-pill"><strong>DARVO</strong><span>Deny, Attack, Reverse Victim and Offender — the abuser becomes the victim every time they're confronted</span></div>
+          <div class="term-pill"><strong>Parental alienation</strong><span>Using children as weapons against the other parent — turning love into leverage</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>Have you ever apologized for someone else's behavior — and not noticed you were doing it until later?</p>
+          <p>Who taught you to doubt your own reality? What did that sound like?</p>
+          <p>What does it feel like in your body when you know something happened but someone is telling you it didn't?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 5 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 5</div>
+      <div class="lecture-title">Relapse Isn't a Betrayal</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part III — How You Tried to Cope</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Daniel took his first hydrocodone at 17 for a migraine. He said it in the memoir: it didn't just kill the physical pain. It quieted the unease. Something wrong inside. The alarm his nervous system had been running since 1982 finally got turned off — chemically, temporarily, by a pill.</p>
+        <p>That's not a moral failure. That's a damaged nervous system finding the one thing that gave it relief.</p>
+        <p>Addiction in the context of CPTSD is almost never about pleasure. It's about regulation. Meth didn't make him feel high. It made the screaming inside go quiet. When you understand that — when you stop treating relapse as betrayal and start treating it as a signal — you can actually ask the right question: what pain is so unbearable that this is the only thing that quiets it?</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Addiction as regulation</strong><span>Substance use as a way to manage overwhelming internal states — not pleasure-seeking, pain-quieting</span></div>
+          <div class="term-pill"><strong>Shame spiral</strong><span>Relapse → shame → more relapse — the cycle feeds itself</span></div>
+          <div class="term-pill"><strong>Emotional flooding</strong><span>Being so overwhelmed by emotion that the rational brain goes completely offline</span></div>
+          <div class="term-pill"><strong>Systemic failure</strong><span>When the institutions meant to help — rehab, healthcare, courts — make things worse instead</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What coping mechanisms have you used that you're not proud of? What were they actually trying to manage?</p>
+          <p>Have you ever watched someone relapse and felt pure judgment? What would you think now if you knew the full internal story?</p>
+          <p>What does "addiction treatment" need to do differently to actually treat the trauma underneath the substance?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 6 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 6</div>
+      <div class="lecture-title">What Healing Actually Looks Like</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part III — How You Tried to Cope</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Healing doesn't look like a sunrise. It doesn't look like a breakthrough moment in a therapist's office where everything clicks and you never struggle again. Healing looks like choosing the journal instead of the bottle. It looks like saying no once, feeling the guilt flood in, holding the boundary anyway, and surviving. It looks like writing letters to your kids you might never send.</p>
+        <p>The first real shift isn't sobriety. It's narrative. When Daniel stopped running from the story and started writing it — that was the moment the material moved from raw alarm in his amygdala to something his brain could actually process. That's neurological, not metaphorical.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Narrative integration</strong><span>Putting the trauma into a coherent story — which moves it from raw body-memory into something your thinking brain can hold</span></div>
+          <div class="term-pill"><strong>Self-attunement</strong><span>Asking yourself what you actually feel and need — and taking that seriously</span></div>
+          <div class="term-pill"><strong>Co-regulation</strong><span>Using another safe person's calm nervous system to help regulate your own</span></div>
+          <div class="term-pill"><strong>Window of tolerance</strong><span>The zone where you can feel things without being overwhelmed or shutting down — healing expands it</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What does healing mean to you — not what you've been told it should look like, but what you actually want?</p>
+          <p>Have you ever told your story and felt it shift slightly just by telling it? What happened?</p>
+          <p>Who in your life helps regulate your nervous system just by being present? How do you know?</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Grounding Exercise</h4>
+        <div class="grounding-box"><p>Safe place visualization: Close your eyes and picture somewhere — real or imagined — where you feel completely safe. Notice what you see, hear, feel. Spend two minutes there. This is a place your nervous system can return to when it needs an anchor.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 7 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 7</div>
+      <div class="lecture-title">The Breaking Point</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part III — How You Tried to Cope</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>June 24, 2011. Garrett died. Ninety miles an hour into a tree, one day after Daniel had last seen him. Daniel watched a baseball game that night and ate a hotdog. He moved through motions while something inside him collapsed completely. That's not denial — that's a nervous system doing the only thing available when grief hits a body that was already at capacity.</p>
+        <p>When he finally cried — really cried — his wife told him to shut up. She had work in the morning. That moment combined two of the deepest wounds a person can have: losing the person and being punished for grieving them. Grief needs a witness. He didn't get one.</p>
+        <p>Twenty-four people in the memoir. Twenty-four deaths, mostly unprocessed, stacked on a nervous system with no regulation capacity. That's not grief. That's a geological pressure event waiting to fracture.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Survivor's guilt</strong><span>The persistent belief that your survival cost someone else theirs — logic doesn't touch it, it lives in the body</span></div>
+          <div class="term-pill"><strong>Grief dissociation</strong><span>Going numb or "offline" when loss is too overwhelming — the mind's emergency exit</span></div>
+          <div class="term-pill"><strong>Weaponized stigma</strong><span>Using someone's emotional state or mental health against them — in the moment they need compassion most</span></div>
+          <div class="term-pill"><strong>Cumulative grief</strong><span>Loss piled on loss with no space to process — each new death reactivates every previous one</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What grief are you still carrying that was never witnessed by anyone?</p>
+          <p>When did you learn that your grief was inconvenient to other people? What did you do with it after that?</p>
+          <p>What does it mean to "witness" someone's grief? Have you ever given that to someone? Received it?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 8 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 8</div>
+      <div class="lecture-title">Rewriting the Legacy</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part IV — The Internal Battlefield</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Daniel didn't disappear from his children because he didn't love them. He disappeared because the shame was so total, the depression so complete, that he genuinely believed they were better off without him. A nervous system deep in shutdown doesn't look like "I choose not to show up." It looks like a man who can't get out of bed, who is convinced his presence is net harm.</p>
+        <p>Parental alienation took what little remained and weaponized it. The kids were taught a story. He became the villain in it. That's a wound that doesn't have a clean clinical name — it's somewhere between grief and erasure and injustice, all happening to the same love at the same time.</p>
+        <p>The legacy he's building now isn't through perfection. It's through truth-telling. That's all he has. It turns out that's enough.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Father wound</strong><span>The psychological injury from an absent, abusive, or emotionally unavailable father — and what it does to every relationship that follows</span></div>
+          <div class="term-pill"><strong>Invisible grief</strong><span>Loss that isn't socially recognized or supported — the grief nobody asks you about</span></div>
+          <div class="term-pill"><strong>Reparenting</strong><span>Learning to give yourself the safety, validation, and care that childhood didn't provide</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What's the difference between choosing to leave and being too broken to stay? How do we hold both truths at once?</p>
+          <p>What story were you told about an absent parent? What might the fuller truth be?</p>
+          <p>What does it mean to build a legacy when you can't undo the past?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 9 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 9</div>
+      <div class="lecture-title">Shame vs. Responsibility</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part IV — The Internal Battlefield</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Guilt says: I did something bad. Shame says: I am something bad. Those are not the same sentence. Guilt can motivate repair. Shame just paralyzes — or worse, it fuels the very behavior you're ashamed of. You use to escape the shame, then feel more shame, then use more to escape that shame. The spiral is airtight.</p>
+        <p>Real accountability — the kind that leads somewhere — requires separating what you did from what you are. Daniel hurt people. That's true. He was also raised in a burning building and never taught how to stop, drop, and roll. Both of those things are true. Neither one cancels the other out.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Toxic shame</strong><span>A core belief that you are inherently bad — not that you did something bad, but that you ARE bad</span></div>
+          <div class="term-pill"><strong>Guilt vs. shame</strong><span>Guilt is about behavior. Shame is about identity. Guilt can heal. Shame spirals.</span></div>
+          <div class="term-pill"><strong>Shame spiral</strong><span>Shame → destructive coping → more shame → repeat. Without intervention, it only tightens.</span></div>
+          <div class="term-pill"><strong>Accountability</strong><span>Owning what you did while refusing to become it permanently — the difference between responsibility and self-destruction</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What does shame feel like in your body, specifically? Where does it live?</p>
+          <p>Is there something you've done that you've never been able to separate from your identity? What would it take to hold that behavior accountable without letting it define you?</p>
+          <p>What's the difference between "I did something harmful" and "I am a harmful person"?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 10 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 10</div>
+      <div class="lecture-title">Your Brain on Trauma</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part IV — The Internal Battlefield</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Your brain has three parts that matter most for understanding CPTSD. The amygdala is the alarm system — in CPTSD, it's stuck on and hypersensitive. A slammed door. A certain tone of voice. A smell. It fires before your thinking brain can even register what happened. The hippocampus is the memory librarian — in CPTSD, it can't properly date traumatic memories, so they feel like they're happening right now, not twenty years ago. The prefrontal cortex is the CEO — it goes offline whenever the alarm fires, which is why you can't "just think your way" out of a trauma response.</p>
+        <p>The good news: neuroplasticity is real. Your brain rewired itself in response to danger. It can rewire itself in response to safety too. That's not a motivational poster. That's neuroscience.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Amygdala hijack</strong><span>When the alarm fires and takes over before your rational brain can even process what's happening</span></div>
+          <div class="term-pill"><strong>Window of tolerance</strong><span>The zone where you can think and feel simultaneously. CPTSD makes it very narrow.</span></div>
+          <div class="term-pill"><strong>Neuroplasticity</strong><span>The brain's ability to form new pathways — the scientific basis for why healing is actually possible</span></div>
+          <div class="term-pill"><strong>Polyvagal theory</strong><span>The science of how your nervous system moves between connection, mobilization, and shutdown — and why</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>When was the last time your amygdala fired before your thinking brain caught up? What triggered it?</p>
+          <p>Do you spend more time above your window of tolerance (anxious, flooded) or below it (numb, shut down)?</p>
+          <p>What small things help you return to your window? Make a real list — not what should help, what actually does.</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Grounding Exercise</h4>
+        <div class="grounding-box"><p>When overwhelmed (above the window): slow your exhale longer than your inhale — that activates the vagus nerve and tells your body to brake. When shut down (below the window): gentle movement, cold water on your wrists, call someone. The direction you need is different depending on where you are.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 11 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 11</div>
+      <div class="lecture-title">Rewiring the Clock</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part IV — The Internal Battlefield</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Chronic lateness in CPTSD isn't rudeness or laziness. It's a nervous system that treats routine tasks as threats, a prefrontal cortex that can't track time properly, sensory overload that makes the morning feel like an assault course before you've even brushed your teeth. Daniel walked around his entire building to avoid the front entrance just to delay the moment of social exposure. He wasn't avoiding work. He was avoiding collapse.</p>
+        <p>Standard time management advice — set more alarms, try harder, want it more — fails completely because it doesn't touch the underlying nervous system problem. The solution isn't discipline. It's architecture: predictable morning rituals that signal safety to the body, visual timers instead of internal time perception, micro-steps that make initiation less terrifying.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Time blindness</strong><span>Impaired internal time perception — common in CPTSD and ADHD, not a character flaw</span></div>
+          <div class="term-pill"><strong>Task initiation paralysis</strong><span>The freeze response applied to everyday tasks — can't start, even when you desperately want to</span></div>
+          <div class="term-pill"><strong>Nervous system anchors</strong><span>Small, predictable daily rituals that signal "we are safe" to the body before the world gets loud</span></div>
+          <div class="term-pill"><strong>Environmental auditing</strong><span>Identifying and reducing the sensory triggers in your environment that keep your system activated</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What everyday tasks feel disproportionately hard? What might your nervous system be interpreting as a threat in those moments?</p>
+          <p>Have you been punished or shamed for symptoms — lateness, forgetfulness, avoidance — that are actually CPTSD? How did that affect your self-image?</p>
+          <p>What's one tiny anchor you could build into your morning that would signal safety to your body before the day begins?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 12 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 12</div>
+      <div class="lecture-title">From Reactive to Responsive</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part IV — The Internal Battlefield</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Reactive means the trigger fires and you're already six steps into a response before your conscious mind checked in. Responsive means there's a pause — even a small one — between stimulus and action. CPTSD shrinks that pause to zero. Healing is slowly, painstakingly expanding it back.</p>
+        <p>The goal isn't to stop having emotions. It's to have emotions without being controlled by them. It's to feel rage and ask "what boundary was crossed?" instead of sending the text. It's to feel terror and ask "am I actually in danger right now?" instead of fleeing. That gap — that tiny moment of choice — is the whole project.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Rage as data</strong><span>Anger tells you something — a boundary violated, a need ignored, a value crushed. Listen to it before you act on it.</span></div>
+          <div class="term-pill"><strong>Grief metabolization</strong><span>Processing loss through the body — writing, movement, ritual, tears — rather than storing it as permanent weight</span></div>
+          <div class="term-pill"><strong>Boundary-induced guilt</strong><span>The flood of guilt that comes when you set a boundary for the first time — that's old programming, not evidence you did something wrong</span></div>
+          <div class="term-pill"><strong>Legacy work</strong><span>Turning personal pain into something that helps others — not to redeem the past, but to make the future different</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>Think of your last significant emotional reaction. What was the gap between trigger and response? What would a longer pause have looked like?</p>
+          <p>What does your anger usually be about? Not the surface thing — the thing underneath it.</p>
+          <p>What would you do with your pain if you could turn it into something?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 13 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 13</div>
+      <div class="lecture-title">The Lessons Nobody Taught Us</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part V — Changing the World Around You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Daniel needed someone to tell him at age seven that hiding under a blanket during violence was a freeze response — not cowardice. He needed someone to tell him at seventeen that taking a hydrocodone for the quiet in his head was self-medication — not moral failure. Nobody told him any of this. He was punished for symptoms that had names and explanations. That's not bad luck. That's a system that never learned the language of trauma.</p>
+        <p>Trauma literacy — knowing what a fawn response is, what a trauma bond looks like, why the amygdala fires the way it does — should be as basic as CPR. Because people are dying from the lack of it every single day.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Trauma literacy</strong><span>Understanding trauma well enough to recognize it — in yourself, in others, in behavior that looks like something else</span></div>
+          <div class="term-pill"><strong>Trauma stacking</strong><span>When multiple traumas pile up without processing — each new wound activating all the old ones</span></div>
+          <div class="term-pill"><strong>Pathologizing pain</strong><span>Labeling natural responses to abnormal circumstances as disorders — without asking what caused them</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>What would have changed for you if someone had taught you trauma literacy at age twelve?</p>
+          <p>Which behavior of yours has been punished or misread that you now understand as a trauma response?</p>
+          <p>Who in your life could benefit from knowing one thing you've learned in this course? What would you tell them?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 14 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 14</div>
+      <div class="lecture-title">Speaking Truth to Power</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part V — Changing the World Around You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>Daniel was told "guys like you never stay clean" by a rehab counselor. He was medically discharged from another facility in three days because he didn't have his CPAP machine. Courts sided with the person who weaponized his trauma against him. Every institution that was supposed to help either made things worse or made nothing better.</p>
+        <p>That's not Daniel's personal bad luck. That's a system that wasn't built to understand trauma. And systems don't change until people who've been through them name what went wrong — loudly, specifically, and repeatedly. Rage at this is not dysfunction. Rage at this is the only rational response.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Institutional betrayal</strong><span>When the systems that should protect you — courts, hospitals, rehab — actively make things worse instead</span></div>
+          <div class="term-pill"><strong>Survivor-led justice</strong><span>Systems designed around healing survivors rather than punishing their symptoms</span></div>
+          <div class="term-pill"><strong>Rage as data</strong><span>Anger that points to real injustice — not a symptom to be medicated away, but information to be acted on</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>Which systems failed you? What would those systems need to look different for someone like you?</p>
+          <p>What's the difference between rage that burns everything down and rage that builds something?</p>
+          <p>What would you say to a policymaker if you had five minutes and immunity?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 15 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 15</div>
+      <div class="lecture-title">The Crucial Question</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part V — Changing the World Around You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>"What's wrong with you?" assumes the problem is the person. "What happened to you?" assumes the problem is something that was done to them. One leads to punishment. The other leads to understanding. One keeps the cycle running. The other is where the cycle can actually stop.</p>
+        <p>Every teacher, clinician, manager, judge, parent, and partner has a choice every time they encounter someone whose behavior they don't understand. The question they choose in that moment determines whether they're part of the problem or part of the solution. There's no neutral option.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Key Terms</h4>
+        <div class="key-terms">
+          <div class="term-pill"><strong>Bystander complicity</strong><span>When silence in the face of harm becomes participation in it</span></div>
+          <div class="term-pill"><strong>Neuroception</strong><span>Your nervous system's unconscious threat-scan — firing before you consciously register anything</span></div>
+          <div class="term-pill"><strong>Re-traumatization</strong><span>When a "helping" response triggers the original wound instead of addressing it</span></div>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Discussion Questions</h4>
+        <div class="discussion-box">
+          <p>When have you been on the receiving end of "what's wrong with you?" What did that cost you?</p>
+          <p>When have you been the one asking it — about someone else? What would you ask instead now?</p>
+          <p>What does it mean to be a trauma-informed bystander — not just a professional, but a human being in someone's life?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION 16 -->
+  <div class="lecture-card">
+    <div class="lecture-header">
+      <div class="lecture-num">Session 16</div>
+      <div class="lecture-title">The Revolution Must Be Trauma-Informed</div>
+    </div>
+    <div class="lecture-body">
+      <div class="lecture-tag">Part V — Changing the World Around You</div>
+      <div class="lecture-section">
+        <h4>The Plain Version</h4>
+        <p>You can build a new world using the same emotional illiteracy as the old one. You can tear down systems and rebuild them with the same contempt for human vulnerability baked in. None of that is revolution. It's just rearranging the same furniture in the same burning building.</p>
+        <p>Trauma-informed doesn't mean soft. It doesn't mean excusing harm. It means being precise — precise enough to see the difference between someone who is dangerous and someone who is dysregulated. Precise enough to know that healing and accountability are not opposites. Precise enough to ask the right question before reaching for punishment.</p>
+        <p>Daniel's story doesn't end with resolution. It ends with him still in the fire, still writing, still refusing to disappear. That's not a Hollywood ending. That's a real one. And it's enough.</p>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Final Call to Action</h4>
+        <div class="discussion-box">
+          <p>Teach one person one thing from this course this week.</p>
+          <p>Interrupt one shame spiral — in yourself or someone else.</p>
+          <p>Believe one person who has never been believed.</p>
+          <p>Ask "what happened to you?" one time when you would have previously asked "what's wrong with you?"</p>
+        </div>
+      </div>
+      <hr class="lecture-divider">
+      <div class="lecture-section">
+        <h4>Closing Grounding</h4>
+        <div class="grounding-box"><p>Place your hand on your chest. Feel your heart beating. This heart has carried you through everything in this course — and everything before it. You are not broken. You are someone whose nervous system learned to survive in impossible circumstances. Now you're learning to do more than survive. That's the whole work. Go do it.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOSSARY -->
+  <div class="section-header">
+    <div class="label">Reference</div>
+    <h2>Core Glossary</h2>
+  </div>
+
+  <p style="font-family:Arial,sans-serif;font-size:14px;color:#555;margin-bottom:20px;">Every term in this course explained in plain English — no clinical jargon required.</p>
+
+  <dl class="glossary-grid">
+    <div class="glossary-item"><dt>CPTSD</dt><dd>Complex PTSD. What happens when trauma is prolonged, repeated, and inescapable — especially in childhood. It rewires identity, emotion, body, and relationships, not just fear response.</dd></div>
+    <div class="glossary-item"><dt>Fawn Response</dt><dd>The fourth survival response: fight, flight, freeze — and fawn. Appease. People-please. Make yourself useful and unthreatening enough to not get hurt.</dd></div>
+    <div class="glossary-item"><dt>Trauma Bond</dt><dd>An attachment formed through cycles of harm and relief — love and pain so intertwined they feel like the same thing. Mistaken for passion. Actually biochemistry.</dd></div>
+    <div class="glossary-item"><dt>Love Bombing</dt><dd>Overwhelming someone with affection and attention early on to create rapid emotional dependency before control begins.</dd></div>
+    <div class="glossary-item"><dt>Gaslighting</dt><dd>Making someone question their own memory, perception, and sanity through consistent denial and manipulation. Slow. Quiet. Devastating.</dd></div>
+    <div class="glossary-item"><dt>DARVO</dt><dd>Deny, Attack, Reverse Victim and Offender. The abuser becomes the victim every time they're held accountable.</dd></div>
+    <div class="glossary-item"><dt>Repetition Compulsion</dt><dd>The unconscious drive to recreate early relational wounds — hoping this time it'll end differently. It almost never does without awareness.</dd></div>
+    <div class="glossary-item"><dt>Toxic Shame</dt><dd>Not "I did something bad." "I am something bad." The core wound of CPTSD. Paralyzes rather than motivates.</dd></div>
+    <div class="glossary-item"><dt>Hypervigilance</dt><dd>The nervous system locked in permanent threat-scan mode. Reads neutral faces as hostile. Hears footsteps on stairs as warnings. Exhausting. Involuntary.</dd></div>
+    <div class="glossary-item"><dt>Dissociation</dt><dd>The mind's emergency exit — disconnecting from your body, your memories, or reality when overwhelmed. Not "crazy." Adaptive. Until it isn't.</dd></div>
+    <div class="glossary-item"><dt>Window of Tolerance</dt><dd>The zone where you can feel things and think simultaneously. CPTSD makes it very narrow. Healing expands it.</dd></div>
+    <div class="glossary-item"><dt>Narrative Integration</dt><dd>Putting trauma into a coherent story — which moves it from raw body-alarm into something the thinking brain can hold and place in the past.</dd></div>
+    <div class="glossary-item"><dt>Addiction as Regulation</dt><dd>Using substances not for pleasure but to quiet an unregulated nervous system. Not a moral choice. A neurological emergency response.</dd></div>
+    <div class="glossary-item"><dt>Neuroplasticity</dt><dd>The brain's ability to form new pathways throughout life. The scientific basis for why healing is actually possible.</dd></div>
+    <div class="glossary-item"><dt>Parental Alienation</dt><dd>Systematically turning children against a parent using manipulation, lies, and fear. Love as a weapon.</dd></div>
+    <div class="glossary-item"><dt>Post-Traumatic Growth</dt><dd>The real psychological change that can emerge from surviving and integrating trauma. Not linear. Not glamorous. Real.</dd></div>
+    <div class="glossary-item"><dt>Self-Attunement</dt><dd>The practice of checking in with yourself — what am I actually feeling, what do I actually need — and taking that answer seriously.</dd></div>
+    <div class="glossary-item"><dt>Institutional Betrayal</dt><dd>When the systems meant to help — courts, hospitals, rehab, schools — make things worse instead. As damaging as the original trauma.</dd></div>
+  </dl>
+
+  <!-- RECOMMENDED READING -->
+  <div class="section-header">
+    <div class="label">Going Further</div>
+    <h2>Recommended Reading</h2>
+  </div>
+
+  <div class="rules-box">
+    <ul>
+      <li><strong>The Body Keeps the Score</strong> — Bessel van der Kolk. The foundational text on how trauma lives in the body.</li>
+      <li><strong>Complex PTSD: From Surviving to Thriving</strong> — Pete Walker. Plain-language guide written for survivors, not clinicians.</li>
+      <li><strong>What My Bones Know</strong> — Stephanie Foo. A journalist's personal investigation into her own CPTSD.</li>
+      <li><strong>Trauma and Recovery</strong> — Judith Herman. The original academic work that defined complex trauma.</li>
+      <li><strong>From the Storm to the Fire</strong> — Daniel Lingar. The memoir this course is built around.</li>
+    </ul>
+  </div>
+
+  <div class="callout" style="margin-top:40px;">
+    <p><strong>"The revolution isn't trauma-informed — or it isn't a revolution at all."</strong></p>
+    <p>Daniel Bret Lingar</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p><strong>What Really Happened: Understanding CPTSD Through Daniel's Life</strong></p>
+  <p>A 16-Session Trauma Education Course · Daniel Bret Lingar, Instructor</p>
+  <p style="margin-top:16px;font-size:12px;">Case Study: From the Storm to the Fire · All lecture content derived from original documents</p>
+</div>
+
+</body>
+</html>
