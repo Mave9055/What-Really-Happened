@@ -53,7 +53,7 @@ The curriculum is designed for five primary deployment contexts:
 
 **Capitol Contracts LLC** is a service-disabled veteran-owned small business (SDVOSB) registered in Clarksville, Arkansas.
 
-- **NAICS Codes**: 611710, 611699, 513130
+- **NAICS Codes**: 611710, 611430, 624190
 - **Status**: Pursuing SDVOSB and HUBZone certification
 - **Primary Targets**: Arkansas Department of Corrections, Arkansas Department of Human Services, Arkansas Division of Workforce Services, local recovery and reentry organizations
 
