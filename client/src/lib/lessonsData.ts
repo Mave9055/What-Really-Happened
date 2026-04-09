@@ -270,7 +270,7 @@ export const lessonsData: Lesson[] = [
       },
       {
         setting: "VA / Military",
-        note: "Connect to combat stress and operational tempo."
+        note: "Connect to combat stress spirals and decompensation."
       }
     ]
   },
@@ -421,23 +421,56 @@ export const lessonsData: Lesson[] = [
   {
     id: "session-12",
     sessionNumber: 12,
-    title: "Crisis, Suicide Risk, and Staying Alive",
-    subtitle: "Safety Protocols & Mechanisms of Protection",
-    duration: 70,
-    goal: "Name the specific nervous-system mechanisms behind suicidal crisis and teach how to interrupt these patterns.",
+    title: "Decoding the Damage, Rewriting the Truth",
+    subtitle: "The Science and Story of Reclaiming Your Life",
+    duration: 90,
+    goal: "Hand every survivor the blueprint of their own nervous system and the tools to rewrite their truth.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "Session Content",
-        duration: 70,
-        content: "The razor was in a drawer. This is not a person who wants to die; it is a nervous system drowning in diffuse agony choosing locatable pain over diffuse agony. The cut interrupts the alarm long enough for the system to briefly come offline. This session addresses the mechanisms of suicidal crisis, NSSI as regulation, and 'perceived burdensomeness'—the belief that the people you love would be better without you. This is a symptom, not a fact. Participants complete a Personal Safety Reference card to signal safety to the system before the pressure gets unsurvivable."
+        title: "Welcome, Architects of Your Own Mind",
+        duration: 5,
+        content: "Welcome back, students. We have walked through fire together—Daniel’s incubator isolation, the war zone of his childhood home, the masks of fawning and perfectionism, the trauma bonds that felt like love, the gaslighting that stole his reality, the relapses that were screams for silence, the grief after Garrett’s death, and the long climb toward self-attunement.\n\nToday we step out of the story and into the machinery behind it. We decode the damage—not to pathologize Daniel, but to hand every survivor the blueprint of their own nervous system. Understanding how trauma rewired your brain is the first real act of taking the pen back and rewriting your truth.\n\nThis is a full 60–90 minute deep-dive lecture. We will move slowly and deliberately. There will be pauses for your body to process, time for science to land in your bones, and space for you to begin your own rewiring in real time.\n\nYou are not here to be fixed. You are here to become the conscious architect of your own mind."
+      },
+      {
+        title: "Part 1: The Brain Rewired – Trauma’s Invisible Blueprint",
+        duration: 18,
+        content: "Trauma does not live only in memories. It lives in tissue. It physically reshapes three key brain regions that once kept Daniel alive and still quietly run much of his operating system.\n\n**The Amygdala – Your Overactive Smoke Detector**\nIn a safe environment, the amygdala acts as a precise alarm. After prolonged trauma—incubator isolation, screams, broken bones, police visits, constant threat—it becomes hypersensitive. A slammed door, a certain tone of voice, a neutral text message can trigger a full flood of cortisol and adrenaline before the thinking brain even engages.\n\nThis is not “overreacting.” This is a nervous system that learned early: safety is conditional and threat is everywhere. Chronic stress enlarges and sensitizes the amygdala while weakening its connection to the prefrontal cortex, turning neutral stimuli into perceived danger.\n\n**The Hippocampus – The Fragmented Librarian**\nThe hippocampus tags memories with time, place, and context so you can distinguish “then” from “now.” High cortisol from chronic trauma shrinks it and impairs its function. Daniel could forget everyday details but remember the exact shade of rage in his father’s eyes with terrifying clarity. This fragmentation fuels emotional flashbacks that feel vividly present.\n\n**The Prefrontal Cortex (PFC) – The Silenced CEO**\nThe PFC handles impulse control, emotional regulation, long-term planning, and rational decision-making. Trauma dials it down. When the amygdala screams, the PFC struggles to say, “This is not the same threat.” That disconnection explains why Daniel reached for meth—not primarily for euphoria, but for a temporary off-switch when emotional chaos became unbearable.\n\n**[Grounding Pause – 60–90 seconds]**\nGently press your fingertips together and notice the precise sensation of contact. Inhale slowly through the nose for 4 counts, hold for 2, exhale for 6. As you breathe out, imagine releasing one layer of mental static. This simple practice activates the parasympathetic nervous system and gently signals safety to your amygdala.\n\n**The Revolutionary Good News: Neuroplasticity**\nYour brain is not stone. It is living clay. Neuroplasticity—the brain’s lifelong ability to form new neural connections—means what trauma wired, deliberate repeated practice can rewire. Every new response, every moment of naming a feeling instead of numbing it, every boundary, every journal entry strengthens the hippocampus and reconnects the PFC to the amygdala. Recovery is intentional neuro-engineering."
+      },
+      {
+        title: "Part 2: Decoding Daniel – From Survival Scripts to Strategic Living",
+        duration: 15,
+        content: "**Emotional Flashbacks**\nA coworker’s casual comment triggers full-body shame and panic. The amygdala has hijacked the PFC. The body believes the threat is current. These are not mood swings—they are time travelers from the past.\n\n**Addiction as Regulation, Not Moral Failure**\nMeth was a desperate attempt to silence a brain stuck in terror. The overwhelmed PFC could not regulate the storm, so the nervous system reached for the fastest available tool. Relapse was often the old survival script running when newer strategies were not yet strong enough.\n\n**Fawn Fatigue and Self-Betrayal**\nDaniel’s people-pleasing and over-giving were survival adaptations. Saying “no” once felt like inviting danger, so “yes” became the default—even at the cost of his own needs. Naming this pattern out loud is where neuroplasticity begins."
+      },
+      {
+        title: "Part 3: Rewiring Tools – Your Brain’s Daily Update Button",
+        duration: 18,
+        content: "You cannot positive-think your way out of trauma. You must build new neural highways through consistent, embodied practice.\n\n**Journaling as Hippocampal Integration**\nWriting connects fragmented memories with language and meaning. Daniel wrote unsent “rage letters” to those who had rewritten his reality, then burned them. Each act moved him from “this happened to me” to “this is what I now make of it.”\n\n**Storytelling as Narrative Reconstruction**\nTrauma lives as chaos in the body. Storytelling creates coherence. Renaming experiences—“I am broken” becomes “I adapted brilliantly to survive”; “divorce was failure” becomes “divorce was my first act of reclaiming autonomy”—literally forges new pathways. Language is neuroplasticity in action.\n\n**[Embodied Practice – 2 minutes]**\nWrite one sentence: “The story I inherited was ________. The story I am writing now is ________.” Speak it aloud if you can. Feel the shift in your body."
+      },
+      {
+        title: "Part 4: Relapse & Failure – Survival Scripts, Not Life Sentences",
+        duration: 10,
+        content: "Old script: “I relapsed because I’m weak and broken.”\nNew truth: “My nervous system reached for an old survival tool when it was overwhelmed. Now I’m upgrading the toolkit.”\n\nFailure is data, not defect. Every setback shows which pathways still dominate and where new scaffolding is needed. Daniel’s therapist said: “You’re not failing. You’re adapting. Let’s upgrade your strategy.”"
+      },
+      {
+        title: "Professor’s Challenge & Practical Integration",
+        duration: 20,
+        content: "**Audit the Inherited Stories**\n- Were you called “too sensitive” when your amygdala was on high alert for real danger?\n- Labeled “unstable” when your hippocampus couldn’t separate past from present?\n- Punished for “impulsivity” or “laziness” when your PFC was exhausted by hypervigilance?\n\nThese were never character flaws. They were misreadings of a brain doing its best to survive.\n\n**Rewrite Your Script – Guided Exercise (10–12 minutes journaling)**\n1. **Audit the Brain** – Map your current patterns: triggers (amygdala), memory gaps/flashbacks (hippocampus), impulsive/shutdown responses (PFC).\n2. **Edit the Labels** – “Damaged” → “Wired for survival—now rewiring for thriving.” “Too much” → “Deeply feeling and perceptive.” “Weak” → “Still learning new tools.”\n3. **Publish Your Truth** – Write it, speak it, burn it, sing it, share it. Become the conscious author of your story.\n\n**[Extended Journaling Pause – 5–7 minutes]**\nUse the prompts above. Let whatever arises come. Tears are integration, not weakness."
+      },
+      {
+        title: "Discussion Questions",
+        duration: 15,
+        content: "1. How does understanding the specific neurological impacts of trauma shift your self-compassion and reduce shame?\n2. What creative, embodied practices (movement, art, music, ritual, etc.) have you used or could you use to harness neuroplasticity?\n3. Why does shifting language from deficit-based to strength- or process-based terms create real changes in brain function and emotional experience?"
       }
     ],
     handout: [
-      "Session 12: Crisis, Suicide Risk, and Staying Alive",
-      "NSSI as Regulatory Strategy",
-      "Personal Safety Reference Card",
-      "Crisis Resources: 988 Lifeline, Crisis Text Line"
+      "Amygdala: Brain’s alarm system; becomes hypersensitive in trauma.",
+      "Hippocampus: Memory contextualizer; often shrinks under chronic stress.",
+      "Prefrontal Cortex (PFC): Executive function and regulation center; often underactive in trauma.",
+      "Neuroplasticity: Brain’s ability to form new neural connections throughout life.",
+      "Emotional Flashback: Intense reliving of past trauma that feels present.",
+      "Narrative Integration: Turning chaotic trauma into a coherent, empowering personal story.",
+      "Fawn Response: Appeasement and over-functioning to maintain safety."
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
@@ -592,4 +625,3 @@ export const lessonsData: Lesson[] = [
     ]
   }
 ];
-
