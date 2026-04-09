@@ -528,5 +528,69 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system turning point many service members recognize - when the old combat wiring starts getting new evidence that it is safe to come off high alert."
       }
     ]
+  },
+  {
+    id: "session-09",
+    sessionNumber: 9,
+    title: "Living the New Wiring",
+    subtitle: "Applying Regulation and Boundaries in Real Life",
+    duration: 80,
+    goal: "Show how the nervous system moves from early new-wiring practices into real-life application - using regulation tools and small boundary experiments in daily situations to accumulate more safety data and gently challenge the old template.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor",
+        duration: 5,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
+      },
+      {
+        title: "III. Core Teaching: Living the New Wiring",
+        duration: 50,
+        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, and the breaking point. We saw the first turning toward the body in Session 07 and the beginning of new practices in Session 08. Today we watch how those new practices start to move into real daily life. After the crack, Daniel did not suddenly become a different person. He began applying the regulation tools and small boundaries in ordinary moments - one day at a time. He used the gravity press and voo breath at work when the old urge to over-function and please everyone rose. He practiced the 3-2-1 scan in the car before walking into situations that used to trigger fawn or shutdown. These were not big heroic moments. They were small, repeatable choices that gave his nervous system new data: I can feel my body in the present moment and still be safe. I do not have to perform perfectly to earn the right to exist. He also began experimenting with tiny boundaries. Instead of automatically saying yes to every request that triggered the old competence trap, he practiced saying not right now or I need a minute. Each time he did this without collapse or abandonment, the nervous system received accumulating evidence that the old rule usefulness equals safety was no longer the only option. In his relationships with his children, he started showing up as a regulated father instead of the exhausted, over-functioning one. He held their names - Maverick, Shayla, Tegan, Adalie - in his mind not just to survive the dark moments, but to anchor himself in the present. The nervous system learned, little by little, that presence and peace were possible without the old chaos or numbing. These real-life applications were biology in action. Repeated safe experiences strengthened new neural pathways. Allostatic load slowly decreased. The old dorsal vagal shutdown and sympathetic over-drive lost some of their automatic grip. Glimpses of ventral vagal regulation - calm, flexible presence - became more accessible. The nervous system remained loyal to its entire history. It had kept Daniel alive through the incubator, the war-zone home, the trauma bond, and the breaking point. These new practices did not erase that loyalty. They simply gave the nervous system new, consistent evidence that safer, more regulated responses were now possible in an adult world. This is how new wiring is lived: not in perfect transformation, but in small, daily choices that deliver new safety data to a loyal nervous system."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can stay loyal to its history while beginning to live new, regulated responses in daily life. No sharing required."
+      },
+      {
+        title: "V. Closing Grounding & Transition",
+        duration: 8,
+        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing 9 questions + one new low-burden question: On a scale of 1-10, how supported did the practices feel today?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 9: Living the New Wiring",
+      "Apply Session 00 tools in real daily moments (work, car, relationships)",
+      "Small, tolerable boundary experiments (not right now, I need a minute)",
+      "Choose regulated presence over old fawn/performance/chaos",
+      "Accumulating new safety data strengthens new neural pathways",
+      "Loyalty message: The nervous system remains loyal to its history - these real-life practices simply give it new, consistent evidence that safer responses are now possible."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug begins to show up differently in everyday life - using regulation and small boundaries instead of the old patterns."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the same nervous-system updating that can happen even under structure - choosing regulation and boundaries in daily moments instead of defaulting to old survival responses."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system shift many service members recognize - moving from high-alert wiring to practical regulation and boundaries that work in real life after service."
+      }
+    ]
   }
 ];
