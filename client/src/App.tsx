@@ -10,10 +10,10 @@ import Home from "./pages/Home";
 
 function AppRouter() {
   return (
-    <Router hook={useHashLocation}>
+    <Router base="/What-Really-Happened" hook={useHashLocation}>
       <Switch>
         <Route path="/" component={Home} />
-        {/* Match paths like /session-01 or /~session-01 */}
+        {/* Match paths like /session-01 */}
         <Route path="/:sessionId" component={Home} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
