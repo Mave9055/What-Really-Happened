@@ -24,40 +24,29 @@ export interface FacilitatorAdaptation {
 }
 
 export const lessonsData: Lesson[] = [
-  {
+{
     id: "session-00",
     sessionNumber: 0,
-    title: "Welcome, Safety & Why This Course Exists",
-    subtitle: "The Clinical Frame & Informed Consent",
-    duration: 75,
-    goal: "Establish safety, regulation, and informed consent framework for all subsequent sessions.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    title: "Introduction: What Really Happened",
+    subtitle: "Setting the Compass for the Revolution",
+    duration: 60,
+    goal: "Establish the framework of trauma-informed education and the 'contract' of the room.",
+    heroImage: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80",
     sections: [
       {
-        title: "Session Content",
-        duration: 75,
-        content: "This session establishes the clinical frame, gathers informed consent, and installs the Plan B protocol for managing nervous system dysregulation throughout the course. Participants learn grounding techniques including the 3-2-1 Scan, Gravity Check, Voo Breath, and Straw Breath."
+        title: "The Framework",
+        duration: 60,
+        content: "This is not a support group. This is a trauma education series. We are here to look at the clinical mechanisms of CPTSD through a single case study.\n\nWe start with the primary rule: You are not the problem. Your nervous system's response to what happened is the data. We are moving from 'What is wrong with you?' to 'What happened to you?' and finally to 'How did your system learn to survive that?'\n\nThe door remains unlocked. You have permission to leave, to breathe, and to regulate. Your only job is to stay present enough to keep breathing."
       }
     ],
     handout: [
-      "Session 0: Welcome, Safety & Why This Course Exists",
-      "Plan B Card (bright yellow) - permission to leave at any time",
-      "Grounding Techniques: 3-2-1 Scan, Gravity Check, Voo Breath, Straw Breath"
+      "The Window of Tolerance",
+      "The Three Pillars of Safety",
+      "Course Roadmap: Sessions 1-17"
     ],
-    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    settings: ["NA/AA", "Jails", "VA", "Public Health"],
     facilitatorAdaptations: [
-      {
-        setting: "NA/AA or Rehab",
-        note: "Emphasize that this framework precedes any substance use. The nervous system wiring we study started before the first drink or drug."
-      },
-      {
-        setting: "Jail / Corrections",
-        note: "Frame Plan B as genuine autonomy in a system that demands control. This is real choice."
-      },
-      {
-        setting: "VA / Military",
-        note: "Honor service while establishing that this is a space where survival wiring is studied, not judged."
-      }
+      { setting: "General", note: "Focus on the shift from moral failure to physiological adaptation." }
     ]
   },
   {
