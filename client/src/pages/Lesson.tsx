@@ -10,6 +10,7 @@ export default function Lesson() {
   
   // Find the lesson using the sessionId from the URL
   const lesson = lessonsData.find((l) => String(l.id) === String(sessionId));
+  const facilitatorScript = lesson?.facilitatorScript?.trim();
 
   if (!lesson) return <div className="p-20 text-center">Lesson not found</div>;
 
@@ -27,6 +28,19 @@ export default function Lesson() {
           <h1 className="text-5xl font-black text-slate-900 mt-2">{lesson.title}</h1>
           <p className="text-2xl text-slate-500 mt-4 italic">{lesson.subtitle}</p>
         </header>
+
+        {facilitatorScript && (
+          <section className="border-t pt-10">
+            <h2 className="flex items-center gap-3 text-3xl font-bold text-slate-800 mb-6">
+              <BookOpen className="h-8 w-8 text-blue-600" /> Facilitator Script
+            </h2>
+            <div className="bg-slate-50 p-8 rounded-2xl border prose prose-slate max-w-none">
+              <div className="text-lg leading-relaxed whitespace-pre-wrap text-slate-800">
+                {facilitatorScript}
+              </div>
+            </div>
+          </section>
+        )}
 
         <section className="prose max-w-none border-t pt-10">
           <h2 className="flex items-center gap-3 text-3xl font-bold text-slate-800 mb-6">
