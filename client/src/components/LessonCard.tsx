@@ -1,5 +1,6 @@
 import { Lesson } from "@/lib/lessonsData";
 import { Clock, BookOpen } from "lucide-react";
+import { Link } from "wouter";
 
 
 interface LessonCardProps {
@@ -73,12 +74,12 @@ export default function LessonCard({ lesson, index }: LessonCardProps) {
         </div>
 
         {/* View Details Link */}
-        <a
-          href={`#${lesson.id}`}
+        <Link
+          to={`/${lesson.id}`}
           className="inline-block px-6 py-2 bg-sage-600 text-white rounded hover:bg-sage-700 transition-colors font-medium text-sm w-fit"
         >
           View Full Lesson
-        </a>
+        </Link>
       </div>
     </div>
   );

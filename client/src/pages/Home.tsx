@@ -3,8 +3,21 @@ import LessonDetail from "@/components/LessonDetail";
 import LessonIndex from "@/components/LessonIndex";
 import { lessonsData } from "@/lib/lessonsData";
 import { BookOpen } from "lucide-react";
+import { useEffect } from "react";
+import { useRoute } from "wouter";
 
 export default function Home() {
+  const [match, params] = useRoute("/:sessionId");
+
+  useEffect(() => {
+    if (match && params?.sessionId) {
+      const element = document.getElementById(params.sessionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [match, params]);
+
   return (
     <div className="min-h-screen bg-off-white">
       {/* Header */}
