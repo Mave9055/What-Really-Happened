@@ -94,9 +94,25 @@ export default function LessonDetail({ lesson }: LessonDetailProps) {
 
               {expandedSections.has(idx) && (
                 <div className="px-4 py-4 bg-slate-50 border-t border-slate-200">
-                  <p className="text-slate-700 leading-relaxed whitespace-pre-wrap">
-                    {section.content}
-                  </p>
+                  <div className="text-slate-700 leading-relaxed prose prose-sm max-w-none">
+                    {section.content.split('\n\n').map((paragraph, pIdx) => (
+                      <p key={pIdx} className="mb-4 whitespace-pre-wrap">
+                        {paragraph.split('\n').map((line, lIdx) => {
+                          // Bold text between ** **
+                          const boldRegex = /\*\*(.*?)\*\*/g;
+                          const parts = line.split(boldRegex);
+                          return (
+                            <span key={lIdx}>
+                              {parts.map((part, pIdx) => 
+                                pIdx % 2 === 1 ? <strong key={pIdx} className="font-semibold text-charcoal">{part}</strong> : part
+                              )}
+                              {lIdx < line.split('\n').length - 1 && <br />}
+                            </span>
+                          );
+                        })}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
