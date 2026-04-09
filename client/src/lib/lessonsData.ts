@@ -24,66 +24,39 @@ export interface FacilitatorAdaptation {
 }
 
 export const lessonsData: Lesson[] = [
-{
+  {
     id: "session-00",
     sessionNumber: 0,
     title: "Introduction: What Really Happened",
     subtitle: "Setting the Compass for the Revolution",
     duration: 60,
-    goal: "Establish the framework of trauma-informed education and the 'contract' of the room.",
+    goal: "Establish the framework of trauma-informed education.",
     heroImage: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80",
-    sections: [
-      {
-        title: "The Framework",
-        duration: 60,
-        content: "This is not a support group. This is a trauma education series. We are here to look at the clinical mechanisms of CPTSD through a single case study.\n\nWe start with the primary rule: You are not the problem. Your nervous system's response to what happened is the data. We are moving from 'What is wrong with you?' to 'What happened to you?' and finally to 'How did your system learn to survive that?'\n\nThe door remains unlocked. You have permission to leave, to breathe, and to regulate. Your only job is to stay present enough to keep breathing."
-      }
-    ],
-    handout: [
-      "The Window of Tolerance",
-      "The Three Pillars of Safety",
-      "Course Roadmap: Sessions 1-17"
-    ],
-    settings: ["NA/AA", "Jails", "VA", "Public Health"],
-    facilitatorAdaptations: [
-      { setting: "General", note: "Focus on the shift from moral failure to physiological adaptation." }
-    ]
+    sections: [{
+      title: "The Framework",
+      duration: 60,
+      content: "This is not a support group. This is a trauma education series. We move from 'What is wrong with you?' to 'How did your system learn to survive?' The door remains unlocked. You have permission to leave, to breathe, and to regulate."
+    }],
+    handout: ["The Window of Tolerance", "The Three Pillars of Safety"],
+    settings: ["Public Health", "VA"],
+    facilitatorAdaptations: [{ setting: "General", note: "Focus on physiological adaptation." }]
   },
   {
     id: "session-01",
     sessionNumber: 1,
-    title: "The Blueprint of Survival",
-    subtitle: "How Early Trauma Shapes the Nervous System",
-    duration: 75,
-    goal: "Analyze how early adverse experiences shape nervous system development and survival adaptations.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
-    sections: [
-      {
-        title: "Session Content",
-        duration: 75,
-        content: "This session traces how early experiences—such as NICU isolation and childhood domestic violence—create the foundational nervous system blueprint. Participants learn that trauma is not just what happens to the body, but what fails to happen for the soul."
-      }
-    ],
-    handout: [
-      "Session 1: The Blueprint of Survival",
-      "Early Attachment & Nervous System Development",
-      "Survival Adaptations & Protective Mechanisms"
-    ],
-    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
-    facilitatorAdaptations: [
-      {
-        setting: "NA/AA or Rehab",
-        note: "Connect early wiring to later substance use as a regulatory strategy."
-      },
-      {
-        setting: "Jail / Corrections",
-        note: "Normalize the survival mechanisms that may have led to justice involvement."
-      },
-      {
-        setting: "VA / Military",
-        note: "Acknowledge how early wiring intersects with military training and service."
-      }
-    ]
+    title: "The Load-Bearing Belief",
+    subtitle: "I Am The Problem",
+    duration: 60,
+    goal: "Identify the primary maladaptive belief.",
+    heroImage: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80",
+    sections: [{
+      title: "The Logic of the System",
+      duration: 60,
+      content: "To survive an unreliable world, a child's brain performs a trade: 'The world is fine—I am the problem.' This maintains the illusion of control. If I am the problem, I can fix myself to be safe."
+    }],
+    handout: ["Identifying the Inner Critic", "Logic Loop Worksheet"],
+    settings: ["Clinical", "Peer Support"],
+    facilitatorAdaptations: [{ setting: "General", note: "Watch for high activation." }]
   },
   {
     id: "session-02",
