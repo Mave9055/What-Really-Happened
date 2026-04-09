@@ -851,5 +851,71 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system skill many service members need - recognizing when old high-alert or survival wiring reactivates and returning to regulated presence more quickly in daily life."
       }
     ]
+  },
+  {
+    id: "session-14",
+    sessionNumber: 14,
+    title: "Crisis, Suicide Risk, and Staying Alive",
+    subtitle: "Understanding the Mechanisms and Building Real Protection",
+    duration: 80,
+    goal: "Name the specific nervous-system mechanisms behind suicidal crisis, non-suicidal self-injury (NSSI), perceived burdensomeness, and acquired capability while teaching how the loyal nervous system can interrupt these patterns with the tools built across the curriculum.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor (Slower & Longer Pauses)",
+        duration: 6,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00, delivered more slowly. End with: This session goes deep. We are going together, and we are coming back. You do not have to manage or contain anything that arises. You only have to stay present enough to keep breathing. The door stays open. Use Plan B any time without explanation."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it. Today we name some of the hardest mechanisms in the entire template."
+      },
+      {
+        title: "III. Core Teaching: Crisis, Suicide Risk, and Staying Alive",
+        duration: 45,
+        content: "Across the twelve previous sessions we have mapped how the loyal nervous system stacked its survival template from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, and the long turn toward new wiring. Today we name what can still happen when that template is pushed to its furthest edge - suicidal crisis, non-suicidal self-injury, and the specific body-texture of wanting to disappear. In the documented life, there were moments when the internal pressure became unbearable - a toxic fog of rage, hurt, and exhaustion that felt about to explode. The nervous system, running at emergency pitch for decades, reached for the most concrete interruption available: a razor kept in a known drawer. The first bite brought shocking calm. The chaos drained with the blood. The heart slowed. The internal war went quiet for a moment. That is not a person who wants to die. That is a nervous system that has been drowning in diffuse emotional agony for so long that it chooses locatable physical pain because pain with edges is neurologically easier to process than pain without location. This is non-suicidal self-injury - NSSI. It is a regulatory strategy. The goal is not death. The goal is the brief offline moment when the alarm quiets. Shame arrived immediately afterward - sharper than the blade - especially the guilt that the night had stolen energy from the children who needed a present father. That guilt is part of a larger mechanism called perceived burdensomeness: the belief that one's existence costs more than it gives, that the people you love would be better without you. In the case study this belief appeared as a symptom of a nervous system that had carried the early load-bearing belief I am the problem for decades and extended its logic to its furthest conclusion. It feels like arithmetic. It is not arithmetic. It is a symptom. The history also built acquired capability - the reduced fear of pain and death that comes from prior exposure. Witnessing an uncle's attempts, carrying twenty-four unprocessed deaths, and the accumulation of self-harm all lowered the threshold for acting on crisis. This is not a character flaw. It is a risk factor created by specific, repeated exposure. From inside the crisis, the body-texture was rarely dramatic. It was wired frayed - perpetually braced for an impact that never quite landed. Exhaustion that looked like readiness. A nervous system in emergency mode so long it no longer recognized non-emergency. That braced, frayed state is often misread by others as fine, difficult, or withdrawn - not as crisis. What actually kept him here was never one dramatic intervention. It was the accumulation of small, specific decisions: returning to sobriety, using the grounding tools we practiced in Session 00, choosing to stay present with his four children even when guilt tried to pull him into disappearance, and learning to tolerate peace boring as a sign of healing rather than emptiness. For a nervous system calibrated to chaos since the incubator, the absence of alarm initially felt like absence of life. Staying in the flatness long enough for the nervous system to update its baseline was some of the hardest work. The nervous system remained loyal to its entire history. Even in crisis it was still trying to protect. Advanced resilience means learning to interrupt the old cascade earlier, return to regulation faster, and treat perceived burdensomeness as a loud symptom - not a fact - while holding the specific protective weight of what (or who) matters enough to stay."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can reach its furthest edge out of loyalty and still learn to interrupt the old patterns and return to regulation. No sharing required."
+      },
+      {
+        title: "V. Personal Safety Reference + Closing Grounding",
+        duration: 12,
+        content: "Distribute the Personal Safety Reference card (half-sheet, bright color recommended). Before we close, everyone will complete a Personal Safety Reference card. This is for you alone - not collected, not shared. It is a simple tool your nervous system can use when pressure builds. After cards are completed, lead the exact closing grounding from previous sessions, then add: You just went to one of the hardest places in the entire curriculum and you came back. The card in your hand and the tools we have practiced across all thirteen sessions are real protection. Perceived burdensomeness is a symptom, not a fact. Staying here is built from many small decisions. You are here. That is enough for today."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing questions + one new low-burden question: On a scale of 1-10, how clear and usable did the safety mechanisms feel today?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 14: Crisis, Suicide Risk, and Staying Alive",
+      "NSSI as regulatory strategy - locatable pain interrupting diffuse agony",
+      "Perceived burdensomeness as symptom, not fact",
+      "Acquired capability built through exposure and history",
+      "Body-texture of crisis: wired frayed, perpetually braced",
+      "What actually protects: accumulation of small decisions, grounding tools, specific anchors",
+      "Loyalty message: Even in crisis the nervous system was still trying to protect. Interrupting the cascade and returning faster is possible with consistent new evidence.",
+      "Crisis Resources: 988 Suicide & Crisis Lifeline (call or text 988), Crisis Text Line (text HOME to 741741)"
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug can still produce crisis and self-harm - and how the same nervous system can learn to interrupt it using the regulation tools we've practiced."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the nervous-system reality that can show up under extreme pressure - naming the mechanisms so we can protect life even when the old template screams loudest."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system stacking that can lead to crisis after repeated threat or moral injury - and how the tools of regulation and small decisions can create real protection."
+      }
+    ]
   }
 ];
