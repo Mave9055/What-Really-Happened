@@ -592,5 +592,69 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system shift many service members recognize - moving from high-alert wiring to practical regulation and boundaries that work in real life after service."
       }
     ]
+  },
+  {
+    id: "session-10",
+    sessionNumber: 10,
+    title: "Sustaining the New Wiring",
+    subtitle: "Navigating Triggers and Maintaining Regulation",
+    duration: 80,
+    goal: "Show how the nervous system moves from early new-wiring practices into long-term maintenance - learning to navigate real-life triggers while sustaining regulation, boundaries, and the updated template.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor",
+        duration: 5,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
+      },
+      {
+        title: "III. Core Teaching: Sustaining the New Wiring",
+        duration: 50,
+        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, the breaking point, the first turning toward the body, the beginning of new practices, and living those practices in daily life. Today we watch how that new wiring is sustained when real-life triggers still show up. After the crack and the first small changes, Daniel discovered that the old blueprint did not disappear overnight. Triggers still came - a tone of voice that sounded like the war-zone house, a request that pulled on the old fawn response, a moment of stress that made the competence trap feel safer than the new peace. The nervous system was still loyal. It had kept him alive for decades. When a trigger hit, the old patterns tried to fire automatically: freeze, fawn, over-function, numb, or dissociate. But now Daniel had new tools and new evidence. He used the gravity press and voo breath the moment he felt the old pull. He did the 3-2-1 scan in the middle of a difficult conversation. He practiced small boundaries even when the old fear of abandonment rose. Each time he did this, he was giving his nervous system repeated, consistent data: I can feel the trigger and still choose a different response. The world does not end. He also learned to notice the early warning signs his body had always given him - the tight chest, the racing thoughts, the urge to perform or disappear - and to treat them as information instead of commands. He began to respond to those signals with the tools from Session 00 instead of automatically obeying the old survival template. In his relationships with his children, he practiced showing up regulated even when old guilt or shame tried to pull him back into over-functioning. He held their names in his mind not just to survive the dark moments, but to anchor himself in the present and show up as the father he wanted to be. These were not perfect days. There were still slips. There were still moments when the old wiring won for a minute or an hour. But each time he returned to the new practices, the nervous system received more evidence that the updated template was safer and more sustainable in an adult world. This is how sustaining the new wiring happens: not by never being triggered again, but by learning to meet the triggers with the new tools and the new evidence. The loyal nervous system does not erase its history - it simply adds new, consistent data that allows it to respond differently over time. Neuroplasticity works through repetition. Every time Daniel chose the gravity press instead of the old fawn, every time he set a small boundary instead of over-functioning, every time he stayed present instead of dissociating, he was strengthening the new pathways and gently weakening the automatic grip of the old ones. The nervous system remained loyal to everything it had learned in the Glass Box and the war-zone home. These new practices simply gave it accumulating evidence that a different way was now possible - and safer - in daily life."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can stay loyal to its history while learning to meet triggers with new, regulated responses. No sharing required."
+      },
+      {
+        title: "V. Closing Grounding & Transition",
+        duration: 8,
+        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing 10 questions + one new low-burden question: On a scale of 1-10, how manageable did triggers feel with the new practices today?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 10: Sustaining the New Wiring",
+      "Triggers still arise - old patterns try to fire",
+      "Meet triggers with Session 00 tools and small boundaries",
+      "Notice early warning signs and respond with new choices",
+      "Repetition strengthens new neural pathways",
+      "Loyalty message: The nervous system remains loyal to its history - these real-life practices give it consistent new evidence that safer responses are now possible and sustainable."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug is sustained in real life - using regulation and boundaries when old triggers still show up."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the same nervous-system maintenance that can happen even under structure - sustaining new responses when old survival patterns get triggered."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system maintenance many service members recognize - sustaining regulation and boundaries when everyday triggers or old high-alert wiring reactivates."
+      }
+    ]
   }
 ];
