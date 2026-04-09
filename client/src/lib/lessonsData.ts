@@ -457,42 +457,29 @@ export const lessonsData: Lesson[] = [
     ]
   },
   {
-    id: "session-12",
-    sessionNumber: 12,
-    title: "Crisis, Suicide Risk, and Staying Alive",
-    subtitle: "Safety Protocols & Mechanisms of Protection",
-    duration: 75,
-    goal: "Name the specific nervous-system mechanisms behind suicidal crisis and teach how to interrupt these patterns.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
-    sections: [
-      {
-        title: "Session Content",
-        duration: 75,
-        content: "This session addresses the mechanisms of suicidal crisis, non-suicidal self-injury (NSSI) as regulation, and perceived burdensomeness. Participants complete a Personal Safety Reference card with crisis resources and protective strategies."
-      }
-    ],
-    handout: [
-      "Session 12: Crisis, Suicide Risk, and Staying Alive",
-      "NSSI as Regulatory Strategy",
-      "Personal Safety Reference Card",
-      "Crisis Resources: 988 Lifeline, Crisis Text Line"
-    ],
-    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
-    facilitatorAdaptations: [
-      {
-        setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug can still produce crisis and self-harm."
-      },
-      {
-        setting: "Jail / Corrections",
-        note: "This is the nervous-system reality that can show up under extreme pressure."
-      },
-      {
-        setting: "VA / Military",
-        note: "This is the nervous-system stacking that can lead to crisis after repeated threat or moral injury."
-      }
-    ]
+  id: 12,
+  slug: "crisis-suicide-risk-staying-alive",
+  title: "Session 12: Crisis, Suicide Risk, and Staying Alive",
+  subtitle: "Safety Protocols & Mechanisms of Protection",
+  testimony: {
+    heading: "The Razor (Mechanism of Relief)",
+    content: "The razor was in a drawer. He knew where it was. The memoir says: 'Night, trapped in a toxic fog of rage and hurt... The blade's first bite — shocking calm. The chaos drained with the blood. Heart slowed. Breath steadied.' This is not a person who wants to die. This is a nervous system drowning in diffuse agony choosing locatable pain over diffuse agony. The cut interrupts the alarm long enough for the system to briefly come offline."
   },
+  analysis: {
+    heading: "Perceived Burdensomeness & Acquired Capability",
+    content: "Suicidal thinking in CPTSD is often not 'I want to die.' It is: 'the people I love would be better without me.' This is 'perceived burdensomeness'—a symptom, not a fact. Combined with 'acquired capability' (exposure to pain/death), it creates a high-risk configuration. Crisis doesn't always look like a movie scene; it often feels like being 'wired frayed and perpetually braced'—a nervous system in emergency mode for so long it cannot remember non-emergency."
+  },
+  exercise: {
+    heading: "The Personal Safety Reference",
+    prompt: "Complete these three prompts for your own nervous system:",
+    steps: [
+      "Identify the first sign of pressure building (The Early Warning Texture).",
+      "List one person to contact before the pressure gets unsurvivable.",
+      "Identify one 'Sensory Interruptors' (e.g., Voo breath, holding ice) that has helped regulate you before.",
+      "Save the Crisis Resources: Call/Text 988 or Text HOME to 741741."
+    ]
+  }
+}
   {
     id: "session-13",
     sessionNumber: 13,
