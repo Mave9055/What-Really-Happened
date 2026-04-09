@@ -1,33 +1,9 @@
 import LessonCard from "@/components/LessonCard";
-import LessonDetail from "@/components/LessonDetail";
 import LessonIndex from "@/components/LessonIndex";
 import { lessonsData } from "@/lib/lessonsData";
 import { BookOpen } from "lucide-react";
-import { useEffect } from "react";
-import { useRoute } from "wouter";
 
 export default function Home() {
-  const [match, params] = useRoute("/:sessionId");
-
-  useEffect(() => {
-    // Check if the sessionId exists and is not just "404"
-    if (match && params?.sessionId && params.sessionId !== "404") {
-      // Handle both /session-01 and /~session-01 (wouter's tilde prefix)
-      const targetId = params.sessionId.startsWith("~") 
-        ? params.sessionId.substring(1) 
-        : params.sessionId;
-        
-      // Small delay to ensure the DOM is ready after route change
-      const timer = setTimeout(() => {
-        const element = document.getElementById(targetId);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-      return () => clearTimeout(timer);
-    }
-  }, [match, params]);
-
   return (
     <div className="min-h-screen bg-off-white">
       {/* Header */}
@@ -50,7 +26,9 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Sidebar Navigation */}
           <div className="lg:col-span-1">
-            <LessonIndex lessons={lessonsData} />
+            <div className="sticky top-24">
+              <LessonIndex lessons={lessonsData} />
+            </div>
           </div>
 
           {/* Main Content Area */}
@@ -91,18 +69,6 @@ export default function Home() {
               <div className="space-y-12">
                 {lessonsData.map((lesson, idx) => (
                   <LessonCard key={lesson.id} lesson={lesson} index={idx} />
-                ))}
-              </div>
-            </section>
-
-            {/* Full Lesson Details */}
-            <section>
-              <h2 className="text-2xl font-bold text-charcoal mb-8">
-                Full Lesson Details
-              </h2>
-              <div className="space-y-16">
-                {lessonsData.map((lesson) => (
-                  <LessonDetail key={lesson.id} lesson={lesson} />
                 ))}
               </div>
             </section>

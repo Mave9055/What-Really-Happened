@@ -6,6 +6,7 @@ import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Lesson from "./pages/Lesson";
 
 
 function AppRouter() {
@@ -13,8 +14,8 @@ function AppRouter() {
     <Router hook={useHashLocation}>
       <Switch>
         <Route path="/" component={Home} />
-        {/* Support both root and direct session paths in the hash router */}
-        <Route path="/:sessionId" component={Home} />
+        {/* Support direct lesson paths in the hash router */}
+        <Route path="/:sessionId" component={Lesson} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
