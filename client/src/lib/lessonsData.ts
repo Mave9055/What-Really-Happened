@@ -656,5 +656,70 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system maintenance many service members recognize - sustaining regulation and boundaries when everyday triggers or old high-alert wiring reactivates."
       }
     ]
+  },
+  {
+    id: "session-11",
+    sessionNumber: 11,
+    title: "Integration and Forward Momentum",
+    subtitle: "Living with the Updated Nervous System",
+    duration: 80,
+    goal: "Show how the new wiring becomes integrated into daily life and identity over time - carrying the full loyal history while operating with more choice, sustainability, and presence.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor",
+        duration: 5,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
+      },
+      {
+        title: "III. Core Teaching: Integration and Forward Momentum",
+        duration: 50,
+        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, the breaking point, the first turning toward the body, the beginning of new practices, living those practices in daily life, and sustaining them when triggers arise. Today we watch how that new wiring becomes integrated into a more stable way of living - not by erasing the past, but by carrying the full loyal history while operating with more choice and sustainability in the present. After the crack and the first small changes, Daniel discovered that integration was not a finish line. It was a gradual process of the nervous system learning to hold both truths at once: the old blueprint had kept him alive for decades, and new responses were now possible and safer. He continued using the Session 00 tools - gravity press, 3-2-1 scan, voo breath - not just during big triggers, but as part of his normal daily rhythm. These became automatic anchors that interrupted the old freeze or fawn before they fully took over. He practiced small boundaries in real relationships - with his children, at work, in the community - and noticed that the feared abandonment or punishment did not always follow. Each time he set a limit without collapse, the nervous system received more evidence that the old rule usefulness equals safety no longer had to run the show. In his role as a father, he began showing up with more regulated presence instead of the exhausted, over-functioning version of himself. He held the names of Maverick, Shayla, Tegan, and Adalie not just to survive the dark moments, but as a daily anchor that reminded him why the new wiring mattered. Setbacks still happened. Old patterns still fired. There were days when the competence trap or the urge to numb pulled hard. But now Daniel could meet those moments with the new tools instead of automatically obeying the old blueprint. Each return to regulation added another layer of evidence that the nervous system could carry its entire history without being ruled by it. This is the biology of sustained integration. Repeated safe experiences consolidate new neural pathways. Allostatic load continues to ease. Access to ventral vagal regulation - the state of calm presence and flexible connection - becomes more available as a baseline rather than a rare glimpse. The loyal nervous system does not forget its history; it simply retires the old survival strategies to a background role instead of keeping them on constant frontline duty. Integration is not perfection. It is not the absence of triggers or old feelings. It is the nervous system carrying its full loyal history while operating with more choice, more presence, and more sustainability in an adult world. This is forward momentum: the nervous system remains loyal to everything it learned in order to keep Daniel alive - and it now has new, consistent evidence that a different way is possible."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can carry its full loyal history while beginning to live with more regulated choice and presence. No sharing required."
+      },
+      {
+        title: "V. Closing Grounding & Transition",
+        duration: 8,
+        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing 11 questions + one new low-burden question: On a scale of 1-10, how integrated did the material feel with real life today?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 11: Integration and Forward Momentum",
+      "Carry the full loyal history while operating with more choice",
+      "Daily regulation tools become part of normal rhythm",
+      "Small boundaries practiced in real relationships and roles",
+      "Setbacks are normal; return to new responses adds evidence",
+      "Long-term biology: reduced allostatic load, stronger ventral vagal access",
+      "Loyalty message: The nervous system carries its entire history - integration means it no longer has to run the old survival program as the default."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug becomes part of everyday life - carrying the past while living with more regulated choices."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the same nervous-system integration that can happen even under structure - carrying the old survival history while practicing new responses in real daily moments."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building a more sustainable way forward in civilian life."
+      }
+    ]
   }
 ];
