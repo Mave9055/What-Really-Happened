@@ -721,5 +721,70 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building a more sustainable way forward in civilian life."
       }
     ]
+  },
+  {
+    id: "session-12",
+    sessionNumber: 12,
+    title: "Deepening Integration",
+    subtitle: "Relationships, Fatherhood, and Long-Term Resilience",
+    duration: 80,
+    goal: "Show how the updated nervous system integrates more deeply into key life domains — particularly relationships and fatherhood — while building realistic long-term resilience.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor",
+        duration: 5,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
+      },
+      {
+        title: "III. Core Teaching: Deepening Integration",
+        duration: 50,
+        content: "By now we have mapped the full survival template - from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, turning toward the body, new practices, sustaining through triggers, and initial integration. Today we watch how that updated wiring deepens into daily life roles, especially relationships and fatherhood, while building long-term resilience. Integration is not a finish line. It is an ongoing process in which the nervous system carries its entire loyal history and still learns to respond differently in the moments that matter most. For Daniel, this showed up powerfully in his relationship with his four children - Maverick, Shayla, Tegan, and Adalie. The old competence trap and fawn response had once pushed him into over-functioning or disappearing when guilt or shame rose. Now he practiced showing up with regulated presence instead. When old fear of abandonment or failure tried to pull him back into performing or numbing, he used the Session 00 tools in real time - pressing feet into the floor, the gravity check, a quiet voo breath - to stay connected rather than collapse or overcompensate. He learned to set small, clear boundaries with love instead of the old all-or-nothing patterns. He noticed early body signals - tight chest, racing thoughts, urge to fix everything - and treated them as information, not commands. Each time he stayed present during difficult conversations or everyday parenting moments, the nervous system received accumulating evidence: I can feel the old pull and still choose connection. The relationship does not end if I am not perfect. In broader relationships and community, the same mechanism applied. Old hypervigilance or dissociation could still activate, but repeated practice of grounding and small boundaries gave the nervous system new data that safety and connection were possible without the old survival cost. The loyal blueprint from the Glass Box and war-zone home was not erased - it remained part of the story - but it no longer had to run as the default operating system. This deepening is supported by the biology of neuroplasticity. Consistent, repeated safe experiences strengthen new neural pathways. Allostatic load continues to decrease as the body spends less time in chronic defensive states. Access to ventral vagal regulation - the biological state of calm presence, flexible connection, and social engagement - becomes more available as a baseline rather than a rare moment. The nervous system does not forget its protective history; it simply retires the old frontline strategies to a supporting role. Long-term resilience is built the same way: not by never facing triggers or setbacks, but by meeting them with the updated tools and returning to regulation more quickly. Setbacks are normal and expected. Each return to the new responses adds another layer of evidence that a more sustainable way is possible. The nervous system remains loyal to everything it learned in order to keep a small human alive through impossible conditions. Deepening integration means it now carries that full history while living with more choice, more presence in relationships, and more resilience in an adult world."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can carry its full loyal history while deepening into more regulated presence in relationships and roles. No sharing required."
+      },
+      {
+        title: "V. Closing Grounding & Transition",
+        duration: 8,
+        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing 12 questions + one new low-burden question: On a scale of 1-10, how relevant did today's integration feel to your own life roles (e.g., relationships, parenting, community)?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 12: Deepening Integration - Relationships, Fatherhood, and Long-Term Resilience",
+      "Carry the full loyal history into key roles (especially parenting and relationships)",
+      "Practice regulated presence and small boundaries in real moments",
+      "Notice early signals and respond with Session 00 tools",
+      "Setbacks are normal; each return to regulation strengthens new pathways",
+      "Long-term biology: continued neuroplasticity, reduced allostatic load, more consistent ventral vagal access",
+      "Loyalty message: The nervous system carries its entire protective history - deepening integration means it no longer has to run old survival strategies as the default while building resilience in relationships and daily life."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug deepens into real relationships and parenting - carrying the past while showing up more regulated and present."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the nervous-system integration that can support healthier relationships and roles even under structure or after release."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building sustainable presence in family and community life."
+      }
+    ]
   }
 ];
