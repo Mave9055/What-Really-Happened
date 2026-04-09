@@ -1,6 +1,6 @@
 import { Lesson } from "@/lib/lessonsData";
 import { BookOpen } from "lucide-react";
-import { Link } from "wouter";
+
 
 interface LessonIndexProps {
   lessons: Lesson[];
@@ -16,12 +16,12 @@ export default function LessonIndex({ lessons }: LessonIndexProps) {
       <ul className="space-y-2">
         {lessons.map((lesson) => (
           <li key={lesson.id}>
-            <Link
-              to={`/~${lesson.id}`}
+            <a
+              href={`#${lesson.id}`}
               className="block px-3 py-2 rounded text-sm text-slate-700 hover:bg-sage-50 hover:text-sage-700 transition-colors font-medium cursor-pointer"
             >
               Session {lesson.sessionNumber}: {lesson.title}
-            </Link>
+            </a>
           </li>
         ))}
       </ul>
