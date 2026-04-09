@@ -27,47 +27,22 @@ export const lessonsData: Lesson[] = [
   {
     id: "session-00",
     sessionNumber: 0,
-    title: "Opening Grounding & Safety Framework",
-    subtitle: "Universal Pilot Edition - Foundation",
-    duration: 60,
+    title: "Welcome, Safety & Why This Course Exists",
+    subtitle: "The Clinical Frame & Informed Consent",
+    duration: 75,
     goal: "Establish safety, regulation, and informed consent framework for all subsequent sessions.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/hero-main-baXdwLJooTu5wKug6Exhe8.webp",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Welcome & Informed Consent",
-        duration: 5,
-        content: "Facilitator reads the locked consent language. Participants are informed this is psychoeducation, not therapy. They have the right to pass on any sharing, use Plan B (leave the room) at any time, and all feedback is anonymous."
-      },
-      {
-        title: "II. The 3-2-1 Scan + Gravity Check",
-        duration: 10,
-        content: "Guided grounding technique: Notice 3 things you see, 2 things you feel physically, 1 thing you hear. Then press feet into ground, feel the chair, remember you are here and in control."
-      },
-      {
-        title: "III. Voo Breath & Straw Breath",
-        duration: 8,
-        content: "Vagal toning exercises to activate the parasympathetic nervous system. Voo breath (low humming) and straw breath (slow exhale through pursed lips) to regulate the body."
-      },
-      {
-        title: "IV. Plan B Introduction",
-        duration: 5,
-        content: "Bright yellow card introduced. Participants learn they can use Plan B (leave) at any time without explanation or judgment. This is their tool for safety."
-      },
-      {
-        title: "V. Closing Grounding",
-        duration: 10,
-        content: "Wiggle toes, stretch, press palms together, feel skin boundary. Facilitator: 'You are leaving as [your name]. You are safe. You are present. You are here.'"
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Hand out anonymous feedback cards with 3 questions: (1) On a scale 1-10, how safe did you feel? (2) What worked? (3) What would help?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session establishes the clinical frame, gathers informed consent, and installs the Plan B protocol for managing nervous system dysregulation throughout the course. Participants learn grounding techniques including the 3-2-1 Scan, Gravity Check, Voo Breath, and Straw Breath."
       }
     ],
     handout: [
+      "Session 0: Welcome, Safety & Why This Course Exists",
       "Plan B Card (bright yellow) - permission to leave at any time",
-      "Grounding Techniques: 3-2-1 Scan, Gravity Check, Voo Breath, Straw Breath",
-      "Informed Consent Language - Psychoeducation, not therapy"
+      "Grounding Techniques: 3-2-1 Scan, Gravity Check, Voo Breath, Straw Breath"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
@@ -81,840 +56,585 @@ export const lessonsData: Lesson[] = [
       },
       {
         setting: "VA / Military",
-        note: "Connect grounding to combat readiness. These techniques are tools for nervous system regulation, just like tactical breathing."
+        note: "Honor service while establishing that this is a space where survival wiring is studied, not judged."
       }
     ]
   },
   {
     id: "session-01",
     sessionNumber: 1,
-    title: "The Glass Box Blueprint",
-    subtitle: "How Early Isolation Wires the Nervous System",
+    title: "The Blueprint of Survival",
+    subtitle: "How Early Trauma Shapes the Nervous System",
     duration: 75,
-    goal: "Introduce the case study and show how the first thirty days of life can wire a nervous system for distance and danger.",
+    goal: "Analyze how early adverse experiences shape nervous system development and survival adaptations.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding – Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo Breath from Session 00. End with: 'You are here. You are in control of this space.'"
-      },
-      {
-        title: "II. Quick Frame Reminder",
-        duration: 3,
-        content: "We are in psychoeducation mode. We study one documented life so we can see the machinery of trauma without flooding our own nervous systems. Mechanism over narrative. Right to pass. Plan B is always available."
-      },
-      {
-        title: "III. Introducing the Case Study",
-        duration: 12,
-        content: "Today we meet Daniel. Born three pounds four ounces, seven weeks early. He spent the first thirty days of his life in a glass incubator — no mother's heartbeat, no skin-to-skin, no human touch. Just wires, alarms, and a priest giving him last rites. His body learned its very first lesson: Distance equals safety. Proximity equals danger."
-      },
-      {
-        title: "IV. The Mechanism: How Early Isolation Wires the Brain",
-        duration: 25,
-        content: "NICU = chronic cortisol flood + zero oxytocin → disorganized attachment template. Body learns: 'If I stay still and quiet, maybe I survive.' Later echoes: hiding under blanket → sleep paralysis → adult freeze responses. The body keeps the score: screams at night, bed-wetting until age 11, hypervigilance."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 10,
-        content: "Exact same closing script: wiggle toes, stretch, feel skin boundary. 'You are leaving as [your name]. You are safe. You are present. You are here.'"
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Hand out anonymous feedback cards with 3 questions."
+        title: "Session Content",
+        duration: 75,
+        content: "This session traces how early experiences—such as NICU isolation and childhood domestic violence—create the foundational nervous system blueprint. Participants learn that trauma is not just what happens to the body, but what fails to happen for the soul."
       }
     ],
     handout: [
-      "The Glass Box Blueprint – Key Mechanisms",
-      "Original wiring: Distance = safety",
-      "Survival strategy installed: Freeze / fawn / don't take up space",
-      "Later echoes: Sleep paralysis, screams, adult dissociation, over-functioning",
-      "Lesson: The nervous system is not defective — it is loyal to the first lessons it was taught."
+      "Session 1: The Blueprint of Survival",
+      "Early Attachment & Nervous System Development",
+      "Survival Adaptations & Protective Mechanisms"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
-        setting: "Rehab / NA/AA",
-        note: "This is how the disease of trauma starts before the first drink or drug."
+        setting: "NA/AA or Rehab",
+        note: "Connect early wiring to later substance use as a regulatory strategy."
       },
       {
-        setting: "Jail",
-        note: "This is the wiring that shows up as freeze or fawn when the system expects compliance."
+        setting: "Jail / Corrections",
+        note: "Normalize the survival mechanisms that may have led to justice involvement."
       },
       {
         setting: "VA / Military",
-        note: "This is the same nervous-system wiring that shows up after combat, moral injury, or repeated deployments — the body learns 'distance = safety' long before the first tour."
+        note: "Acknowledge how early wiring intersects with military training and service."
       }
     ]
   },
   {
     id: "session-02",
     sessionNumber: 2,
-    title: "Mapping the Survival Template",
-    subtitle: "From Glass Box to War-Zone Childhood",
+    title: "The Masks We Wear",
+    subtitle: "Fawning, Perfectionism & High-Functioning Survival",
     duration: 75,
-    goal: "Show how the original Glass Box Blueprint stacked with repeated relational violence and chaos in childhood to create the next layer of loyal survival adaptations.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-02-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    goal: "Identify protective personas and examine how high-functioning survivors use fawning and perfectionism to hide trauma.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding – Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: 'You are here. You are in control of this space. Plan B is always available.'"
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light — use it."
-      },
-      {
-        title: "III. Core Teaching: Mapping the Survival Template",
-        duration: 35,
-        content: "Last session we saw how the first thirty days in the glass box wired Daniel's nervous system with the original blueprint: distance equals safety, proximity equals danger. Today we watch that blueprint meet the next layer of threat — a war-zone childhood. By age five, after his parents split, a new man moved into the house. Violence became unpredictable and brutal. Screams ripped through the night. Daniel, at six years old, learned the only strategy that kept him alive: hide under a thin blanket, stay completely still, make no sound, take up no space. His body executed the Glass Box lesson perfectly — freeze. He watched his mother get beaten. He heard bones snap. He wanted to run to her but fear locked him in place. The same total freeze that would later show up in adult life as dissociation or shutdown under pressure. CPS came to school once. When asked about bruises, the children said, 'Only when we are bad.' They thought it was normal. Some nights they ran barefoot into the dark — gravel tearing their feet — trying to reach an uncle's house. Mom always lagged behind, pulled back by the same arm that had hurt her. The body kept the score. Bed-wetting continued until age eleven — a somatic signal of a nervous system that never felt safe enough to relax, even in sleep. At age ten the freeze response evolved into sleep paralysis — waking frozen, unable to move or scream, feeling a crushing presence on the chest. Later it became night screams: full-body alarms while he was unconscious, his nervous system still scanning for the next threat. None of this was broken. It was loyal. The nervous system was doing exactly what it was designed to do: keep a small human alive in an environment where danger could erupt without warning and love could disappear in a heartbeat."
-      },
-      {
-        title: "IV. Group Reflection Prompt",
-        duration: 8,
-        content: "Only if room is regulated. 'Notice how the nervous system was not broken. It was executing the only strategies available to a child who had no power, no escape, and no consistent safety. Take a moment in silence. No sharing required.'"
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as locked Session 01: wiggle toes, stretch, feel skin boundary, 'You are leaving as [your name]. You are safe. You are present. You are here.'"
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Hand out before they leave with 3 questions + one new data point: On a scale of 1–10, how clear was today's mechanism (the stacking of the survival template)?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session explores the fawn response and over-functioning as trauma-driven reflexes. Participants learn that society praises 'work ethic' that is often actually a trauma-driven reflex for emotional appeasement."
       }
     ],
     handout: [
-      "Survival Template Layers:",
-      "Layer 1 (Glass Box): Distance = safety",
-      "Layer 2 (War-Zone Childhood): Freeze / fawn / hypervigilance / somatic echoes (bed-wetting, paralysis, screams)",
-      "The nervous system is loyal — it maximized short-term survival in chaos."
+      "Session 2: The Masks We Wear",
+      "The Fawn Response & Trauma Bonding",
+      "High-Functioning Survival & Burnout"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug kept stacking — the nervous system doing its job in a war zone at home."
+        note: "Connect fawning to people-pleasing in recovery groups."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same template that shows up as freeze or over-compliance when the system demands control."
+        note: "Explore how institutional compliance masks internal dysregulation."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system stacking that happens after repeated threat — same wiring that shows up in combat, moral injury, or back home when the body still thinks it's under fire."
-      }
-    ]
-  },
-  {
-    id: "session-04",
-    sessionNumber: 4,
-    title: "Trauma Bonds and the Adult Echo",
-    subtitle: "When the Survival Template Meets Intimate Relationships",
-    duration: 75,
-    goal: "Show how the childhood survival template stacked into adult intimate relationships, creating a trauma bond that felt familiar even when destructive.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/hero-main-baXdwLJooTu5wKug6Exhe8.webp",
-    sections: [
-      {
-        title: "I. Opening Grounding – Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: 'You are here. You are in control of this space. Plan B is always available.'"
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light — use it."
-      },
-      {
-        title: "III. Core Teaching: Trauma Bonds and the Adult Echo",
-        duration: 35,
-        content: "By now we have seen the Glass Box Blueprint and how it stacked with war-zone childhood into a survival template of freeze, fawn, hypervigilance, and over-functioning. Today we watch that same template meet intimate adult relationships. At seventeen, a stupid bet at the steakhouse led Daniel into a twenty-year marriage. Three months in, his partner became pregnant. His nervous system, still wired for 'perform or be abandoned,' went into overdrive: two jobs, paid-off trailer, car with no payments — anything to prove he could provide the safety he never had. What began as responsibility quickly became a trauma bond. A trauma bond is not built on mutual respect or steady safety. It is built on intermittent reinforcement — cycles of chaos, conflict, and brief moments of relief that the nervous system mistakes for love. To a system wired in the Glass Box and war-zone childhood, calm actually felt dangerous. Chaos felt familiar. The adrenaline spikes that once kept him alive in the house of screams now registered as 'connection.' The childhood fawn response evolved into chronic over-functioning. Daniel became hyper-responsible, indispensable, the one who fixed everything — exactly the competence trap that had once earned temporary safety from unpredictable caregivers. When he tried to set boundaries or leave, the fear of losing his children (another abandonment) pulled him back. The kids became weapons in the cycle. His partner learned exactly where his soft spots were. Pain or stress was turned back on him: 'You think you're suffering? Try being me.' Relief was intermittent and unpredictable — just enough to keep the nervous system hooked. When he relapsed, she did not offer support. She punished. Kicked him out. The nervous system learned the lesson it had learned as a child: do not bring pain here. Hide it. Perform harder. Numb it when performance is no longer enough. Eventually he was hiding in literal closets when her family visited. Legally married with four children, yet erased — the adult version of the six-year-old under the blanket. None of this was broken. The nervous system was still executing the only blueprint it had ever been given: Fawn and over-function to earn safety. Stay in the chaos because chaos is familiar. Dissociate or numb when the performance finally cracks. The trauma bond felt like love because the nervous system recognized the pattern it had practiced for decades. It was loyal. It was doing its job — protecting him the only way it knew how."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. 'Take a quiet moment. Notice how the nervous system was not defective — it was loyal, executing the only templates it had been given. No sharing required.'"
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as previous locked sessions: wiggle toes, stretch, press palms, feel skin boundary. 'You are leaving as [your name]. You are safe. You are present. You are here.'"
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Hand out before they leave with same 5 questions + one new targeted question: On a scale of 1–10, how manageable was the material intensity today?"
-      }
-    ],
-    handout: [
-      "Survival Template Layers – Layer 4: Adult Echoes",
-      "Childhood wiring (Glass Box + war zone) → fawn / competence trap",
-      "Adult echo: Trauma bond formed through intermittent reinforcement",
-      "Nervous system response: Over-function to earn safety, stay in chaos because it feels familiar, numb or dissociate when performance fails",
-      "Loyalty message: The system was still trying to protect him with the only strategies it had ever been taught."
-    ],
-    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
-    facilitatorAdaptations: [
-      {
-        setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug showed up in relationships — using the same fawn and over-functioning to try to stay safe."
-      },
-      {
-        setting: "Jail / Corrections",
-        note: "This is the same template that can show up as over-compliance or staying in chaotic situations because the nervous system learned 'perform or be abandoned.'"
-      },
-      {
-        setting: "VA / Military",
-        note: "This is the nervous-system stacking that shows up in intimate relationships after combat or moral injury — the body still using old blueprints to regulate threat, even at home."
+        note: "Connect to military obedience and service-oriented identity."
       }
     ]
   },
   {
     id: "session-03",
     sessionNumber: 3,
-    title: "The Competence Trap",
-    subtitle: "How Fawn and Over-Functioning Became Survival",
+    title: "When Love Hurts",
+    subtitle: "Trauma Bonds & Relational Re-enactment",
     duration: 75,
-    goal: "Show how the childhood survival template evolved into chronic over-functioning and the competence trap — a sophisticated nervous-system strategy that once maximized short-term safety but carried a hidden long-term cost.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-02-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    goal: "Explore how CPTSD disrupts attachment patterns, leading to trauma bonding and relational re-enactment.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding – Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: 'You are here. You are in control of this space. Plan B is always available.'"
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light — use it."
-      },
-      {
-        title: "III. Core Teaching: The Competence Trap",
-        duration: 35,
-        content: "Last session we saw the original Glass Box Blueprint stack with war-zone childhood to create a survival template of freeze, fawn, and hypervigilance. Today we watch that fawn response evolve into something more sophisticated — and more costly. By his teens, Daniel's nervous system had learned that freezing kept him alive under immediate threat, but fawning (becoming useful, indispensable, the one who over-functions) could sometimes de-escalate unpredictable adults or earn temporary safety. That fawn response turned into chronic over-functioning. He started working back-of-house restaurant jobs as a teenager — grueling hours, grease, heat, physical exhaustion. He pushed his body until it literally collapsed because his internal wiring said: 'The second you stop being useful, you will be discarded.' The competence trap was now fully formed. The trap works like this: The more the survivor over-functions to appease or protect, the higher the baseline of expectation becomes. Society rewards it — calls it strong work ethic, team player, reliable. But the nervous system is still running on panic, not choice. Eventually the exhausted, disregulated system hits a wall. When it slows down or breaks, the same people who benefited from the over-functioning now punish the 'failure.' The survivor is labeled defective and discarded — exactly what the childhood nervous system feared most. Daniel lived this trap for decades. He performed, provided, fixed, and carried everyone — because the Glass Box and war-zone lessons had taught him that usefulness was the only reliable form of safety. When he finally began to crack, the old blueprint had no off-switch. Early substance use entered here as another layer of regulation. Alcohol at 16, then opioids by 17 — not for recreation, but to quiet the constant internal roar when performance alone could no longer keep the nervous system regulated. The fawn had become competence; the competence had become exhaustion; the exhaustion was managed with chemicals. None of this was broken. The nervous system was still executing the only strategies it had ever been taught: Fawn and become indispensable so they won't abandon or destroy you. Over-function to earn safety. Numb or collapse when the performance finally fails. This is the competence trap — a loyal, intelligent survival adaptation that once kept a child alive in chaos and later became a cage in adulthood."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. 'Take a quiet moment. Notice how the nervous system was not defective — it was loyal, executing the only strategies available. No sharing required.'"
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as previous locked sessions."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Same 6 questions as the locked Session 04 (safety, Plan B usage, exit feeling, mechanism clarity, relevance, material intensity)."
+        title: "Session Content",
+        duration: 75,
+        content: "This session examines how relationships often mirror childhood chaos because the nervous system responds to danger with closeness. A trauma bond is a chemical addiction to the high of connection and the low of rejection."
       }
     ],
     handout: [
-      "Survival Template Layers – Layer 3: The Competence Trap",
-      "Childhood fawn → adult over-functioning",
-      "Nervous system learns: 'Be useful or be discarded'",
-      "Society rewards the trap until the system cracks",
-      "Hidden cost: burnout, health collapse, substance use as regulation",
-      "Loyalty message: The nervous system was still doing its job — maximizing survival with the only tools it had been given."
+      "Session 3: When Love Hurts",
+      "Trauma Bonds & Attachment Disruption",
+      "Relational Re-enactment Patterns"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug turned into over-functioning and the competence trap — performing to survive until substances became the next regulator."
+        note: "Connect trauma bonding to codependency in recovery."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same fawn/over-functioning template that can show up as over-compliance or 'being the strong one' under institutional pressure."
+        note: "Explore institutional relationships and power dynamics."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system stacking many service members recognize — fawn and hyper-responsibility used to protect the mission or the unit, even when it costs the self."
+        note: "Connect to military unit bonding and loyalty."
+      }
+    ]
+  },
+  {
+    id: "session-04",
+    sessionNumber: 4,
+    title: "The War on Reality",
+    subtitle: "Gaslighting, DARVO & Reality Distortion",
+    duration: 75,
+    goal: "Focus on gaslighting, reality distortion, and the mechanisms used to invalidate a survivor's testimony.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches about gaslighting as a human rights violation that erodes identity. Participants learn the mechanisms of reality theft and how to recognize and name these patterns in their own lives."
+      }
+    ],
+    handout: [
+      "Session 4: The War on Reality",
+      "Gaslighting & Reality Distortion",
+      "DARVO & Narrative Theft"
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "Connect to denial and minimization in addictive systems."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "Explore institutional gaslighting and official narratives."
+      },
+      {
+        setting: "VA / Military",
+        note: "Connect to military command structures and institutional narratives."
       }
     ]
   },
   {
     id: "session-05",
     sessionNumber: 5,
-    title: "The Breaking Point",
-    subtitle: "When the Loyal Template Begins to Crack",
+    title: "Relapse Isn't a Betrayal",
+    subtitle: "Addiction as Nervous System Regulation",
     duration: 75,
-    goal: "Show how the stacked survival template eventually reached its limit — not because the nervous system failed, but because the loyal adaptations that once kept Daniel alive could no longer sustain him in an adult world.",
-    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/hero-main-baXdwLJooTu5wKug6Exhe8.webp",
+    goal: "Reframe addiction and relapse as desperate strategies for nervous system regulation rather than moral failures.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding – Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: 'You are here. You are in control of this space. Plan B is always available.'"
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light — use it."
-      },
-      {
-        title: "III. Core Teaching: The Breaking Point",
-        duration: 35,
-        content: "By now we have watched the survival template stack from the Glass Box through childhood and into the adult trauma bond. The nervous system stayed loyal — fawning, over-functioning, numbing, performing — because those strategies once kept him alive. Today we reach the moment the loyal template begins to crack. The costs had been stacking for years. Chronic over-functioning drained Daniel's body and mind. Health issues appeared. Sleep was shattered. Dissociation became more frequent. The competence trap that once earned temporary safety now demanded superhuman output just to maintain the status quo. When he tried to set boundaries or leave the marriage, terror of losing his children — another abandonment — pulled him back. The nervous system doubled down on the only blueprint it knew: perform harder, hide the pain, numb when performance failed. External pressures mounted. Court involvement. Family ultimatums. The relationship became a pressure cooker of intermittent reinforcement and punishment. In 2015, his partner and mother tag-teamed him into court-ordered rehab — not for healing, but for control. The counselor saw it immediately: 'You'll relapse. You're not here by choice. This is pain with desperate coping mechanisms attached.' He kicked daily opiates. Spent six months on Suboxone. Then quit that too. The pain remained, so the nervous system switched weapons. From 2015 to 2021, meth became the new regulator — sometimes injected, sometimes traded for alcohol — anything to keep the old template running just a little longer. The breaking point was not dramatic or cinematic. It was the slow, grinding realization that the strategies that had once maximized survival were now destroying him. The nervous system was still trying to protect him — still executing the Glass Box and war-zone lessons with perfect loyalty — but the adult world had grown larger than the old blueprint could hold. Burnout. Deepening dissociation. Loss of self. The gap between the competent mask he wore and the exhausted human underneath finally became too wide to ignore. The nervous system had not failed. It had simply reached the edge of what those early adaptations could sustain. This is the breaking point: the loyal template cracking under the weight of its own success. Not because Daniel was broken, but because the survival strategies that once kept him alive in the incubator and the violent house could no longer carry him through an adult life built on the same unpredictable threat."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. 'Take a quiet moment. Notice how the nervous system remained loyal even as the old template began to crack. No sharing required.'"
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as previous locked sessions."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Same 7 questions (safety, Plan B usage, exit feeling, mechanism clarity, relevance, material intensity, hope)."
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches that substances are used to gain a moment of quiet from the sirens in the nervous system. Relapse is what happens when pain outlasts hope—not a character flaw, but a symptom of dysregulation."
       }
     ],
     handout: [
-      "Survival Template Layers – Layer 5: The Breaking Point",
-      "Accumulated cost of fawn / competence trap / numbing",
-      "Nervous system doubles down on old strategies (perform harder, hide pain, switch substances)",
-      "External pressures expose the limits",
-      "Internal conflict grows (mask vs. exhaustion)",
-      "Loyalty message: The nervous system was still doing its job — it had simply reached the edge of what the old blueprint could sustain."
+      "Session 5: Relapse Isn't a Betrayal",
+      "Addiction as Regulation Strategy",
+      "Compassionate Relapse Prevention"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is the moment the wiring that started before the first drink or drug finally hits the wall — the old survival strategies stop working."
+        note: "Frame relapse as nervous system information, not moral failure."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same stacking that can show up as burnout, shutdown, or intensified use when the system demands performance but the old template can't keep up."
+        note: "Explore substance use as survival mechanism in trauma."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system point many service members recognize — when the strategies that kept you alive in combat or on deployment start cracking under the weight of everyday life."
+        note: "Connect to self-medication for PTSD and moral injury."
       }
     ]
   },
   {
-    id: "session-08",
-    sessionNumber: 8,
-    title: "Rebuilding Safety",
-    subtitle: "New Practices for Nervous-System Regulation and Boundary Setting",
+    id: "session-06",
+    sessionNumber: 6,
+    title: "What Healing Actually Looks Like",
+    subtitle: "Narrative Integration & the Window of Tolerance",
     duration: 75,
-    goal: "Show how the nervous system, after the turning point, begins to deepen new wiring through repeatable, practical regulation and boundary practices that provide consistent new evidence of safety.",
+    goal: "Develop a realistic, non-linear model of recovery involving narrative integration and self-attunement.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Rebuilding Safety",
-        duration: 35,
-        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, and the breaking point. Today we watch how that turning begins to deepen through repeatable practices that give the nervous system new evidence of safety. After the crack, Daniel did not have a sudden breakthrough. He began small, consistent experiments. He returned to the exact grounding tools we practiced in Session 00 - pressing his feet into the floor (gravity press), the 3-2-1 scan, the voo breath - whenever the old panic or shutdown rose. These were not fixing him. They were delivering new data: I can feel my body in the present moment and still be safe. He started making the agonizing choice to accept boring, full peace instead of the familiar chaos of the old trauma bond. In his darkest moments he held the specific names of his four children - Maverick, Shayla, Tegan, Adalie - and decided, one more minute, not to disappear. He began experimenting with small boundaries - saying no in tiny, tolerable ways instead of defaulting to fawn and over-functioning. Each time he did this without collapse, the nervous system received new evidence: I can set a limit and the world does not end. These practices were not magic. They were biology. Repeated safe experiences strengthen new neural pathways (neuroplasticity). They reduce chronic allostatic load. They open small windows of ventral vagal regulation - the biological state of calm presence and flexible connection instead of pure survival. The nervous system remained loyal to its history - it had kept him alive for decades. These new practices simply gave it accumulating evidence that safer responses were now possible. This is how rebuilding safety happens: not by erasing the old template, but by giving the loyal nervous system consistent, tolerable new data, one grounded breath, one small boundary, one deliberate choice at a time."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can remain loyal to its history while beginning to receive new evidence of safety through simple, repeatable practices. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 8 questions + one new low-burden question: On a scale of 1-10, how supported did the practices feel today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches that healing began by swapping a bottle for a journal and asking what the body needed. Healing is a slow, messy rewiring and a ritual of choosing not to disappear."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 8: Rebuilding Safety & New Practices",
-      "Expand Session 00 tools into daily life (gravity press, 3-2-1 scan, voo breath)",
-      "Small, tolerable boundary experiments (challenging fawn/competence)",
-      "Choose presence and peace over old chaos or numbing",
-      "Accumulating new safety data reduces allostatic load and opens ventral vagal regulation",
-      "Loyalty message: The nervous system remains loyal to its history - these practices simply give it new, consistent evidence that safer responses are now possible."
+      "Session 6: What Healing Actually Looks Like",
+      "Self-Attunement & Narrative Integration",
+      "The Window of Tolerance"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug begins to get new, daily evidence of safety through simple practices anyone can try."
+        note: "Connect to recovery rituals and self-care practices."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same nervous-system updating that can happen even under structure - choosing small regulation and boundary steps instead of the old survival patterns."
+        note: "Explore healing within institutional constraints."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system rebuilding many service members recognize - moving from high-alert wiring to repeatable practices that let the body learn safety again."
+        note: "Connect to post-service identity integration."
       }
     ]
   },
   {
     id: "session-07",
     sessionNumber: 7,
-    title: "Turning Toward the Body",
-    subtitle: "Reclaiming Regulation and the First Steps of New Wiring",
+    title: "The Breaking Point",
+    subtitle: "Recognizing Crisis & Personal Warning Signs",
     duration: 75,
-    goal: "Show the moment the loyal survival template begins to shift - when the nervous system, after reaching its breaking point, starts receiving new evidence of safety and experiments with updated regulation.",
+    goal: "Analyze the specific conditions that lead to nervous system collapse and identify personal warning signs.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Turning Toward the Body",
-        duration: 35,
-        content: "By now we have watched the survival template stack from the Glass Box through childhood, the trauma bond, and weaponized intimacy until it reached its breaking point. Today we reach the moment the loyal nervous system begins to turn toward the body and receive new evidence. After the crack, Daniel sat with the awareness that the old strategies - fawn, over-function, numb, perform - could no longer carry him. The nervous system had been loyal for decades. It had kept him alive in the incubator, under the blanket, in the marriage, and through the losses. But those same strategies were now exhausting him. The first steps of new wiring were not dramatic. There was no single cinematic rescue. They were small, specific, and repeated. He began using the exact grounding tools we practiced in Session 00 - pressing his feet into the floor, the gravity check, the voo breath - when the old panic rose. He started making the agonizing choice to accept boring, full peace instead of the familiar chaos of the trauma bond. In his darkest moments, he held the names of his four children - Maverick, Shayla, Tegan, Adalie - in his mind and decided, one more minute, not to disappear. These were not fixing the nervous system. They were giving it new data. The nervous system had spent a lifetime learning: proximity equals danger, pain must be hidden, usefulness equals safety. Now it began receiving repeated, tolerable experiences of: I can feel my feet on the floor and still be safe. I can allow a small release of energy without being punished. I can choose presence instead of performance. This is the biology of neuroplasticity in action. When the nervous system gets consistent new evidence of safety - even in tiny doses - it starts updating its predictions. Allostatic load begins to ease. Glimpses of ventral vagal regulation (the rest-and-connect state) become possible. The old dorsal vagal shutdown and sympathetic hyper-arousal lose their monopoly. The nervous system did not suddenly become fixed. It remained loyal - and it began incorporating new evidence that the old blueprint was no longer the only option. This is the turning point: the loyal nervous system receiving its first consistent experiences of safety and regulation, one small decision at a time."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system remained loyal while beginning to receive new evidence of safety. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 7 questions + one new low-burden question: On a scale of 1-10, how possible did trying a new response feel today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches participants to recognize the body-texture of crisis and identify their personal entry points into dysregulation before they reach the breaking point."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 7: Turning Toward the Body & New Wiring Begins",
-      "Awareness that old strategies have reached their limit",
-      "Small, repeated experiments with regulation (grounding tools, choosing peace over chaos)",
-      "Nervous system receives new data of safety",
-      "Biology of change: neuroplasticity, reduced allostatic load, ventral vagal glimpses",
-      "Loyalty message: The nervous system stayed loyal - and it is capable of updating when given new, consistent evidence of safety."
+      "Session 7: The Breaking Point",
+      "Warning Signs & Crisis Recognition",
+      "Personal Dysregulation Patterns"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is the turning point where the wiring that started before the first drink or drug begins to get new data - small, consistent safety experiences that let the nervous system update."
+        note: "Connect to relapse warning signs and recovery milestones."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same nervous-system shift that can happen when someone starts choosing different responses even under pressure or structure."
+        note: "Explore crisis within institutional settings."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system turning point many service members recognize - when the old combat wiring starts getting new evidence that it is safe to come off high alert."
+        note: "Connect to combat stress and operational tempo."
+      }
+    ]
+  },
+  {
+    id: "session-08",
+    sessionNumber: 8,
+    title: "Rewriting the Legacy",
+    subtitle: "Intergenerational Trauma & the Father Wound",
+    duration: 75,
+    goal: "Investigate inherited trauma narratives and the specific impact of intergenerational patterns.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "Session Content",
+        duration: 75,
+        content: "This session explores intergenerational healing and the choice to remain present despite being taught to be distrusted. Awareness allows pain to become a guidepost rather than a prison."
+      }
+    ],
+    handout: [
+      "Session 8: Rewriting the Legacy",
+      "Intergenerational Trauma Patterns",
+      "Breaking Cycles & Parental Presence"
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "Connect to family of origin patterns in addiction."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "Explore family separation and institutional cycles."
+      },
+      {
+        setting: "VA / Military",
+        note: "Connect to military family systems and service legacy."
       }
     ]
   },
   {
     id: "session-09",
     sessionNumber: 9,
-    title: "Living the New Wiring",
-    subtitle: "Applying Regulation and Boundaries in Real Life",
-    duration: 80,
-    goal: "Show how the nervous system moves from early new-wiring practices into real-life application - using regulation tools and small boundary experiments in daily situations to accumulate more safety data and gently challenge the old template.",
+    title: "Shame vs. Responsibility",
+    subtitle: "Identity-Level Shame vs. Behavior-Level Accountability",
+    duration: 75,
+    goal: "Teach the difference between identity-level shame and behavior-level responsibility.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Living the New Wiring",
-        duration: 50,
-        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, and the breaking point. We saw the first turning toward the body in Session 07 and the beginning of new practices in Session 08. Today we watch how those new practices start to move into real daily life. After the crack, Daniel did not suddenly become a different person. He began applying the regulation tools and small boundaries in ordinary moments - one day at a time. He used the gravity press and voo breath at work when the old urge to over-function and please everyone rose. He practiced the 3-2-1 scan in the car before walking into situations that used to trigger fawn or shutdown. These were not big heroic moments. They were small, repeatable choices that gave his nervous system new data: I can feel my body in the present moment and still be safe. I do not have to perform perfectly to earn the right to exist. He also began experimenting with tiny boundaries. Instead of automatically saying yes to every request that triggered the old competence trap, he practiced saying not right now or I need a minute. Each time he did this without collapse or abandonment, the nervous system received accumulating evidence that the old rule usefulness equals safety was no longer the only option. In his relationships with his children, he started showing up as a regulated father instead of the exhausted, over-functioning one. He held their names - Maverick, Shayla, Tegan, Adalie - in his mind not just to survive the dark moments, but to anchor himself in the present. The nervous system learned, little by little, that presence and peace were possible without the old chaos or numbing. These real-life applications were biology in action. Repeated safe experiences strengthened new neural pathways. Allostatic load slowly decreased. The old dorsal vagal shutdown and sympathetic over-drive lost some of their automatic grip. Glimpses of ventral vagal regulation - calm, flexible presence - became more accessible. The nervous system remained loyal to its entire history. It had kept Daniel alive through the incubator, the war-zone home, the trauma bond, and the breaking point. These new practices did not erase that loyalty. They simply gave the nervous system new, consistent evidence that safer, more regulated responses were now possible in an adult world. This is how new wiring is lived: not in perfect transformation, but in small, daily choices that deliver new safety data to a loyal nervous system."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can stay loyal to its history while beginning to live new, regulated responses in daily life. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 9 questions + one new low-burden question: On a scale of 1-10, how supported did the practices feel today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session provides language for accountability that does not lead to self-destruction. Participants learn to distinguish between 'I did something bad' (responsibility) and 'I am bad' (shame)."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 9: Living the New Wiring",
-      "Apply Session 00 tools in real daily moments (work, car, relationships)",
-      "Small, tolerable boundary experiments (not right now, I need a minute)",
-      "Choose regulated presence over old fawn/performance/chaos",
-      "Accumulating new safety data strengthens new neural pathways",
-      "Loyalty message: The nervous system remains loyal to its history - these real-life practices simply give it new, consistent evidence that safer responses are now possible."
+      "Session 9: Shame vs. Responsibility",
+      "Identity-Level vs. Behavior-Level Accountability",
+      "Compassionate Self-Responsibility"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug begins to show up differently in everyday life - using regulation and small boundaries instead of the old patterns."
+        note: "Connect to Step 4 and amends work in recovery."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same nervous-system updating that can happen even under structure - choosing regulation and boundaries in daily moments instead of defaulting to old survival responses."
+        note: "Explore accountability within justice contexts."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system shift many service members recognize - moving from high-alert wiring to practical regulation and boundaries that work in real life after service."
+        note: "Connect to moral injury and combat accountability."
       }
     ]
   },
   {
     id: "session-10",
     sessionNumber: 10,
-    title: "Sustaining the New Wiring",
-    subtitle: "Navigating Triggers and Maintaining Regulation",
-    duration: 80,
-    goal: "Show how the nervous system moves from early new-wiring practices into long-term maintenance - learning to navigate real-life triggers while sustaining regulation, boundaries, and the updated template.",
+    title: "Your Brain on Trauma",
+    subtitle: "Neurological Mechanics: Amygdala, Prefrontal Cortex & HPA Axis",
+    duration: 75,
+    goal: "Explain the neurological mechanics of trauma in plain English.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Sustaining the New Wiring",
-        duration: 50,
-        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, the breaking point, the first turning toward the body, the beginning of new practices, and living those practices in daily life. Today we watch how that new wiring is sustained when real-life triggers still show up. After the crack and the first small changes, Daniel discovered that the old blueprint did not disappear overnight. Triggers still came - a tone of voice that sounded like the war-zone house, a request that pulled on the old fawn response, a moment of stress that made the competence trap feel safer than the new peace. The nervous system was still loyal. It had kept him alive for decades. When a trigger hit, the old patterns tried to fire automatically: freeze, fawn, over-function, numb, or dissociate. But now Daniel had new tools and new evidence. He used the gravity press and voo breath the moment he felt the old pull. He did the 3-2-1 scan in the middle of a difficult conversation. He practiced small boundaries even when the old fear of abandonment rose. Each time he did this, he was giving his nervous system repeated, consistent data: I can feel the trigger and still choose a different response. The world does not end. He also learned to notice the early warning signs his body had always given him - the tight chest, the racing thoughts, the urge to perform or disappear - and to treat them as information instead of commands. He began to respond to those signals with the tools from Session 00 instead of automatically obeying the old survival template. In his relationships with his children, he practiced showing up regulated even when old guilt or shame tried to pull him back into over-functioning. He held their names in his mind not just to survive the dark moments, but to anchor himself in the present and show up as the father he wanted to be. These were not perfect days. There were still slips. There were still moments when the old wiring won for a minute or an hour. But each time he returned to the new practices, the nervous system received more evidence that the updated template was safer and more sustainable in an adult world. This is how sustaining the new wiring happens: not by never being triggered again, but by learning to meet the triggers with the new tools and the new evidence. The loyal nervous system does not erase its history - it simply adds new, consistent data that allows it to respond differently over time. Neuroplasticity works through repetition. Every time Daniel chose the gravity press instead of the old fawn, every time he set a small boundary instead of over-functioning, every time he stayed present instead of dissociating, he was strengthening the new pathways and gently weakening the automatic grip of the old ones. The nervous system remained loyal to everything it had learned in the Glass Box and the war-zone home. These new practices simply gave it accumulating evidence that a different way was now possible - and safer - in daily life."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can stay loyal to its history while learning to meet triggers with new, regulated responses. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 10 questions + one new low-burden question: On a scale of 1-10, how manageable did triggers feel with the new practices today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches amygdala hijack, prefrontal cortex suppression, and HPA axis dysregulation in accessible language. Participants learn the neurobiology of their own survival responses."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 10: Sustaining the New Wiring",
-      "Triggers still arise - old patterns try to fire",
-      "Meet triggers with Session 00 tools and small boundaries",
-      "Notice early warning signs and respond with new choices",
-      "Repetition strengthens new neural pathways",
-      "Loyalty message: The nervous system remains loyal to its history - these real-life practices give it consistent new evidence that safer responses are now possible and sustainable."
+      "Session 10: Your Brain on Trauma",
+      "Amygdala, Prefrontal Cortex & HPA Axis",
+      "Neurobiology of Survival Responses"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug is sustained in real life - using regulation and boundaries when old triggers still show up."
+        note: "Connect to how substances affect these brain systems."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same nervous-system maintenance that can happen even under structure - sustaining new responses when old survival patterns get triggered."
+        note: "Explain institutional stress responses through neurobiology."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system maintenance many service members recognize - sustaining regulation and boundaries when everyday triggers or old high-alert wiring reactivates."
+        note: "Connect to combat neurobiology and hypervigilance."
       }
     ]
   },
   {
     id: "session-11",
     sessionNumber: 11,
-    title: "Integration and Forward Momentum",
-    subtitle: "Living with the Updated Nervous System",
-    duration: 80,
-    goal: "Show how the new wiring becomes integrated into daily life and identity over time - carrying the full loyal history while operating with more choice, sustainability, and presence.",
+    title: "The Anatomy of a Spiral",
+    subtitle: "Sequential Stages of Trauma Spirals & Entry Points",
+    duration: 75,
+    goal: "Map the sequential stages of a trauma spiral so survivors can identify their personal entry points.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Integration and Forward Momentum",
-        duration: 50,
-        content: "By now we have watched the loyal survival template stack from the Glass Box through childhood, trauma bonds, weaponized intimacy, the breaking point, the first turning toward the body, the beginning of new practices, living those practices in daily life, and sustaining them when triggers arise. Today we watch how that new wiring becomes integrated into a more stable way of living - not by erasing the past, but by carrying the full loyal history while operating with more choice and sustainability in the present. After the crack and the first small changes, Daniel discovered that integration was not a finish line. It was a gradual process of the nervous system learning to hold both truths at once: the old blueprint had kept him alive for decades, and new responses were now possible and safer. He continued using the Session 00 tools - gravity press, 3-2-1 scan, voo breath - not just during big triggers, but as part of his normal daily rhythm. These became automatic anchors that interrupted the old freeze or fawn before they fully took over. He practiced small boundaries in real relationships - with his children, at work, in the community - and noticed that the feared abandonment or punishment did not always follow. Each time he set a limit without collapse, the nervous system received more evidence that the old rule usefulness equals safety no longer had to run the show. In his role as a father, he began showing up with more regulated presence instead of the exhausted, over-functioning version of himself. He held the names of Maverick, Shayla, Tegan, and Adalie not just to survive the dark moments, but as a daily anchor that reminded him why the new wiring mattered. Setbacks still happened. Old patterns still fired. There were days when the competence trap or the urge to numb pulled hard. But now Daniel could meet those moments with the new tools instead of automatically obeying the old blueprint. Each return to regulation added another layer of evidence that the nervous system could carry its entire history without being ruled by it. This is the biology of sustained integration. Repeated safe experiences consolidate new neural pathways. Allostatic load continues to ease. Access to ventral vagal regulation - the state of calm presence and flexible connection - becomes more available as a baseline rather than a rare glimpse. The loyal nervous system does not forget its history; it simply retires the old survival strategies to a background role instead of keeping them on constant frontline duty. Integration is not perfection. It is not the absence of triggers or old feelings. It is the nervous system carrying its full loyal history while operating with more choice, more presence, and more sustainability in an adult world. This is forward momentum: the nervous system remains loyal to everything it learned in order to keep Daniel alive - and it now has new, consistent evidence that a different way is possible."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can carry its full loyal history while beginning to live with more regulated choice and presence. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 11 questions + one new low-burden question: On a scale of 1-10, how integrated did the material feel with real life today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches participants to recognize the stages of dysregulation before they bottom out. Understanding the anatomy of a spiral allows for early intervention and self-protection."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 11: Integration and Forward Momentum",
-      "Carry the full loyal history while operating with more choice",
-      "Daily regulation tools become part of normal rhythm",
-      "Small boundaries practiced in real relationships and roles",
-      "Setbacks are normal; return to new responses adds evidence",
-      "Long-term biology: reduced allostatic load, stronger ventral vagal access",
-      "Loyalty message: The nervous system carries its entire history - integration means it no longer has to run the old survival program as the default."
+      "Session 11: The Anatomy of a Spiral",
+      "Stages of Dysregulation",
+      "Personal Entry Points & Early Intervention"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug becomes part of everyday life - carrying the past while living with more regulated choices."
+        note: "Connect to relapse spirals and recovery milestones."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the same nervous-system integration that can happen even under structure - carrying the old survival history while practicing new responses in real daily moments."
+        note: "Explore institutional spirals and crisis points."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building a more sustainable way forward in civilian life."
+        note: "Connect to combat stress spirals and decompensation."
       }
     ]
   },
   {
     id: "session-12",
     sessionNumber: 12,
-    title: "Deepening Integration",
-    subtitle: "Relationships, Fatherhood, and Long-Term Resilience",
-    duration: 80,
-    goal: "Show how the updated nervous system integrates more deeply into key life domains — particularly relationships and fatherhood — while building realistic long-term resilience.",
+    title: "Crisis, Suicide Risk, and Staying Alive",
+    subtitle: "Safety Protocols & Mechanisms of Protection",
+    duration: 75,
+    goal: "Name the specific nervous-system mechanisms behind suicidal crisis and teach how to interrupt these patterns.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Deepening Integration",
-        duration: 50,
-        content: "By now we have mapped the full survival template - from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, turning toward the body, new practices, sustaining through triggers, and initial integration. Today we watch how that updated wiring deepens into daily life roles, especially relationships and fatherhood, while building long-term resilience. Integration is not a finish line. It is an ongoing process in which the nervous system carries its entire loyal history and still learns to respond differently in the moments that matter most. For Daniel, this showed up powerfully in his relationship with his four children - Maverick, Shayla, Tegan, and Adalie. The old competence trap and fawn response had once pushed him into over-functioning or disappearing when guilt or shame rose. Now he practiced showing up with regulated presence instead. When old fear of abandonment or failure tried to pull him back into performing or numbing, he used the Session 00 tools in real time - pressing feet into the floor, the gravity check, a quiet voo breath - to stay connected rather than collapse or overcompensate. He learned to set small, clear boundaries with love instead of the old all-or-nothing patterns. He noticed early body signals - tight chest, racing thoughts, urge to fix everything - and treated them as information, not commands. Each time he stayed present during difficult conversations or everyday parenting moments, the nervous system received accumulating evidence: I can feel the old pull and still choose connection. The relationship does not end if I am not perfect. In broader relationships and community, the same mechanism applied. Old hypervigilance or dissociation could still activate, but repeated practice of grounding and small boundaries gave the nervous system new data that safety and connection were possible without the old survival cost. The loyal blueprint from the Glass Box and war-zone home was not erased - it remained part of the story - but it no longer had to run as the default operating system. This deepening is supported by the biology of neuroplasticity. Consistent, repeated safe experiences strengthen new neural pathways. Allostatic load continues to decrease as the body spends less time in chronic defensive states. Access to ventral vagal regulation - the biological state of calm presence, flexible connection, and social engagement - becomes more available as a baseline rather than a rare moment. The nervous system does not forget its protective history; it simply retires the old frontline strategies to a supporting role. Long-term resilience is built the same way: not by never facing triggers or setbacks, but by meeting them with the updated tools and returning to regulation more quickly. Setbacks are normal and expected. Each return to the new responses adds another layer of evidence that a more sustainable way is possible. The nervous system remains loyal to everything it learned in order to keep a small human alive through impossible conditions. Deepening integration means it now carries that full history while living with more choice, more presence in relationships, and more resilience in an adult world."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can carry its full loyal history while deepening into more regulated presence in relationships and roles. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 12 questions + one new low-burden question: On a scale of 1-10, how relevant did today's integration feel to your own life roles (e.g., relationships, parenting, community)?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session addresses the mechanisms of suicidal crisis, non-suicidal self-injury (NSSI) as regulation, and perceived burdensomeness. Participants complete a Personal Safety Reference card with crisis resources and protective strategies."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 12: Deepening Integration - Relationships, Fatherhood, and Long-Term Resilience",
-      "Carry the full loyal history into key roles (especially parenting and relationships)",
-      "Practice regulated presence and small boundaries in real moments",
-      "Notice early signals and respond with Session 00 tools",
-      "Setbacks are normal; each return to regulation strengthens new pathways",
-      "Long-term biology: continued neuroplasticity, reduced allostatic load, more consistent ventral vagal access",
-      "Loyalty message: The nervous system carries its entire protective history - deepening integration means it no longer has to run old survival strategies as the default while building resilience in relationships and daily life."
+      "Session 12: Crisis, Suicide Risk, and Staying Alive",
+      "NSSI as Regulatory Strategy",
+      "Personal Safety Reference Card",
+      "Crisis Resources: 988 Lifeline, Crisis Text Line"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug deepens into real relationships and parenting - carrying the past while showing up more regulated and present."
+        note: "This is how the wiring that started before the first drink or drug can still produce crisis and self-harm."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the nervous-system integration that can support healthier relationships and roles even under structure or after release."
+        note: "This is the nervous-system reality that can show up under extreme pressure."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building sustainable presence in family and community life."
+        note: "This is the nervous-system stacking that can lead to crisis after repeated threat or moral injury."
       }
     ]
   },
   {
     id: "session-13",
     sessionNumber: 13,
-    title: "Advanced Resilience",
-    subtitle: "When Old Wiring Reactivates and How to Return Faster",
-    duration: 80,
-    goal: "Provide advanced tools for when the old survival template reactivates strongly - teaching participants how to recognize reactivation, interrupt it more quickly, and return to the updated wiring with less allostatic cost.",
+    title: "The Lessons Nobody Taught Us",
+    subtitle: "Developmental Skills Interrupted by Trauma",
+    duration: 75,
+    goal: "Identify trauma literacy gaps and developmental skills interrupted by early trauma.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor",
-        duration: 5,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
-      },
-      {
-        title: "III. Core Teaching: Advanced Resilience - Reactivation and Faster Return",
-        duration: 50,
-        content: "By now we have mapped the full journey: the loyal survival template from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, turning toward the body, new practices, sustaining through triggers, integration, and deepening into relationships and fatherhood. Today we address an advanced reality: even after significant new wiring, the old blueprint can still reactivate - sometimes strongly - and how to meet those moments with greater skill and less cost. In the documented life, reactivation still happened. Certain tones of voice, financial stress, parenting moments that triggered old guilt or fear of failure, or even neutral situations that echoed the war-zone unpredictability could suddenly pull the nervous system back toward freeze, fawn, over-functioning, numbing, or dissociation. The competence trap or the urge to hide pain could surge even after years of practice. This is not failure. It is normal nervous-system behavior. The old template was installed in the first thirty days of life and reinforced for decades. It was designed to keep a small human alive in conditions of chronic threat and isolation. The nervous system remains loyal to that history - it does not forget easily. When it perceives threat (real or patterned), it can default to the fastest, most practiced survival response. The key mechanism of advanced resilience is not preventing reactivation - that is unrealistic - but shortening the time it takes to notice, interrupt, and return to the updated wiring. Daniel learned to spot early warning signs more quickly: the tight chest that once signaled perform or be discarded, the sudden urge to over-function or disappear, the wave of dissociation that felt like hiding under the blanket again. Instead of judging these signals or obeying them automatically, he treated them as valuable data from a loyal system. He then used layered tools in sequence: Immediate grounding from Session 00 (gravity press, 3-2-1 scan, voo breath) to interrupt the old cascade before it fully took over. A brief internal acknowledgment: This is the old blueprint trying to protect me - thank you, but I have new options now. A small, doable new choice - staying present with his children instead of numbing, setting a boundary instead of fawning, or allowing a tolerable amount of feeling instead of dissociating. Each faster return added evidence to the nervous system: the reactivation did not have to run its full course, and the updated template could regain control more quickly. Over time, the window between trigger and regulated response shortened. Allostatic load decreased because the body spent less total time in defensive states. This is the biology of advanced resilience. The nervous system does not erase its early wiring - it builds a stronger, faster return pathway. Repeated practice strengthens the connection between detection of the old pattern and activation of new responses. Ventral vagal flexibility improves as the system learns it can move out of sympathetic or dorsal vagal states more efficiently. The loyal history remains, but it no longer dictates the duration or intensity of the response. Setbacks and strong reactivations are expected, especially during major life stress. The measure of progress is not never falling back - it is falling back less often, for shorter periods, and returning with greater skill and self-compassion. The nervous system stays loyal to its protective roots while gaining the ability to update in real time."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can reactivate out of loyalty and still learn to return to regulation more quickly. No sharing required."
-      },
-      {
-        title: "V. Closing Grounding & Transition",
-        duration: 8,
-        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing 13 questions + one new low-burden question: On a scale of 1-10, how confident did you feel in your ability to return from a reactivation after today's material?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches the developmental skills like emotional regulation and boundary-setting that were interrupted by early trauma. Participants learn these are learnable skills, not character defects."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 13: Advanced Resilience - When Old Wiring Reactivates",
-      "Reactivation is normal - the loyal nervous system defaults to early wiring under perceived threat",
-      "Early warning signs (somatic signals from the old template)",
-      "Layered return sequence: grounding tools, acknowledgment, small new choice",
-      "Faster return equals less allostatic load and stronger new pathways",
-      "Biology: improved ventral vagal flexibility and shorter defensive-state duration",
-      "Loyalty message: The nervous system remains loyal to its history - advanced resilience means shortening reactivation time and returning to the updated wiring with greater skill and compassion."
+      "Session 13: The Lessons Nobody Taught Us",
+      "Developmental Skills & Trauma Interruption",
+      "Emotional Regulation & Boundary-Setting"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug can still reactivate - and how to return to regulation faster without self-judgment or returning to old chemical regulators."
+        note: "Connect to recovery skills and relational healing."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is advanced nervous-system maintenance that can help even when old patterns flare under pressure or institutional stress."
+        note: "Explore institutional skill-building and rehabilitation."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system skill many service members need - recognizing when old high-alert or survival wiring reactivates and returning to regulated presence more quickly in daily life."
+        note: "Connect to post-service civilian skill development."
       }
     ]
   },
   {
     id: "session-14",
     sessionNumber: 14,
-    title: "Crisis, Suicide Risk, and Staying Alive",
-    subtitle: "Understanding the Mechanisms and Building Real Protection",
-    duration: 80,
-    goal: "Name the specific nervous-system mechanisms behind suicidal crisis, non-suicidal self-injury (NSSI), perceived burdensomeness, and acquired capability while teaching how the loyal nervous system can interrupt these patterns with the tools built across the curriculum.",
+    title: "Speaking Truth to Power",
+    subtitle: "Naming Harm & Advocacy Language",
+    duration: 75,
+    goal: "Practice naming harm accurately to institutional structures and develop advocacy language.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "I. Opening Grounding - Re-anchor (Slower & Longer Pauses)",
-        duration: 6,
-        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00, delivered more slowly. End with: This session goes deep. We are going together, and we are coming back. You do not have to manage or contain anything that arises. You only have to stay present enough to keep breathing. The door stays open. Use Plan B any time without explanation."
-      },
-      {
-        title: "II. Quick Frame & Plan B Reminder",
-        duration: 4,
-        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it. Today we name some of the hardest mechanisms in the entire template."
-      },
-      {
-        title: "III. Core Teaching: Crisis, Suicide Risk, and Staying Alive",
-        duration: 45,
-        content: "Across the twelve previous sessions we have mapped how the loyal nervous system stacked its survival template from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, and the long turn toward new wiring. Today we name what can still happen when that template is pushed to its furthest edge - suicidal crisis, non-suicidal self-injury, and the specific body-texture of wanting to disappear. In the documented life, there were moments when the internal pressure became unbearable - a toxic fog of rage, hurt, and exhaustion that felt about to explode. The nervous system, running at emergency pitch for decades, reached for the most concrete interruption available: a razor kept in a known drawer. The first bite brought shocking calm. The chaos drained with the blood. The heart slowed. The internal war went quiet for a moment. That is not a person who wants to die. That is a nervous system that has been drowning in diffuse emotional agony for so long that it chooses locatable physical pain because pain with edges is neurologically easier to process than pain without location. This is non-suicidal self-injury - NSSI. It is a regulatory strategy. The goal is not death. The goal is the brief offline moment when the alarm quiets. Shame arrived immediately afterward - sharper than the blade - especially the guilt that the night had stolen energy from the children who needed a present father. That guilt is part of a larger mechanism called perceived burdensomeness: the belief that one's existence costs more than it gives, that the people you love would be better without you. In the case study this belief appeared as a symptom of a nervous system that had carried the early load-bearing belief I am the problem for decades and extended its logic to its furthest conclusion. It feels like arithmetic. It is not arithmetic. It is a symptom. The history also built acquired capability - the reduced fear of pain and death that comes from prior exposure. Witnessing an uncle's attempts, carrying twenty-four unprocessed deaths, and the accumulation of self-harm all lowered the threshold for acting on crisis. This is not a character flaw. It is a risk factor created by specific, repeated exposure. From inside the crisis, the body-texture was rarely dramatic. It was wired frayed - perpetually braced for an impact that never quite landed. Exhaustion that looked like readiness. A nervous system in emergency mode so long it no longer recognized non-emergency. That braced, frayed state is often misread by others as fine, difficult, or withdrawn - not as crisis. What actually kept him here was never one dramatic intervention. It was the accumulation of small, specific decisions: returning to sobriety, using the grounding tools we practiced in Session 00, choosing to stay present with his four children even when guilt tried to pull him into disappearance, and learning to tolerate peace boring as a sign of healing rather than emptiness. For a nervous system calibrated to chaos since the incubator, the absence of alarm initially felt like absence of life. Staying in the flatness long enough for the nervous system to update its baseline was some of the hardest work. The nervous system remained loyal to its entire history. Even in crisis it was still trying to protect. Advanced resilience means learning to interrupt the old cascade earlier, return to regulation faster, and treat perceived burdensomeness as a loud symptom - not a fact - while holding the specific protective weight of what (or who) matters enough to stay."
-      },
-      {
-        title: "IV. Regulated Reflection Prompt",
-        duration: 8,
-        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can reach its furthest edge out of loyalty and still learn to interrupt the old patterns and return to regulation. No sharing required."
-      },
-      {
-        title: "V. Personal Safety Reference + Closing Grounding",
-        duration: 12,
-        content: "Distribute the Personal Safety Reference card (half-sheet, bright color recommended). Before we close, everyone will complete a Personal Safety Reference card. This is for you alone - not collected, not shared. It is a simple tool your nervous system can use when pressure builds. After cards are completed, lead the exact closing grounding from previous sessions, then add: You just went to one of the hardest places in the entire curriculum and you came back. The card in your hand and the tools we have practiced across all thirteen sessions are real protection. Perceived burdensomeness is a symptom, not a fact. Staying here is built from many small decisions. You are here. That is enough for today."
-      },
-      {
-        title: "VI. Pilot Feedback Card",
-        duration: 2,
-        content: "Continue the existing questions + one new low-burden question: On a scale of 1-10, how clear and usable did the safety mechanisms feel today?"
+        title: "Session Content",
+        duration: 75,
+        content: "This session teaches participants to name harm accurately without self-destruction. Participants develop language for advocacy that centers their own survival and healing."
       }
     ],
     handout: [
-      "Survival Template Layers - Layer 14: Crisis, Suicide Risk, and Staying Alive",
-      "NSSI as regulatory strategy - locatable pain interrupting diffuse agony",
-      "Perceived burdensomeness as symptom, not fact",
-      "Acquired capability built through exposure and history",
-      "Body-texture of crisis: wired frayed, perpetually braced",
-      "What actually protects: accumulation of small decisions, grounding tools, specific anchors",
-      "Loyalty message: Even in crisis the nervous system was still trying to protect. Interrupting the cascade and returning faster is possible with consistent new evidence.",
-      "Crisis Resources: 988 Suicide & Crisis Lifeline (call or text 988), Crisis Text Line (text HOME to 741741)"
+      "Session 14: Speaking Truth to Power",
+      "Naming Harm & Institutional Accountability",
+      "Advocacy Language & Self-Protection"
     ],
     settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
     facilitatorAdaptations: [
       {
         setting: "NA/AA or Rehab",
-        note: "This is how the wiring that started before the first drink or drug can still produce crisis and self-harm - and how the same nervous system can learn to interrupt it using the regulation tools we've practiced."
+        note: "Connect to speaking up in group settings and recovery communities."
       },
       {
         setting: "Jail / Corrections",
-        note: "This is the nervous-system reality that can show up under extreme pressure - naming the mechanisms so we can protect life even when the old template screams loudest."
+        note: "Explore naming harm within institutional power structures."
       },
       {
         setting: "VA / Military",
-        note: "This is the nervous-system stacking that can lead to crisis after repeated threat or moral injury - and how the tools of regulation and small decisions can create real protection."
+        note: "Connect to military accountability and chain of command."
+      }
+    ]
+  },
+  {
+    id: "session-15",
+    sessionNumber: 15,
+    title: "The Crucial Question",
+    subtitle: "Meaning-Making & the Stigma Industrial Complex",
+    duration: 75,
+    goal: "Engage with meaning-making and construct a livable account of one's survival.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "Session Content",
+        duration: 75,
+        content: "This session focuses on meaning-making and how to construct a livable account of one's survival. Participants explore the Stigma Industrial Complex and how to resist narratives that diminish their humanity."
+      }
+    ],
+    handout: [
+      "Session 15: The Crucial Question",
+      "Meaning-Making & Narrative Construction",
+      "Resisting the Stigma Industrial Complex"
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "Connect to recovery narratives and identity reconstruction."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "Explore identity beyond institutional labels."
+      },
+      {
+        setting: "VA / Military",
+        note: "Connect to post-service identity and meaning-making."
+      }
+    ]
+  },
+  {
+    id: "session-16",
+    sessionNumber: 16,
+    title: "The Revolution Must Be Trauma-Informed",
+    subtitle: "Systemic Design & Institutional Change",
+    duration: 75,
+    goal: "Analyze how legal and institutional systems misread trauma symptoms and provide a call to action.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "Session Content",
+        duration: 75,
+        content: "This final session analyzes how legal and institutional systems (the legal echo chamber) misread trauma symptoms. Participants learn how to advocate for trauma-informed systemic design and become agents of change."
+      }
+    ],
+    handout: [
+      "Session 16: The Revolution Must Be Trauma-Informed",
+      "Institutional Misreading of Trauma",
+      "Trauma-Informed Systemic Design",
+      "Call to Action for Systemic Change"
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "Connect to trauma-informed recovery communities and systemic change."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "Explore trauma-informed corrections and institutional reform."
+      },
+      {
+        setting: "VA / Military",
+        note: "Connect to trauma-informed military culture and veteran support systems."
       }
     ]
   }
