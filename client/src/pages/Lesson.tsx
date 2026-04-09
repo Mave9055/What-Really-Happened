@@ -32,10 +32,18 @@ export default function Lesson() {
           <h2 className="flex items-center gap-3 text-3xl font-bold text-slate-800 mb-6">
             <BookOpen className="h-8 w-8 text-blue-600" /> Full Lecture Content
           </h2>
-          <div className="text-xl leading-relaxed text-slate-700 whitespace-pre-wrap bg-slate-50 p-8 rounded-2xl border">
+          <div className="space-y-8">
             {lesson.sections && lesson.sections.length > 0 
-              ? lesson.sections[0].content 
-              : "No lecture content available."}
+              ? lesson.sections.map((section, idx) => (
+                  <div key={idx} className="bg-slate-50 p-8 rounded-2xl border">
+                    <h3 className="text-2xl font-bold text-slate-800 mb-4">{section.title}</h3>
+                    <div className="text-xl leading-relaxed text-slate-700 whitespace-pre-wrap">
+                      {section.content}
+                    </div>
+                  </div>
+                ))
+              : <div className="bg-slate-50 p-8 rounded-2xl border text-xl text-slate-700">No lecture content available.</div>
+            }
           </div>
         </section>
 

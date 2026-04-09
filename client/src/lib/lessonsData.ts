@@ -418,21 +418,218 @@ export const lessonsData: Lesson[] = [
       }
     ]
   },
-  {
+    {
     id: "session-12",
     sessionNumber: 12,
-    title: "Decoding the Damage, Rewriting the Truth",
-    subtitle: "The Science and Story of Reclaiming Your Life",
-    duration: 90,
-    goal: "Hand every survivor the blueprint of their own nervous system and the tools to rewrite their truth.",
+    title: "Crisis, Suicide Risk, and Staying Alive",
+    subtitle: "Safety Protocols & Mechanisms of Protection",
+    duration: 70,
+    goal: "Name the specific nervous-system mechanisms behind suicidal crisis and teach how to interrupt these patterns.",
     heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
     sections: [
       {
-        title: "Welcome, Architects of Your Own Mind",
+        title: "Part 1: Opening Grounding",
         duration: 5,
-        content: "Welcome back, students. We have walked through fire together—Daniel’s incubator isolation, the war zone of his childhood home, the masks of fawning and perfectionism, the trauma bonds that felt like love, the gaslighting that stole his reality, the relapses that were screams for silence, the grief after Garrett’s death, and the long climb toward self-attunement.\n\nToday we step out of the story and into the machinery behind it. We decode the damage—not to pathologize Daniel, but to hand every survivor the blueprint of their own nervous system. Understanding how trauma rewired your brain is the first real act of taking the pen back and rewriting your truth.\n\nThis is a full 60–90 minute deep-dive lecture. We will move slowly and deliberately. There will be pauses for your body to process, time for science to land in your bones, and space for you to begin your own rewiring in real time.\n\nYou are not here to be fixed. You are here to become the conscious architect of your own mind."
+        content: "Before we go anywhere in this session — plant yourself here.
+
+Feel your feet on the floor.
+
+Feel the weight of your body in the seat.
+
+Take one breath in through the nose. Slow and full.
+
+Hold it two counts.
+
+Let it go through the mouth.
+
+This session goes to the bottom. We're going together, and we're coming back.
+
+You don't have to white-knuckle anything. You don't have to manage what comes up or keep it contained. You just have to stay present enough to keep breathing.
+
+That's enough.
+
+The door stays unlocked. You know what to do if something gets loud — feet, three things, one breath. Use it any time you need it, without explanation."
       },
       {
+        title: "Part 2A: The Razor",
+        duration: 8,
+        content: "The razor was in a drawer. He knew where it was.
+
+That's the first clinical detail worth holding: it wasn't an impulse that had to go find a method. The method was already located. Already known. Already the answer to a question the nervous system had been forming for a long time.
+
+Here is what the memoir says happened:
+
+Night, trapped in a toxic fog of rage and hurt, felt about to explode. The pressure unbearable. Impulse: the razor. Cut the arm. Found the drawer. The blade's first bite — shocking calm. The chaos drained with the blood. Heart slowed. Breath steadied. For a moment, the internal war went quiet.
+
+I want you to read that sequence carefully — not to judge it, but to see the mechanism inside it.
+
+Pressure. Impulse. Action. Physiological shift. Relief.
+
+The chaos drained. The heart slowed. The internal war went quiet.
+
+That is not a person who wants to die. That is a person whose nervous system has been running at a pitch so high, for so long, that the only available interruption was physical pain — because physical pain is concrete. It has location. It has edges. It is in the body, not diffused through the whole of existence.
+
+A nervous system drowning in diffuse emotional agony will choose locatable pain over diffuse agony every time. The brain treats it as relief because neurologically, it is. The cut does not fix anything. It interrupts the alarm long enough for the system to briefly come offline. That is what it's for. That is what it does.
+
+This is non-suicidal self-injury — NSSI. It is a regulatory strategy. The goal is not death. The goal is the shocking calm. The drained chaos. The moment when the internal war goes quiet.
+
+He did it again two weeks later. The memoir names that plainly: only then, behavior left. Not escalation toward death. A regulatory strategy that works in the worst possible way — working well enough that the nervous system returns to it.
+
+Then the shame arrived. And this is where it compounds:
+
+The shame cut deeper — knowing the night had been lost to Kristina's cycle, that it had stolen energy from Maverick, Shayla, Teaguen, Adalee, leaving a shadow of the dad they needed. The guilt sharper than the blade.
+
+The guilt sharper than the blade.
+
+That line is clinically precise. Suicidal thinking in CPTSD is often not I want to die. It is: the people I love would be better without me. The math appears to work out in favor of absence. The existence costs more than it gives.
+
+This has a clinical name: perceived burdensomeness. It is one of the two core mechanisms in Thomas Joiner's Interpersonal Theory of Suicide — and it is a symptom. Not a fact. Not arithmetic. A symptom of a nervous system that has been running the load-bearing belief of Session 1 — I am the problem — for so long that it has extended the logic to its furthest possible conclusion.
+
+The belief feels like a fact. It is not a fact."
+      },
+      {
+        title: "Part 2B: The History",
+        duration: 9,
+        content: "The first hospitalization for suicidal thinking was 1999. He was seventeen.
+
+Before that, his uncle had already shown him what that road looked like — pills first, then a .22 caliber to the stomach. He watched his uncle survive twice. He carried that knowledge in his body the way you carry things you witness before you have language to process them.
+
+This is what Joiner calls acquired capability — the third factor in suicide risk. Having become less afraid of pain and death through prior exposure: either your own or witnessed. The uncle's attempts. The twenty-four deaths carried without processing. The cuts. Each one builds the capacity to act in ways that would terrify a nervous system that hadn't already been there.
+
+Acquired capability is not a character trait. It is a risk factor produced by specific history.
+
+By December 2021, when his mother died, he stood thirty yards from her casket at the funeral — high, unable to move closer. The grief was physical. The meth was the only thing keeping the nervous system from full collapse in that moment. That is not avoidance of grief. That is the last load-bearing wall holding the structure up long enough to be present in the room at all.
+
+The clinical record is blunt: History of Ideation. Past Attempt. Recent Self-Harm. C-SSRS positive across all three domains.
+
+I want to name what suicidal crisis actually feels like from inside it — because the clinical checklist and the actual body-texture are very different things, and the gap between them is where people fall through.
+
+The memoir describes it as:
+
+Wired frayed. Perpetually braced for an impact that never landed.
+
+Not lying dramatically on a floor. Not a movie scene of a person in visible despair. Wired frayed and braced. Chronically. Exhaustion that looks like from inside it, most of the time. Not loud. Not obvious. The perpetual bracing.
+
+That body-texture — wired frayed, braced for impact — is what gets read by the people around it as fine, or difficult, or withdrawn, or angry. Not as crisis. Because it doesn't look like the crisis on the checklist."
+      },
+      {
+        title: "Part 2C: What Actually Kept Him Here",
+        duration: 8,
+        content: "I want to name what actually kept him here — because it was not what the intervention system assumes keeps people here.
+
+It wasn't a hotline. It wasn't a safety plan worksheet. It wasn't a hospitalization.
+
+It was the accumulation of small specific decisions. Sobriety. Breathwork. Grounding. EMDR. Somatic work. Refusing to chase the next person who would trigger the abandonment wound. Choosing boring.
+
+Because as he wrote: peace boring, sign healing — not wrong.
+
+Sit with that for a moment.
+
+Peace boring, sign healing — not wrong.
+
+For a nervous system calibrated to chaos — trained from the incubator forward to read danger as the baseline, to read the absence of alarm as the absence of aliveness — peace feels like absence. Quiet feels like something wrong. Boring feels like evidence that nothing real is happening. And so the nervous system keeps finding ways to return to the familiar frequency of emergency.
+
+The clinical work — the actual work of staying here — was learning to tolerate the boredom. To let the absence of crisis be safety rather than emptiness. To stay in the flatness long enough for the nervous system to update its baseline.
+
+That is not a dramatic intervention. It is the most ordinary possible thing: staying in the room when nothing is happening and learning to call that enough.
+
+The primary protective factor throughout the case study — documented, consistent, the thing that interrupted the most acute ideation at its most dangerous points — was the love for his children. Maverick. Shayla. Teaguen. Adalee. The specific, named weight of four people who still needed him to stay.
+
+Session 8 named the instability in that protective factor — the way it was also being weaponized, the way estrangement could invert it. What belongs here is the other side of that: it held. Through the mattress on the buddy's floor. Through the worst of the spiral. Through the C-SSRS positive across all three domains. Something in the nervous system held the weight of those four names and stayed.
+
+That is the decision to stay — which we named in Session 0, which we've been tracking across every session since. Not a single dramatic choice. The accumulation of small specific decisions not to disappear. Sobriety, breathwork, grounding, boring peace, four names in the dark.
+
+If the revolution must be trauma-informed — and this course argues that it must — then this is the session where that stops being a slogan. Suicidal crisis is what happens when a wound is old enough, deep enough, and unwitnessed enough. Understanding it — really understanding it, not just recognizing the warning signs on a checklist — is where the difference gets made. Between a system that keeps the loop closed and a system that can let a circuit-breaker in."
+      },
+      {
+        title: "Part 3: Group Discussion",
+        duration: 20,
+        content: "Discussion Prompt 1: The memoir describes the razor producing shocking calm — the chaos draining, the heart slowing. Before you judge that: what does your own nervous system do when it cannot find relief? What does it reach for — and what is that thing actually managing?
+
+Discussion Prompt 2: The guilt is sharper than the blade. When have you carried guilt that was bigger than the original wound — guilt for what your pain cost someone else? What did that do to your sense of your own right to exist?
+
+Discussion Prompt 3: Daniel's uncle survived two attempts before Daniel was old enough to process what he'd witnessed. How does that kind of early exposure to someone else's crisis live in a body over decades? What does it build?
+
+Discussion Prompt 4: Peace boring, sign healing — not wrong. What would it mean for you if the absence of crisis wasn't emptiness but was actually safety? Have you ever been able to feel that difference — even briefly?
+
+Discussion Prompt 5: The clinical record lists ideation, attempt, and recent self-harm as separate categories. Which of those three do you think gets the least honest conversation — in therapy offices, in families, in communities — and why?"
+      },
+      {
+        title: "Part 4: Personal Safety Reference",
+        duration: 10,
+        content: "Before we close, I want everyone to complete a Personal Safety Reference. This is for you — not collected, not shared, not graded. It's a card you leave with today that tells your own nervous system what to do before the pressure gets unsurvivable.
+
+You are going to write three things. Take the full ten minutes.
+
+Personal Safety Reference Card:
+1. When I notice the pressure building, the first thing I do is: _________________________________________
+2. One person I can contact before it gets worse: _________________________________________
+3. One thing that has helped regulate me before: _________________________________________
+
+If I am in crisis:
+988 Suicide & Crisis Lifeline — call or text 988
+Crisis Text Line — text HOME to 741741
+
+I do not have to earn the right to use those numbers. Neither does anyone else."
+      },
+      {
+        title: "Part 5: Closing Grounding",
+        duration: 10,
+        content: "Feet on the floor.
+
+Weight in the chair.
+
+Look at one thing in the room that is not a threat. Look at it for ten full seconds.
+
+One slow breath in.
+
+And out.
+
+You just went somewhere hard. And you came back.
+
+I want to leave you with the two things this session is built on.
+
+The first: perceived burdensomeness is a symptom. The belief that the people you love would be better without you is not arithmetic. It is not a fact. It is what a nervous system produces when it has been running the load-bearing belief of childhood — I am the problem — long enough for that belief to reach its furthest conclusion. It feels like a fact. It is a symptom.
+
+The second: staying here is not one dramatic choice. It is the accumulation of small specific decisions. Sobriety. Breathwork. Grounding. Choosing boring. Letting peace be safety rather than absence.
+
+That is the whole work, reduced to its simplest form.
+
+The card in your hands has three things on it and two phone numbers. You do not have to earn the right to use any of them. The numbers exist because some moments require a voice on the other end of a line, and that is not weakness. That is a circuit-breaker arriving from outside the loop.
+
+Feel your feet. Feel the chair. You are here.
+
+That is enough for today.
+
+Session 13 is about what happens when we turn this knowledge outward — when the question stops being what happened to me and starts being what do I do with what I now know. We'll see you then."
+      }
+    ],
+    handout: [
+      "Perceived burdensomeness: The belief that your existence costs more than it contributes.",
+      "Thwarted belonging: The belief that you don't belong anywhere.",
+      "Non-suicidal self-injury (NSSI): Self-harm used as a regulatory strategy.",
+      "Acquired capability: Having become less afraid of pain and death through prior exposure.",
+      "Passive ideation: Wishing you weren't here, without a specific plan.",
+      "Active ideation: Specific thoughts about method, timing, or plan.",
+      "Nervous system collapse: The shutdown state below the window of tolerance."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug can still produce crisis and self-harm."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is the nervous-system reality that can show up under extreme pressure."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system stacking that can lead to crisis after repeated threat or moral injury."
+      }
+    ]
+  },
+  {
         title: "Part 1: The Brain Rewired – Trauma’s Invisible Blueprint",
         duration: 18,
         content: "Trauma does not live only in memories. It lives in tissue. It physically reshapes three key brain regions that once kept Daniel alive and still quietly run much of his operating system.\n\n**The Amygdala – Your Overactive Smoke Detector**\nIn a safe environment, the amygdala acts as a precise alarm. After prolonged trauma—incubator isolation, screams, broken bones, police visits, constant threat—it becomes hypersensitive. A slammed door, a certain tone of voice, a neutral text message can trigger a full flood of cortisol and adrenaline before the thinking brain even engages.\n\nThis is not “overreacting.” This is a nervous system that learned early: safety is conditional and threat is everywhere. Chronic stress enlarges and sensitizes the amygdala while weakening its connection to the prefrontal cortex, turning neutral stimuli into perceived danger.\n\n**The Hippocampus – The Fragmented Librarian**\nThe hippocampus tags memories with time, place, and context so you can distinguish “then” from “now.” High cortisol from chronic trauma shrinks it and impairs its function. Daniel could forget everyday details but remember the exact shade of rage in his father’s eyes with terrifying clarity. This fragmentation fuels emotional flashbacks that feel vividly present.\n\n**The Prefrontal Cortex (PFC) – The Silenced CEO**\nThe PFC handles impulse control, emotional regulation, long-term planning, and rational decision-making. Trauma dials it down. When the amygdala screams, the PFC struggles to say, “This is not the same threat.” That disconnection explains why Daniel reached for meth—not primarily for euphoria, but for a temporary off-switch when emotional chaos became unbearable.\n\n**[Grounding Pause – 60–90 seconds]**\nGently press your fingertips together and notice the precise sensation of contact. Inhale slowly through the nose for 4 counts, hold for 2, exhale for 6. As you breathe out, imagine releasing one layer of mental static. This simple practice activates the parasympathetic nervous system and gently signals safety to your amygdala.\n\n**The Revolutionary Good News: Neuroplasticity**\nYour brain is not stone. It is living clay. Neuroplasticity—the brain’s lifelong ability to form new neural connections—means what trauma wired, deliberate repeated practice can rewire. Every new response, every moment of naming a feeling instead of numbing it, every boundary, every journal entry strengthens the hippocampus and reconnects the PFC to the amygdala. Recovery is intentional neuro-engineering."
