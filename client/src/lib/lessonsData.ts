@@ -786,5 +786,70 @@ export const lessonsData: Lesson[] = [
         note: "This is the nervous-system integration many service members recognize - carrying the full history of service and trauma while building sustainable presence in family and community life."
       }
     ]
+  },
+  {
+    id: "session-13",
+    sessionNumber: 13,
+    title: "Advanced Resilience",
+    subtitle: "When Old Wiring Reactivates and How to Return Faster",
+    duration: 80,
+    goal: "Provide advanced tools for when the old survival template reactivates strongly - teaching participants how to recognize reactivation, interrupt it more quickly, and return to the updated wiring with less allostatic cost.",
+    heroImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663490036747/MeHgb4NZrdFby9hhugrRXs/session-01-hero-6MPVBfBEokjjx592Rxk4k9.webp",
+    sections: [
+      {
+        title: "I. Opening Grounding - Re-anchor",
+        duration: 5,
+        content: "Use the exact 3-2-1 Scan + Gravity Check + Voo / Straw Breath from Session 00. End with: You are here. You are in control of this space. Plan B is always available."
+      },
+      {
+        title: "II. Quick Frame & Plan B Reminder",
+        duration: 4,
+        content: "We remain in psychoeducation mode. We study one documented life so we can see the machinery without flooding our own nervous systems. Mechanism over narrative. Right to pass. Yellow Light or Red Light - use it."
+      },
+      {
+        title: "III. Core Teaching: Advanced Resilience - Reactivation and Faster Return",
+        duration: 50,
+        content: "By now we have mapped the full journey: the loyal survival template from the Glass Box through war-zone childhood, trauma bonds, weaponized intimacy, the breaking point, turning toward the body, new practices, sustaining through triggers, integration, and deepening into relationships and fatherhood. Today we address an advanced reality: even after significant new wiring, the old blueprint can still reactivate - sometimes strongly - and how to meet those moments with greater skill and less cost. In the documented life, reactivation still happened. Certain tones of voice, financial stress, parenting moments that triggered old guilt or fear of failure, or even neutral situations that echoed the war-zone unpredictability could suddenly pull the nervous system back toward freeze, fawn, over-functioning, numbing, or dissociation. The competence trap or the urge to hide pain could surge even after years of practice. This is not failure. It is normal nervous-system behavior. The old template was installed in the first thirty days of life and reinforced for decades. It was designed to keep a small human alive in conditions of chronic threat and isolation. The nervous system remains loyal to that history - it does not forget easily. When it perceives threat (real or patterned), it can default to the fastest, most practiced survival response. The key mechanism of advanced resilience is not preventing reactivation - that is unrealistic - but shortening the time it takes to notice, interrupt, and return to the updated wiring. Daniel learned to spot early warning signs more quickly: the tight chest that once signaled perform or be discarded, the sudden urge to over-function or disappear, the wave of dissociation that felt like hiding under the blanket again. Instead of judging these signals or obeying them automatically, he treated them as valuable data from a loyal system. He then used layered tools in sequence: Immediate grounding from Session 00 (gravity press, 3-2-1 scan, voo breath) to interrupt the old cascade before it fully took over. A brief internal acknowledgment: This is the old blueprint trying to protect me - thank you, but I have new options now. A small, doable new choice - staying present with his children instead of numbing, setting a boundary instead of fawning, or allowing a tolerable amount of feeling instead of dissociating. Each faster return added evidence to the nervous system: the reactivation did not have to run its full course, and the updated template could regain control more quickly. Over time, the window between trigger and regulated response shortened. Allostatic load decreased because the body spent less total time in defensive states. This is the biology of advanced resilience. The nervous system does not erase its early wiring - it builds a stronger, faster return pathway. Repeated practice strengthens the connection between detection of the old pattern and activation of new responses. Ventral vagal flexibility improves as the system learns it can move out of sympathetic or dorsal vagal states more efficiently. The loyal history remains, but it no longer dictates the duration or intensity of the response. Setbacks and strong reactivations are expected, especially during major life stress. The measure of progress is not never falling back - it is falling back less often, for shorter periods, and returning with greater skill and self-compassion. The nervous system stays loyal to its protective roots while gaining the ability to update in real time."
+      },
+      {
+        title: "IV. Regulated Reflection Prompt",
+        duration: 8,
+        content: "Optional, silent only. Take a quiet moment. Notice how the nervous system can reactivate out of loyalty and still learn to return to regulation more quickly. No sharing required."
+      },
+      {
+        title: "V. Closing Grounding & Transition",
+        duration: 8,
+        content: "Exact same closing script as all locked sessions: wiggle toes, stretch, press palms, feel skin boundary. You are leaving as [your name]. You are safe. You are present. You are here."
+      },
+      {
+        title: "VI. Pilot Feedback Card",
+        duration: 2,
+        content: "Continue the existing 13 questions + one new low-burden question: On a scale of 1-10, how confident did you feel in your ability to return from a reactivation after today's material?"
+      }
+    ],
+    handout: [
+      "Survival Template Layers - Layer 13: Advanced Resilience - When Old Wiring Reactivates",
+      "Reactivation is normal - the loyal nervous system defaults to early wiring under perceived threat",
+      "Early warning signs (somatic signals from the old template)",
+      "Layered return sequence: grounding tools, acknowledgment, small new choice",
+      "Faster return equals less allostatic load and stronger new pathways",
+      "Biology: improved ventral vagal flexibility and shorter defensive-state duration",
+      "Loyalty message: The nervous system remains loyal to its history - advanced resilience means shortening reactivation time and returning to the updated wiring with greater skill and compassion."
+    ],
+    settings: ["NA/AA rooms", "Jails", "Residential rehabs", "VA peer groups"],
+    facilitatorAdaptations: [
+      {
+        setting: "NA/AA or Rehab",
+        note: "This is how the wiring that started before the first drink or drug can still reactivate - and how to return to regulation faster without self-judgment or returning to old chemical regulators."
+      },
+      {
+        setting: "Jail / Corrections",
+        note: "This is advanced nervous-system maintenance that can help even when old patterns flare under pressure or institutional stress."
+      },
+      {
+        setting: "VA / Military",
+        note: "This is the nervous-system skill many service members need - recognizing when old high-alert or survival wiring reactivates and returning to regulated presence more quickly in daily life."
+      }
+    ]
   }
 ];
