@@ -10,11 +10,16 @@ export default function Home() {
   const [match, params] = useRoute("/:sessionId");
 
   useEffect(() => {
-    if (match && params?.sessionId) {
-      const element = document.getElementById(params.sessionId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
+    // Check if the sessionId exists and is not just "404"
+    if (match && params?.sessionId && params.sessionId !== "404") {
+      // Small delay to ensure the DOM is ready after route change
+      const timer = setTimeout(() => {
+        const element = document.getElementById(params.sessionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
     }
   }, [match, params]);
 

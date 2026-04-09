@@ -13,8 +13,10 @@ function AppRouter() {
     <Router hook={useHashLocation}>
       <Switch>
         <Route path="/" component={Home} />
-        {/* Support both root and direct session paths in the hash router */}
-        <Route path="/:sessionId" component={Home} />
+        {/* Match paths like /session-01 */}
+        <Route path="/:sessionId">
+          {(params) => <Home />}
+        </Route>
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
