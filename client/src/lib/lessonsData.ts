@@ -10,6 +10,7 @@ export interface Lesson {
   handout: string[];
   settings: string[];
   facilitatorAdaptations: FacilitatorAdaptation[];
+  facilitatorScript?: string;
 }
 
 export interface Section {
@@ -205,6 +206,32 @@ export const lessonsData: Lesson[] = [
     duration: 70,
     goal: "Name suicidal-crisis mechanisms, keep group safety intact, and ensure every participant leaves with a completed safety reference.",
     heroImage,
+    facilitatorScript: `WHAT REALLY HAPPENED
+Understanding CPTSD Through a Clinical Case Study
+SESSION 12 | FACILITATOR SCRIPT
+
+Crisis, Suicide Risk, and Staying Alive
+
+This session goes to the bottom. We're going together, and we're coming back.
+
+Core mechanisms named in this session:
+- NSSI as regulation (not moral failure)
+- Perceived burdensomeness as symptom (not fact)
+- Acquired capability as history-linked risk factor
+- Crisis body-texture: wired frayed, perpetually braced
+
+Required clinical actions:
+- Complete Personal Safety Reference card before participants leave
+- Deliver crisis resources directly: 988 and HOME to 741741
+- Close with grounding and explicit permission to use support
+
+Discussion focus:
+Recognize mechanisms without requiring personal disclosure.
+
+Closing anchors:
+1) The belief that others are better without you is a symptom, not arithmetic.
+2) Staying alive is the accumulation of small specific decisions.
+`,
     sections: [
       {
         title: "How to Use This Script",
