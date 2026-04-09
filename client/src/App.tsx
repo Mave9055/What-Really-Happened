@@ -13,10 +13,8 @@ function AppRouter() {
     <Router hook={useHashLocation}>
       <Switch>
         <Route path="/" component={Home} />
-        {/* Match paths like /session-01 */}
-        <Route path="/:sessionId">
-          {(params) => <Home />}
-        </Route>
+        {/* Match paths like /session-01 or /~session-01 */}
+        <Route path="/:sessionId" component={Home} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

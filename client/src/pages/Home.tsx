@@ -12,9 +12,14 @@ export default function Home() {
   useEffect(() => {
     // Check if the sessionId exists and is not just "404"
     if (match && params?.sessionId && params.sessionId !== "404") {
+      // Handle both /session-01 and /~session-01 (wouter's tilde prefix)
+      const targetId = params.sessionId.startsWith("~") 
+        ? params.sessionId.substring(1) 
+        : params.sessionId;
+        
       // Small delay to ensure the DOM is ready after route change
       const timer = setTimeout(() => {
-        const element = document.getElementById(params.sessionId);
+        const element = document.getElementById(targetId);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
